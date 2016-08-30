@@ -1,6 +1,28 @@
 .header {
+    height: 700px;
+    margin-bottom: 70px;
+    background: url("../img/header-bg.jpg") center center no-repeat;
+    background-size: cover;
+    &__top {
+        height: 70px;
+        line-height: 70px;
+    }
     &__logo {
         display: inline-block;
-        vertical-align: top;
+        width: 29%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__slogan {
+        @include rob-light(32px, 38px);
+        display: inline-block;
+        margin-top: 130px;
+        margin-left: 18%;
+        color: #fff;
+        &--bigger {
+            @include rob-light(40px, 38px);
+            margin-left: 0;
+            color: #fff;
+        }
     }
 }

@@ -1,0 +1,33 @@
+.page-descr {
+	text-align: center;
+    &--left {
+        display: inline-block;
+        margin-top: 125px;
+        width: 50%;
+        text-align: left;
+    }
+    &__title {
+        @include rob-light(42px, 38px);
+        margin-bottom: 20px;
+        color: #333333;
+        &--white {
+            padding-top: 70px;
+            color: #fff;
+        }
+        &--fz-low {
+            margin-bottom: 60px;
+            font-size: 32px;
+        }
+    }
+    & p {
+        @include rob-reg(15px, 18px);
+        max-width: 600px;
+        margin: 0 auto 20px;
+        color: #8c91a0;
+    }
+    &__text {
+        &--white {
+            color: #fff; // ВОПРОС!!!
+        }
+    }
+}

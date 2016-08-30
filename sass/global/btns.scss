@@ -1,0 +1,40 @@
+.btn-wrapper {
+	max-width: 300px;
+    margin: 0 auto 60px;
+}
+
+.btn {
+	@include rob-reg(15px, 15px);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn-send {
+    display: inline-block;
+    margin: 0 auto;
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+	background: #3869b8;
+}
+
+.btn-try {
+	display: inline-block;
+    margin: 0 auto;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+	background: #38b849;
+}
+
+.btn-details {
+	display: inline-block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #9fb5da;
+    color: #9fb5da;
+    background: transparent;
+}

@@ -1,10 +1,15 @@
-//@import "mixins.scss";
+@import "mixins.scss";
 //@import "variables.scss";
 
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
+@import "blocks/platform.scss";
+@import "blocks/page-descr.scss";
+@import "blocks/news.scss";
+@import "blocks/our-clients.scss";
+@import "blocks/appeal.scss";
 
 @import "global/scaffolding.scss";
 //@import "global/fonts.scss";
-//@import "global/btn.scss";
+@import "global/btns.scss";
 //@import "global/input.scss";

@@ -1,0 +1,13 @@
+.platform {
+    & img {
+        display: block;
+        margin: 0 auto;
+    }
+    &--bg-fiolet {
+        background: #302c38;
+    }
+    &--bg-img {
+        height: 664px;
+        background: url("../img/advice-bg.jpg") center -35px no-repeat;
+    }
+}

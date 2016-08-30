@@ -1,0 +1,15 @@
+@mixin rob-reg($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin rob-light($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}

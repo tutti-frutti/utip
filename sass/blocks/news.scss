@@ -1,0 +1,50 @@
+.news {
+    border-bottom: 1px solid #e4e5e8;
+    margin-bottom: 80px;
+    &__header {
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            text-align: justify;
+        }
+    }
+    &__name {
+        display: inline-block;
+        
+    }
+    &__more {
+        display: inline-block;
+    }
+    &__list {
+        margin-bottom: 80px;
+    }
+    &__item {
+        display: inline-block;
+        width: 30%;
+        margin-right: 4%;
+        text-align: left;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__date {
+        @include rob-reg(11px, 11px);
+        color: #8c91a0;
+    }
+    &__title {
+        & a {
+            @include rob-reg(19px, 19px);
+            display: block;
+            margin-bottom: 10px;
+            color: #3869b8;
+        }
+    }
+    & p {
+        @include rob-reg(14px, 18px);
+        color: #8c91a0;
+    }
+}

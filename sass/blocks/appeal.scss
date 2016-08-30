@@ -1,0 +1,12 @@
+.appeal {
+	background: #f4f4f6;
+    &__form {
+        max-width: 490px;
+        & input[type="text"],
+          input[type="tel"],
+          input[type="email"]{
+              width: 300px;
+              margin: 5px 0;
+        }
+    }
+}

@@ -1,8 +1,24 @@
 .nav {
     display: inline-block;
-    vertical-align: top;
+    width: 70%;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: right;
     &__item {
         display: inline-block;
+        padding: 0 10px;
+        margin-right: 3%;
+        border-right: 1px solid #fff;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        @include rob-reg(13px, 16px);
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &__sub {
         display: none;
