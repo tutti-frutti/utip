@@ -1,12 +1,143 @@
 .appeal {
+    height: 600px;
+    border-top: 1px solid transparent;
 	background: #f4f4f6;
     &__form {
-        max-width: 490px;
+        display: inline-block;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        margin-right: 5%;
+        padding: 20px 20px 0;
+        width: 50%;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0 8px 25px 3px #e8e8ea;
         & input[type="text"],
           input[type="tel"],
-          input[type="email"]{
+          input[type="email"] {
+              @include rob-reg(16px, 16px);
+              padding-left: 10px;
               width: 300px;
+              height: 40px;
               margin: 5px 0;
+              text-align: left;
+              color: #8c91a0;
+              box-sizing: border-box;
+        }
+        & textarea {
+            @include rob-reg(16px, 16px);
+            padding-left: 10px;
+            padding-top: 10px;
+            margin-top: 5px;
+            max-width: 450px;
+            width: 100%;
+            resize: none;
+            color: #8c91a0;
+        }
+    }
+    &__inputs-wrapper {
+        text-align: left;
+    }
+    &__descr {
+        display: inline-block;
+        margin-top: 180px;
+        width: 44%;
+        vertical-align: top;
+    }
+    &__title {
+        @include rob-reg(34px, 39px);
+        color: #333333;
+    }
+    & p {
+        @include rob-reg(16px, 22px);
+        width: 75%;
+        color: #8c91a0;
+    }
+    &__list {
+        height: 80px;
+    }
+    &__item {
+        position: relative;
+        display: inline-block;
+        margin-right: 20%;
+        padding-top: 60px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--active {
+            &::before {
+            position: absolute;
+            content: '';
+            margin-left: -25px;
+            left: 50%;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #7096d4;
+            border-radius: 50%;
+        }
+    }
+        &--disactive {
+            &::before {
+            position: absolute;
+            content: '';
+            margin-left: -25px;
+            left: 50%;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #c3c5cd;
+            border-radius: 50%;
+        }
+    }
+        
+    }
+    &__icon-1 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -8px;
+            left: 50%;
+            top: 17px;
+            width: 22px;
+            height: 22px;
+            background: url("/img/form-ic-1.png") 0 0 no-repeat;
+        }
+    }
+    &__icon-2 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -11px;
+            left: 50%;
+            top: 17px;
+            width: 28px;
+            height: 22px;
+            background: url("/img/form-ic-2.png") 0 0 no-repeat;
+        }
+    }
+    &__icon-3 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -12px;
+            left: 50%;
+            top: 17px;
+            width: 30px;
+            height: 26px;
+            background: url("/img/form-ic-3.png") 0 0 no-repeat;
+        }
+    }
+    &__icon-4 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -12px;
+            left: 50%;
+            top: 17px;
+            width: 30px;
+            height: 26px;
+            background: url("/img/form-ic-4.png") 0 0 no-repeat;
         }
     }
 }

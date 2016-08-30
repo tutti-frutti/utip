@@ -13,3 +13,11 @@
     font-size: $font-size;
     line-height: $line-height;
 }
+
+@mixin rob-bold($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: bold;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
