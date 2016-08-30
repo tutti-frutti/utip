@@ -1,0 +1,11 @@
+.nav {
+    display: inline-block;
+    vertical-align: top;
+    &__item {
+        display: inline-block;
+    }
+    &__sub {
+        display: none;
+        position: absolute;
+    }
+}
