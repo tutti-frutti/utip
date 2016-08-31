@@ -4,13 +4,19 @@
     line-height: normal;
     vertical-align: middle;
     text-align: right;
+    font-size: 0;
+    &__list {
+        @media #{$mobile} {
+            display: none;
+        }
+    }
     &__item {
         display: inline-block;
-        padding: 0 10px;
-        margin-right: 3%;
-        border-right: 1px solid #fff;
+        padding: 0 20px;
+        border-right: 1px solid #a2c2cd;
         &:last-child {
             margin-right: 0;
+            border-right: none;
         }
     }
     &__link {
@@ -23,5 +29,17 @@
     &__sub {
         display: none;
         position: absolute;
+    }
+    &__lang {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            width: 16px;
+            height: 16px;
+            background: url("../img/nav-arr-down.png") 0 0 no-repeat;
+        }
     }
 }

@@ -4,3 +4,7 @@ $(document).ready(function(){
         $(".nav__sub").css("display", "block");
     });
 });
+
+$(function(){
+		$('#menu').slicknav();
+	});

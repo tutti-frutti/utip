@@ -3,22 +3,40 @@
     margin-bottom: 70px;
     background: url("../img/header-bg.jpg") center center no-repeat;
     background-size: cover;
+    &--platform-bg {
+        background: url("/img/platf-header-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
     &__top {
         height: 70px;
         line-height: 70px;
+        @media #{$mobile} {
+            text-align: center;
+        }
     }
     &__logo {
         display: inline-block;
         width: 29%;
         line-height: normal;
         vertical-align: middle;
+        @media #{$mobile} {
+            display: block;
+            padding-top: 20px;
+            width: auto;
+        }
     }
     &__slogan {
         @include rob-light(32px, 38px);
         display: inline-block;
         margin-top: 130px;
-        margin-left: 18%;
+        margin-left: 28%;
         color: #fff;
+        @media #{$mobile} {
+            display: block;
+            margin-left: 0;
+            text-align: center;
+            line-height: 28px;
+        }
         &--bigger {
             @include rob-light(40px, 38px);
             margin-left: 0;

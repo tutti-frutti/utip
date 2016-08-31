@@ -1,0 +1,28 @@
+.footer-bottom {
+	min-height: 100px;
+    line-height: 100px;
+    @media #{$mobile} {
+        padding: 0 10px;
+    }
+    &__left {
+        display: inline-block;
+        margin-right: 3%;
+        width: 28%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__copyright {
+        @include rob-reg(12px, 16px);
+        color: #c3c5cd;
+    }
+    &__right {
+        display: inline-block;
+        width: 57%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__text {
+        @include rob-reg(12px, 16px);
+        color: #c3c5cd;
+    }
+}

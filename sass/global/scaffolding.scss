@@ -20,7 +20,7 @@ a {
 }
 
 img {
-//    max-width: 100%;
+    max-width: 100%;
 }
 
 * {
@@ -32,10 +32,22 @@ img {
     margin: 0 auto;
 }
 
+.center-wide {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
+}
+
+.slicknav_menu {
+	display:none;
+    @media #{$mobile} {
+        display: block;
+    }
 }
 
 //FONTS

@@ -7,6 +7,10 @@
         &:nth-child(4n) {
             margin-right: 0;
         }
+        @media #{$mobile} {
+            display: block;
+            margin-right: 0;
+        }
         & img {
             opacity: .5;
             transition: all 0.7s;

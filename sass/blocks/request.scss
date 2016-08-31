@@ -1,0 +1,22 @@
+.request {
+    margin-top: 65px;
+    margin-left: 14%;
+	width: 33%;
+    &__title {
+        @include rob-light(59px, 45px);
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    &__sub-title {
+        @include rob-light(24px, 28px);
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    &__descr {
+        @include rob-light(14px, 20px);
+        color: #fff;
+    }
+    & .btn-wrapper {
+        margin-left: 0;
+    }
+}

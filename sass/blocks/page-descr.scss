@@ -5,6 +5,11 @@
         margin-top: 125px;
         width: 50%;
         text-align: left;
+        @media #{$mobile} {
+            margin-top: 0;
+            width: auto;
+            text-align: center;
+        }
     }
     &__title {
         @include rob-light(42px, 38px);

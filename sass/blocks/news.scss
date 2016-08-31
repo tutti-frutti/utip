@@ -1,6 +1,10 @@
 .news {
-    border-bottom: 1px solid #e4e5e8;
+    margin-top: 80px;
     margin-bottom: 80px;
+    border-bottom: 1px solid #e4e5e8;
+    @media #{$mobile} {
+        margin-bottom: 20px;
+    }
     &__header {
         display: inline-block;
         width: 100%;
@@ -10,6 +14,9 @@
             display: inline-block;
             width: 100%;
             text-align: justify;
+        }
+        @media #{$mobile} {
+            padding: 0 5px;
         }
     }
     &__name {
@@ -27,6 +34,9 @@
     }
     &__list {
         margin-bottom: 80px;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
     }
     &__item {
         display: inline-block;
@@ -35,6 +45,12 @@
         text-align: left;
         &:last-child {
             margin-right: 0;
+        }
+        @media #{$mobile} {
+            margin-right: 0;
+            margin-bottom: 20px;
+            padding: 0 5px;
+            width: auto;
         }
     }
     &__date {

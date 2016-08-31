@@ -1,5 +1,5 @@
 @import "mixins.scss";
-//@import "variables.scss";
+@import "variables.scss";
 
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -8,6 +8,9 @@
 @import "blocks/news.scss";
 @import "blocks/our-clients.scss";
 @import "blocks/appeal.scss";
+@import "blocks/footer.scss";
+@import "blocks/footer-bottom.scss";
+@import "blocks/request.scss";
 
 @import "global/scaffolding.scss";
 //@import "global/fonts.scss";
