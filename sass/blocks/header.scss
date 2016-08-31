@@ -4,6 +4,7 @@
     background: url("../img/header-bg.jpg") center center no-repeat;
     background-size: cover;
     &--platform-bg {
+        margin-bottom: 0;
         background: url("/img/platf-header-bg.jpg") center center no-repeat;
         background-size: cover;
     }

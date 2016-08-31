@@ -1,0 +1,46 @@
+.terminal-versions {
+    position: relative;
+    height: 750px;
+    background: #302c38;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-top: 2px solid #fff;
+    }
+    & input {
+        display: none;
+        &:checked + label {
+            color: #fff;
+            border-bottom: 1px solid red;
+        }
+    }
+    & input[id="pc"]:checked ~ .terminal-versions__tabs .terminal-versions__pc,
+    input[id="mobile"]:checked ~ .terminal-versions__tabs .terminal-versions__mobile,
+    input[id="web"]:checked ~ .terminal-versions__tabs .terminal-versions__web {
+                display: block;
+            }   
+                
+    & label {
+        display: inline-block;
+        padding: 10px 40px;
+        cursor: pointer;
+        color: #c3c2c6;
+        background: #302c38;
+    }
+    &__tabs {
+        position: relative;
+        & article {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+            padding: 70px 40px;
+            width: 100%;
+            border-bottom: 1px solid #000;
+        }
+    }
+}
