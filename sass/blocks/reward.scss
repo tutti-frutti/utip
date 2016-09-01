@@ -8,25 +8,50 @@
         
     }
     &__item {
-        @include rob-reg(22px, 20px);
+        @include rob-reg(22px, 18px);
         display: inline-block;
         margin: 0 10px;
-        padding: 10px 0;
+//        padding: 10px 0;
         text-align: left;
-        line-height: normal;
+//        line-height: normal;
+        width: 168px;
         vertical-align: middle;
+        @media #{$mobile} {
+            display: block;
+            text-align: center;
+            line-height: none;
+            vertical-align: top;
+        }
         &:last-child {
             padding-right: 0;
             margin-right: 0;
+            @media #{$mobile} {
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+        }
+        &--narrow {
+            width: 100px;
         }
         &--wide {
             width: 240px;
+            @media #{$mobile} {
+                margin: 0 auto;
+            }
         }
         &--width {
-            width: 168px;
+            padding: 0 25px;
+            width: 219px;
+            height: 80px;
+            @media #{$mobile} {
+                margin: 0 auto;
+            }
         }
         &--border {
             border-right: 1px solid #e4e5e8;
+            @media #{$mobile} {
+                border: none;
+            }
         }
     }
     &__title {
@@ -41,7 +66,7 @@
         @include rob-reg(40px, 40px);
     }
     & span {
-        @include rob-reg(16px, 20px);
+        @include rob-reg(16px, 10px);
         color: #8c91a0;
     }
 }

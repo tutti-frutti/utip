@@ -1,5 +1,11 @@
 .page-descr {
 	text-align: center;
+    &--mt {
+        padding: 100px 0 70px;
+        @media #{$mobile} {
+            padding: 20px 0 20px;
+        }
+    }
     &--left {
         display: inline-block;
         margin-top: 125px;
@@ -22,6 +28,10 @@
         &--fz-low {
             margin-bottom: 60px;
             font-size: 32px;
+        }
+        &--smaller {
+            @include rob-reg(24px, 26px);
+            color: #333333;
         }
     }
     & p {

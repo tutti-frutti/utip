@@ -2,8 +2,15 @@
     margin-top: 65px;
     margin-left: 14%;
 	width: 33%;
+    @media #{$mobile} {
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 0 10px;
+        width: auto;
+        
+    }
     &__title {
-        @include rob-light(59px, 45px);
+        @include rob-light(59px, 59px);
         margin-bottom: 15px;
         color: #fff;
     }

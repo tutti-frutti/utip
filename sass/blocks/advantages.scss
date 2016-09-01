@@ -1,0 +1,101 @@
+.advantages {
+	min-height: 499px;
+//    line-height: 499px;
+    border-top: 1px solid transparent;
+    background: url("../img/adv-bg.png") 0 0 no-repeat;
+    background-size: cover;
+    & h2 {
+        color: #fff;
+    }
+    &__list {
+//        display: inline-block;
+//        line-height: normal;
+//        vertical-align: middle;
+        font-size: 0;
+    }
+    &__item {
+        @include rob-reg(16px, 20px);
+        display: inline-block;
+        position: relative;
+        width: 20%;
+        height: 150px;
+        padding: 60px 10px 30px;
+        text-align: center;
+        vertical-align: top;
+        color: #fff;
+        border-right: 1px solid #7983c9;
+        @media #{$mobile} {
+            display: block;
+            width: auto;
+            height: auto;
+        }
+        & span {
+            @include rob-reg(14px, 20px);
+            color: #a0a9d9;
+        }
+        &:last-child {
+            margin-right: 0;
+            border: none;
+        }
+        &--ic-1 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/adv-1.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-2 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/adv-2.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-3 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/adv-3.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-4 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/adv-4.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-5 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/adv-5.png") 0 0 no-repeat;
+            }
+        }
+    }
+}

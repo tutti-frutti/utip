@@ -27,6 +27,12 @@
     line-height: 40px;
     color: #fff;
 	background: #38b849;
+    &--width {
+        width: 165px;
+    }
+    &--width-andr {
+        width: 225px;
+    }
 }
 
 .btn-details {
