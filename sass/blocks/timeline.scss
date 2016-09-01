@@ -1,0 +1,42 @@
+.timeline {
+    &--ta-left {
+        text-align: left;
+    }
+    &--ta-right {
+        text-align: right;
+    }
+    &--mt {
+        margin-top: -50px;
+    }
+    & > h3 {
+        @include rob-light(16px, 16px);
+        color: #333333;
+    }
+    &__item {
+        @include rob-reg(14px, 18px);
+        position: relative;
+        margin-bottom: 5px;
+        color: #8c91a0;
+        &--dot-right {
+            position: relative;
+            &::after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            right: -15px;
+            width: 8px;
+            height: 8px;
+            background: url("../img/dot.png") 0 0 no-repeat;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: -15px;
+            width: 8px;
+            height: 8px;
+            background: url("../img/dot.png") 0 0 no-repeat;
+        }
+    }
+}

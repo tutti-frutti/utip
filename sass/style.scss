@@ -1,5 +1,6 @@
 @import "mixins.scss";
 @import "variables.scss";
+//@import "variables-t.scss";
 
 @import "blocks/header.scss";
 @import "blocks/nav.scss";
@@ -15,6 +16,8 @@
 @import "blocks/terminal-versions.scss";
 @import "blocks/work-scheme.scss";
 @import "blocks/advantages.scss";
+@import "blocks/timeline.scss";
+//@import "blocks/timelify.scss";
 
 @import "global/scaffolding.scss";
 //@import "global/fonts.scss";
