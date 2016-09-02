@@ -1,0 +1,22 @@
+.designation {
+    @include rob-light(20px, 20px);
+    &--fl-right {
+        float: right;
+        margin-right: 8%;
+        margin-top: 16%;
+        width: 310px;
+        text-align: left;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    & h2 {
+        @include rob-light(50px, 50px);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    & p {
+        color: #fff;
+        opacity: .75;
+    }
+}

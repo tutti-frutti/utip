@@ -6,6 +6,14 @@
             padding: 20px 0 20px;
         }
     }
+    &--width {
+        display: inline-block;
+        margin: 0 auto;
+        width: 55%;
+        line-height: normal;
+        vertical-align: middle;
+        
+    }
     &--left {
         display: inline-block;
         margin-top: 125px;
@@ -16,6 +24,9 @@
             width: auto;
             text-align: center;
         }
+    }
+    &--paddingb {
+        padding: 100px 0 0;
     }
     &__title {
         @include rob-light(42px, 38px);
@@ -30,19 +41,22 @@
             font-size: 32px;
         }
         &--smaller {
-            @include rob-reg(24px, 26px);
+            @include rob-reg(30px, 26px);
             color: #333333;
         }
     }
     & p {
-        @include rob-reg(15px, 18px);
+        @include rob-reg(20px, 20px);
         max-width: 600px;
         margin: 0 auto 20px;
-        color: #8c91a0;
+        opacity: .6;
+        color: #fff;
     }
     &__text {
         &--white {
+            @include rob-light(20px, 20px);
             color: #fff; // ВОПРОС!!!
+            opacity: .7;
         }
     }
 }

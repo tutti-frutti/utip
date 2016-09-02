@@ -1,4 +1,20 @@
 .timeline {
+    &--icon {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -7px;
+            bottom: 0;
+            left: 50%;
+            width: 19px;
+            height: 10px;
+            background: url("../img/arr-bottom.png") 0 0 no-repeat;
+        }
+    }
+    &--indent {
+        padding-bottom: 15px;
+    }
     &--ta-left {
         text-align: left;
     }
@@ -6,6 +22,15 @@
         text-align: right;
     }
     &--mt {
+        margin-top: -50px;
+    }
+    &--mt-second {
+        margin-top: -150px;
+    }
+    &--mt-third {
+        margin-top: -150px;
+    }
+    &--mt-fourth {
         margin-top: -50px;
     }
     & > h3 {
@@ -33,7 +58,7 @@
             position: absolute;
             content: '';
             top: 3px;
-            left: -15px;
+            left: -17px;
             width: 8px;
             height: 8px;
             background: url("../img/dot.png") 0 0 no-repeat;

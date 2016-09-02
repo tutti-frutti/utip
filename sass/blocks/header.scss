@@ -13,6 +13,11 @@
         background: url("../img/creating-comp-bg.jpg") center center no-repeat;
         background-size: cover;
     }
+    &--crm-bg {
+        margin-bottom: 0;
+        background: url("../img/crm-bg.jpg") center center no-repeat;
+        background-size: cover;
+    }
     &__top {
         height: 70px;
         line-height: 70px;

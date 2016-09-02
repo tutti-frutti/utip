@@ -1,0 +1,12 @@
+.term {
+    margin-bottom: 100px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+	background: url("../img/terms-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    & h2 {
+        @include rob-reg(30px, 36px);
+        color: #fff;
+    }
+}

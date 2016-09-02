@@ -1,0 +1,26 @@
+.geography {
+    position: relative;
+    margin-bottom: 75px;
+    height: 770px;
+    background: url("../img/geography-bg.png") 0 -50px no-repeat;
+    background-size: cover;
+    & p {
+        color: #8c91a0;
+    }
+    &__country {
+        @include rob-reg(30px, 30px);
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        color: #333333;
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: 3px;
+            left: -40px;
+            width: 20px;
+            height: 30px;
+            background: url(../img/geogrphy-ic.png) 0 0 no-repeat;
+        }
+    }
+}

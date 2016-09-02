@@ -4,7 +4,7 @@
 }
 
 .btn {
-	@include rob-reg(15px, 15px);
+	@include rob-reg(16px, 40px);
     border-radius: 50px;
     text-align: center;
 }
@@ -29,6 +29,9 @@
 	background: #38b849;
     &--width {
         width: 165px;
+    }
+    &--geo {
+        width: 170px;
     }
     &--width-andr {
         width: 225px;
@@ -55,4 +58,16 @@
     border: none;
     color: #fff;
 	background: #3869b8;
+}
+
+.btn-discuss {
+	display: block;
+    margin: 30px auto 100px;
+    max-width: 360px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 2px solid #c3c5cd;
+    color: #3869b8;
 }

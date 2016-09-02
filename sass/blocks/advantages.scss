@@ -11,6 +11,7 @@
 //        display: inline-block;
 //        line-height: normal;
 //        vertical-align: middle;
+        text-align: center;
         font-size: 0;
     }
     &__item {
@@ -28,6 +29,12 @@
             display: block;
             width: auto;
             height: auto;
+        }
+        &--width {
+            width: 25%;
+            @media #{$mobile} {
+                width: auto;
+            }
         }
         & span {
             @include rob-reg(14px, 20px);
@@ -95,6 +102,54 @@
                 width: 50px;
                 height: 50px;
                 background: url("../img/adv-5.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-a {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/comp-ic-a.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-b {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/comp-ic-b.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-c {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/comp-ic-c.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-d {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 0;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/comp-ic-d.png") 0 0 no-repeat;
             }
         }
     }
