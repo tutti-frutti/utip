@@ -1,0 +1,156 @@
+.basic-functions {
+    min-height: 700px;
+    background: url("../img/basic-funct-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    text-align: center;
+    &__list {
+        font-size: 0;
+    }
+    &__item {
+        display: inline-block;
+        position: relative;
+        padding: 70px 20px 0;
+        width: 20%;
+        height: 120px;
+        border-right: 1px solid #7182c7;
+        vertical-align: top;
+        text-align: center;
+        &:first-child {
+            margin-bottom: 70px;
+        }
+        &:nth-child(5n) {
+            border: none;
+        }
+        &--ic-1 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-1.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-2 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-2.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-3 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-3.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-4 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-4.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-5 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-5.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-6 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-6.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-7 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-7.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-8 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-8.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-9 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-9.png") 0 0 no-repeat;
+            }
+        }
+        &--ic-10 {
+            &::before {
+                position: absolute;
+                content: '';
+                margin-left: -25px;
+                top: 10px;
+                left: 50%;
+                width: 50px;
+                height: 50px;
+                background: url("../img/basic-funct-ic/basic-funct-ic-10.png") 0 0 no-repeat;
+            }
+        }
+    }
+    & h2 {
+        @include rob-light(30px, 36px);
+        margin-bottom: 70px;
+        padding-top: 105px;
+        color: #fff;
+    }
+    & p {
+        @include rob-reg(16px, 20px);
+        color: #fff;
+        opacity: .90;
+    }
+}

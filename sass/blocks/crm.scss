@@ -1,0 +1,12 @@
+.crm {
+    text-align: center;
+    & h2 {
+        @include rob-light(40px, 45px);
+        color: #333333;
+    }
+    & p {
+        @include rob-reg(16px, 20px);
+        color: #8c91a0;
+        opacity: 1;
+    }
+}
