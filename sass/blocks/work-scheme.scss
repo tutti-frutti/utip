@@ -1,9 +1,15 @@
 .work-scheme {
     & .page-descr {
-        margin: 100px 0 20px;
+        margin: 100px 0 -1px;
+    }
+    &--zero-mb {
+        margin-bottom: 0;
     }
     &__img {
         display: block;
         margin-bottom: 50px;
+        &--zero-mb {
+            margin: 0 auto;
+        }
     }
 }

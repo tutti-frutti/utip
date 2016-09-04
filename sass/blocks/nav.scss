@@ -18,12 +18,19 @@
             margin-right: 0;
             border-right: none;
         }
+        &--active {
+            border-bottom: 3px solid #000;
+        }
     }
     &__link {
         @include rob-reg(13px, 16px);
+        padding-bottom: 25px;
         color: #fff;
         &:hover {
             text-decoration: underline;
+        }
+        &--active {
+            border-bottom: 3px solid #9cb4dc;
         }
     }
     &__sub {

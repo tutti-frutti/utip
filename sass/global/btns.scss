@@ -1,6 +1,10 @@
 .btn-wrapper {
 	max-width: 300px;
     margin: 0 auto 60px;
+    &--decor-st-page {
+        max-width: 630px;
+        text-align: right;
+    }
 }
 
 .btn {
@@ -17,6 +21,22 @@
     line-height: 40px;
     color: #fff;
 	background: #3869b8;
+    &:hover {
+        background: #4f7ec9;
+    }
+    &:active {
+        background: #2f5899;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        color: #8c91a0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
 }
 
 .btn-try {
@@ -27,6 +47,26 @@
     line-height: 40px;
     color: #fff;
 	background: #38b849;
+    &:hover {
+        background: #4fc95f;
+    }
+    &:active {
+        background: #2f993d;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        color: #8c91a0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+    &--width-binary {
+        margin-bottom: 70px;
+        width: 160px;
+    }
     &--width {
         width: 165px;
     }
@@ -46,6 +86,23 @@
     border: 2px solid #9fb5da;
     color: #9fb5da;
     background: transparent;
+    &:hover {
+        border: 2px solid #cdd9ed;
+        color: #cdd9ed;
+    }
+    &:active {
+        background: #6a8fca;
+        border: 2px solid #6a8fca;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        border: 2px solid #567fc3;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
 }
 
 .btn-submit {
@@ -58,10 +115,54 @@
     border: none;
     color: #fff;
 	background: #3869b8;
+    outline: none;
+    &:hover {
+        background: #4f7ec9;
+    }
+    &:active {
+        background: #2f5899;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        color: #8c91a0;
+    }
+    &--narrow {
+        width: 122px; // for standart page
+    }
+}
+
+.btn-cansel {
+    display: inline-block;
+    margin: 10px auto 20px;
+    width: 122px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+	background: #8c91a0;
+    &:hover {
+        background: #a4a8b4;
+    }
+    &:active {
+        background: #797f90;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        color: #8c91a0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
 }
 
 .btn-discuss {
-	display: block;
+	display: inline-block;
     margin: 30px auto 100px;
     max-width: 360px;
     height: 40px;
@@ -70,4 +171,55 @@
     cursor: pointer;
     border: 2px solid #c3c5cd;
     color: #3869b8;
+    &--width-st-page {
+        width: 100px;
+        margin: 10px 0;
+    }
+}
+
+.btn-type-1 {
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border: 2px solid #c3c5cd;
+    background: #fff;
+    color: #3869b8;
+    &:hover {
+        border: 2px solid #c9d8ef;
+    }
+    &:active {
+        background: #c9d8ef;
+        border: 2px solid #c9d8ef;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        border: 2px solid #e4e5e8;
+        color: #8c91a0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+}
+
+.btn-kit {
+    display: inline-block;
+    margin: 0 10px;
+    width: 100px;
+}
+
+.btn-kit-2 {
+    display: inline-block;
+    margin: 0 10px;
+    width: 100px;
+}
+
+.fill {
+    width: 100px;
+    background: #3869b8;
 }

@@ -4,6 +4,11 @@
     border-top: 1px solid transparent;
 	background: #f4f4f6;
     overflow: hidden;
+    &--bg-none {
+        position: static;
+        max-width: 450px;
+        background: none; // for standart page
+    }
     @media #{$mobile} {
         text-align: center;
     }
@@ -32,6 +37,13 @@
         text-align: center;
         background: #fff;
         box-shadow: 0 8px 25px 3px #e8e8ea;
+        &--decor-st-page { // for standart page
+            margin: 0;
+            padding: 0;
+            width: auto;
+            text-align: left;
+            box-shadow: none;
+        }
         @media #{$mobile} {
             margin: 20px 0;
             padding: 20px 10px 0;
@@ -62,6 +74,15 @@
               border: 1px solid #e4e5e8;
               color: #8c91a0;
               box-sizing: border-box;
+              &:hover {
+                  cursor: pointer;
+              }
+              &:focus {
+                  @include rob-reg(16px, 16px);
+                  border: 1px solid #c9d8ef;
+                  color: #333333;
+                  outline: none;
+              }
               @media #{$mobile} {
                   width: 100%;
               }
@@ -77,6 +98,15 @@
             resize: none;
             border: 1px solid #e4e5e8;
             color: #8c91a0;
+            &:hover {
+                  cursor: pointer;
+              }
+              &:focus {
+                  @include rob-reg(16px, 16px);
+                  border: 1px solid #c9d8ef;
+                  color: #333333;
+                  outline: none;
+              }
             @media #{$mobile} {
                 max-width: 100%;
             }

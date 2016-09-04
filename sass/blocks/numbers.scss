@@ -1,0 +1,43 @@
+.numbers {
+    min-height: 500px;
+    text-align: center;
+    background: url("../img/adv-bg.png") 0 0 no-repeat;
+    background-size: cover;
+    & h2 {
+        @include rob-light(30px, 32px);
+        padding-top: 100px;
+        margin-bottom: 100px;
+        color: #fff;
+    }
+    &__list {
+        font-size: 0;
+    }
+    &__item {
+        @include rob-light(14px, 18px);
+        display: inline-block;
+        padding: 0 5px;
+        width: 20%;
+        height: 120px;
+        text-align: center;
+        border-right: 1px solid #7983c9;
+        vertical-align: top;
+        &:nth-child(5n) {
+            border: none;
+        }
+    }
+    & h3 {
+        @include rob-light(60px, 64px);
+        color: #fff;
+        opacity: .75;
+    }
+    & p {
+        @include rob-reg(16px, 20px);
+        color: #fff;
+        opacity: .90;
+    }
+    & span {
+        @include rob-light(14px, 18px);
+        color: #fff;
+        opacity: .50;
+    }
+}

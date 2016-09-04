@@ -1,6 +1,5 @@
 .advantages {
 	min-height: 499px;
-//    line-height: 499px;
     border-top: 1px solid transparent;
     background: url("../img/adv-bg.png") 0 0 no-repeat;
     background-size: cover;
@@ -8,9 +7,6 @@
         color: #fff;
     }
     &__list {
-//        display: inline-block;
-//        line-height: normal;
-//        vertical-align: middle;
         text-align: center;
         font-size: 0;
     }

@@ -1,5 +1,8 @@
 .page-descr {
 	text-align: center;
+    &--binary-indent {
+        margin-top: 110px;
+    }
     &--mt {
         display: inline-block;
         width: 62%;
@@ -31,7 +34,7 @@
         padding: 100px 0 0;
     }
     &__title {
-        @include rob-light(42px, 38px);
+        @include rob-light(40px, 44px);
         margin-bottom: 20px;
         color: #333333;
         &--white {
@@ -43,7 +46,7 @@
             font-size: 32px;
         }
         &--smaller {
-            @include rob-reg(30px, 26px);
+            @include rob-light(30px, 30px);
             color: #333333;
         }
     }
@@ -55,6 +58,7 @@
 //        color: #fff;
     }
     &__text {
+        padding: 0 90px;
         &--white {
             @include rob-light(20px, 20px);
             color: #fff; // ВОПРОС!!!

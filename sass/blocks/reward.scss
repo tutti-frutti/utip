@@ -4,17 +4,15 @@
     text-align: center;
     background: #f4f4f6;
     &__list {
-//        display: inline-block;
-        
     }
     &__item {
         @include rob-reg(22px, 18px);
         display: inline-block;
         margin: 0 10px;
-//        padding: 10px 0;
+        padding-top: 10px;
         text-align: left;
-//        line-height: normal;
         width: 168px;
+        height: 80px;
         vertical-align: middle;
         @media #{$mobile} {
             display: block;
@@ -32,6 +30,7 @@
         }
         &--narrow {
             width: 100px;
+            height: auto;
         }
         &--wide {
             width: 240px;
@@ -59,7 +58,7 @@
         color: #333333;
     }
     & p {
-        @include rob-light(16px, 20px);
+        @include rob-light(14px, 20px);
         color: #8c91a0;
     }
     & strong {

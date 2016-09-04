@@ -27,3 +27,26 @@
         margin-left: 0;
     }
 }
+
+// binary request
+
+.binary-request {
+    &--pos-right {
+        float: right;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    & h3 {
+        @include rob-light(30px, 36px);
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    & h1 {
+        @include rob-light(50px, 52px);
+        margin-bottom: 25px;
+        color: #fff;
+    }
+    & > .btn-wrapper {
+        margin: 0;
+    }
+}

@@ -21,3 +21,11 @@
     font-size: $font-size;
     line-height: $line-height;
 }
+
+@mixin rob-italic($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: italic;
+    font-size: $font-size;
+    line-height: $line-height;
+}
