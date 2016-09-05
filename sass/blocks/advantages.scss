@@ -1,9 +1,12 @@
 .advantages {
 	min-height: 499px;
     border-top: 1px solid transparent;
+    text-align: center;
     background: url("../img/adv-bg.png") 0 0 no-repeat;
     background-size: cover;
     & h2 {
+        @include rob-light(30px, 30px);
+        margin: 100px 0 80px;
         color: #fff;
     }
     &__list {

@@ -1,0 +1,150 @@
+.toogle-menu {
+    display: none;
+    height: 900px;
+    line-height: 900px;
+    background: url("../img/menu-bg.jpg") center center no-repeat;
+    background-size: cover;
+    &__wrapper {
+        display: inline-block;
+        width: 100%;
+        line-height: normal;
+        vertical-align: middle;
+    }
+    &__product {
+        @include rob-light(20px, 20px);
+        padding-bottom: 20px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        opacity: .60;
+    }
+    &__service {
+        @include rob-light(20px, 20px);
+        margin-top: 80px;
+        padding-bottom: 20px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        opacity: .60;
+    }
+    &__left {
+        display: inline-block;
+        margin-top: 40px;
+        margin-right: 24%;
+        vertical-align: top;
+    }
+    &__left-down {
+        display: inline-block;
+        margin-top: 40px;
+        margin-right: 20.5%;
+    }
+    &__right-down {
+        display: inline-block;
+        margin-top: 40px;
+    }
+    &__trading {
+        position: relative;
+        margin-bottom: 50px;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 55px;
+            background: url("../img/toogle-menu-ic-1.png") 0 0 no-repeat;
+        }
+        & h4 {
+            @include rob-reg(25px, 25px);
+            width: 285px;
+            margin: 10px 0 5px;
+            padding-left: 80px;
+            color: #fff;
+        }
+        & p {
+            @include rob-light(14px, 14px);
+            padding-left: 80px;
+            color: #fff;
+            opacity: .60;
+        }
+    }
+    &__binary {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            background: url("../img/toogle-menu-ic-2.png") 0 0 no-repeat;
+        }
+        & h4 {
+            @include rob-reg(25px, 25px);
+            
+            margin: 10px 0 5px;
+            padding-left: 80px;
+            color: #fff;
+        }
+        & p {
+            @include rob-light(14px, 14px);
+            width: 285px;
+            padding-left: 80px;
+            color: #fff;
+            opacity: .60;
+        }
+    }
+    &__brokerage {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 55px;
+            background: url("../img/toogle-menu-ic-3.png") 0 0 no-repeat;
+        }
+        & h4 {
+            @include rob-reg(25px, 25px);
+            margin: 10px 0 5px;
+            padding-left: 80px;
+            color: #fff;
+        }
+        & p {
+            @include rob-light(14px, 14px);
+            padding-left: 80px;
+            color: #fff;
+            opacity: .60;
+        }
+    }
+    &__links {
+        & h3 {
+            @include rob-reg(16px, 16px);
+            margin: 5px 0;
+            color: #fff;
+        }
+        & a {
+            @include rob-light(14px, 14px);
+            display: inline-block;
+            padding-bottom: 10px;
+            cursor: pointer;
+            color: #fff;
+            border-bottom: 1px solid transparent;
+            opacity: .60;
+            &:hover {
+                border-bottom: 1px solid #fff;
+            }
+        }
+    }
+    &__right {
+        display: inline-block;
+        margin-top: 40px;
+        vertical-align: top;
+        
+    }
+    &__service {
+        @include rob-light(20px, 20px);
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        opacity: .60;
+    }
+}

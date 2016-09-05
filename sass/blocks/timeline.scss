@@ -1,3 +1,11 @@
+.timeline-head {
+    & h2 {
+        @include rob-light(30px, 30px);
+        margin: 110px 0 35px;
+        color: #333;
+    }
+}
+
 .timeline {
     &--icon {
         position: relative;

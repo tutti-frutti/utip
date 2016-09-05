@@ -1,5 +1,4 @@
 .platform {
-//    margin-bottom: 80px;
     text-align: center;
     & img {
         display: block;
@@ -7,14 +6,13 @@
     }
     &--bg-fiolet {
         background: #302c38;
+        
     }
     &--bg-img {
-        height: 664px;
+        min-height: 700px;
+        line-height: 700px;
+        text-align: left;
         background: url("../img/advice-bg.jpg") center -35px no-repeat;
         background-size: cover;
-    }
-    & p {
-        @include rob-reg(16px, 20px);
-        color: #000;
     }
 }

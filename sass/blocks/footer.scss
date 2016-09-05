@@ -66,16 +66,16 @@
             margin: 15px;
         }
         & a {
-            @include rob-reg(13px, 19px);
+            @include rob-reg(12px, 19px);
             color: #3869b8;
         }
     }
     &__cont {
-        @include rob-reg(13px, 19px);
+        @include rob-reg(12px, 19px);
         color: #8c91a0;
     }
     &__title {
-        @include rob-reg(18px, 19px);
+        @include rob-reg(16px, 16px);
         padding-bottom: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid #e4e5e8;

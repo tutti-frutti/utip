@@ -42,7 +42,7 @@
         }
     }
     &__slogan {
-        @include rob-light(32px, 38px);
+        @include rob-light(40px, 42px);
         display: inline-block;
         margin-top: 130px;
         margin-left: 28%;
@@ -54,7 +54,7 @@
             line-height: 28px;
         }
         &--bigger {
-            @include rob-light(40px, 38px);
+            @include rob-light(50px, 54px);
             margin-left: 0;
             color: #fff;
         }

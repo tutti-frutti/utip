@@ -125,22 +125,27 @@
         width: 34%;
         vertical-align: top;
         @media #{$mobile} {
-            margin-top: 30px;
+            margin-top: 0;
             width: auto;
         }
-    }
-    &__title {
-        @include rob-reg(34px, 39px);
-        color: #333333;
-    }
-    & p {
-        @include rob-reg(16px, 22px);
-        width: 75%;
+        & h3 {
+            @include rob-light(30px, 32px);
+            color: #333333;
+        }
+        & p {
+        @include rob-reg(14px, 18px);
+        width: 90%;
         color: #8c91a0;
         @media #{$mobile} {
             padding: 10px;
             width: auto;
         }
+        @media #{$mobile} {
+            margin-top: 30px;
+            width: auto;
+        }
+    }
+    
     }
     &__list {
         position: relative;
@@ -166,7 +171,7 @@
             content: '';
             top: 25%;
             left: 35%;
-            width: 70%;
+            width: 85%;
             height: 3px;
             border-bottom: 3px dotted #c3c5cd;
             @media #{$mobile} {
@@ -175,7 +180,7 @@
         }
     }
     &__item {
-        @include rob-reg(17px, 16px);
+        @include rob-light(16x, 16px);
         position: relative;
         display: inline-block;
         margin-right: 17%;

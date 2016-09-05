@@ -2,11 +2,24 @@
     text-align: center;
     & h2 {
         @include rob-light(40px, 45px);
+        margin: 105px 0 20px;
         color: #333333;
+        @media #{$mobile} {
+            font-size: 20px;
+            line-height: 25px;
+        }
     }
     & p {
-        @include rob-reg(16px, 20px);
+        @include rob-reg(14px, 18px);
+        margin-bottom: 60px;
         color: #8c91a0;
         opacity: 1;
+        @media #{$mobile} {
+            margin-bottom: 0;
+        }
+    }
+    & img {
+        display: block;
+        margin: 0 auto;
     }
 }

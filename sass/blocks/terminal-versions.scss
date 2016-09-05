@@ -49,7 +49,7 @@
     }
     &__pc {
         & p {
-            @include rob-reg(16px, 22px);
+            @include rob-reg(14px, 18px);
             margin: 0 auto;
             margin-bottom: 30px;
             width: 48%;
@@ -60,7 +60,7 @@
         }
     }
     &__pc-img {
-        margin-top: 42px;
+        margin-top: 54px;
     }
     &__mobile-img {
         display: block;
@@ -72,7 +72,7 @@
     }
     &__mobile {
         & p {
-            @include rob-reg(16px, 22px);
+            @include rob-reg(14px, 18px);
             margin: 0 auto;
             margin-bottom: 30px;
             width: 48%;
@@ -84,7 +84,7 @@
     }
     &__web {
         & p {
-            @include rob-reg(16px, 22px);
+            @include rob-reg(14px, 18px);
             margin: 0 auto;
             margin-bottom: 30px;
             width: 48%;

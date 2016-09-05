@@ -20,9 +20,14 @@
         &:nth-child(4n) {
             border: none;
         }
+        @media #{$mobile} {
+            display: block;
+            width: auto;
+            height: auto;
+        }
         & h3 {
             @include rob-light(20px, 24px);
-            margin-bottom: 10px;
+            margin: 0 0 10px;
             color: #333333;
         }
         & p {

@@ -2,9 +2,22 @@
     position: relative;
     margin-bottom: 75px;
     height: 770px;
+    text-align: center;
     background: url("../img/geography-bg.png") 0 -50px no-repeat;
     background-size: cover;
+    @media #{$mobile} {
+        margin-bottom: 0;
+        height: 480px;
+        background: url("../img/geography-bg.png") center no-repeat;
+        background-size: cover;
+    }
+    & h2 {
+        @include rob-light(30px, 20px);
+        margin: 110px 0 20px;
+        color: #333;
+    }
     & p {
+        @include rob-light(20px, 20px);
         color: #8c91a0;
     }
     &__country {

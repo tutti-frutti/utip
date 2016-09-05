@@ -1,5 +1,10 @@
 .our-clients {
     text-align: center;
+    & h2 {
+        @include rob-light(30px, 30px);
+        margin: 100px 0 65px;
+        color: #2b2d33;
+    }
     &__logo {
         display: inline-block;
         margin-right: 5%;

@@ -15,8 +15,17 @@
         border-right: 1px solid #7182c7;
         vertical-align: top;
         text-align: center;
+        @media #{$mobile} {
+            margin-bottom: 10px;
+            width: 50%;
+            height: auto;
+            border-right: none;
+        }
         &:first-child {
             margin-bottom: 70px;
+            @media #{$mobile} {
+                margin-bottom: 0;
+            }
         }
         &:nth-child(5n) {
             border: none;
@@ -144,9 +153,13 @@
     }
     & h2 {
         @include rob-light(30px, 36px);
-        margin-bottom: 70px;
+        margin: 0 0 70px;
         padding-top: 105px;
         color: #fff;
+        @media #{$mobile} {
+            padding-top: 30px;
+            margin: 0 0 20px;
+        }
     }
     & p {
         @include rob-reg(16px, 20px);

@@ -1,0 +1,17 @@
+.interface-extend {
+    & p {
+        @include rob-reg(14px, 18px);
+        max-width: 380px;
+        color: #8c91a0;
+        opacity: 1;
+    }
+}
+
+.interface-simple {
+    & p {
+        @include rob-reg(14px, 18px);
+        max-width: 380px;
+        color: #fff;
+        opacity: .6;
+    }
+}

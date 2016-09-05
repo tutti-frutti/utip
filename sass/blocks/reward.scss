@@ -6,7 +6,7 @@
     &__list {
     }
     &__item {
-        @include rob-reg(22px, 18px);
+        @include rob-reg(20px, 20px);
         display: inline-block;
         margin: 0 10px;
         padding-top: 10px;
@@ -16,6 +16,7 @@
         vertical-align: middle;
         @media #{$mobile} {
             display: block;
+            margin: 0 auto;
             text-align: center;
             line-height: none;
             vertical-align: top;
@@ -53,8 +54,9 @@
             }
         }
     }
-    &__title {
+    & h4 {
         @include rob-reg(20px, 22px);
+        margin: 0;
         color: #333333;
     }
     & p {
@@ -62,10 +64,10 @@
         color: #8c91a0;
     }
     & strong {
-        @include rob-reg(40px, 40px);
+        @include rob-light(40px, 40px);
     }
     & span {
-        @include rob-reg(16px, 10px);
+        @include rob-light(14px, 14px);
         color: #8c91a0;
     }
 }

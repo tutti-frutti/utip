@@ -32,6 +32,10 @@ img {
 .center {
     max-width: 960px;
     margin: 0 auto;
+    &--narrow {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 .center-wide {

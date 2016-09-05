@@ -20,12 +20,12 @@
         }
     }
     &__name {
-        @include rob-reg(28px, 28px);
+        @include rob-reg(30px, 30px);
         display: inline-block;
         color: #2b2d33;
     }
     &__more {
-        @include rob-bold(18px, 18px);
+        @include rob-bold(16px, 18px);
         display: inline-block;
         padding: 10px;
         color: #fff;
@@ -52,21 +52,23 @@
             padding: 0 5px;
             width: auto;
         }
+        & p {
+        @include rob-reg(14px, 18px);
+        color: #8c91a0;
+    }
     }
     &__date {
-        @include rob-reg(11px, 11px);
+        @include rob-reg(12px, 12px);
         color: #8c91a0;
     }
     &__title {
+        margin: 10px 0 0;
         & a {
-            @include rob-reg(19px, 19px);
+            @include rob-reg(20px, 22px);
             display: block;
             margin-bottom: 10px;
             color: #3869b8;
         }
     }
-    & p {
-        @include rob-reg(14px, 18px);
-        color: #8c91a0;
-    }
+    
 }
