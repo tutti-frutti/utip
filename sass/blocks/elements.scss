@@ -394,5 +394,60 @@ cite {
             background: url("../img/list-arr-blue.png") 0 0 no-repeat;
         }
     }
+}
+
+// checkboxes and radio
+
+//input[type="checkbox"] {
+//    display: none;
+//}
+//
+//input[type="checkbox"] + label {
+//    display: block;
+//    position: relative;
+//    cursor: pointer;
+//}
+//
+//input[type="checkbox"] + label::before {
+//    position: absolute;
+//    content: '';
+//    top: 0;
+//    left: 0;
+//    width: 16px;
+//    height: 16px;
+//    background: #4f7ec9;
+//}
+
+.checkbox {
+    cursor: pointer;
+    & input {
+        display: none;
+        
+        &:checked + .box {
+            background: #4f7ec9;
+            border: 1px solid #4f7ec9;
+        }
+    } //input
     
-} 
+    & .box {
+        position: relative;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        border: 1px solid #c7c9d0;
+        &:hover {
+            border: 1px solid #4f7ec9;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            top: 3px;
+            left: 1px;
+            width: 11px;
+            height: 8px;
+            background: url("../img/check-ic.png") 0 0 no-repeat;
+        }
+    }
+} // checkbox
+
