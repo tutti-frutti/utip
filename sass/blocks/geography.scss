@@ -3,7 +3,7 @@
     margin-bottom: 75px;
     height: 770px;
     text-align: center;
-    background: url("../img/geography-bg.png") 0 -50px no-repeat;
+    background: url("../img/geography-bg.png") center no-repeat;
     background-size: cover;
     @media #{$mobile} {
         margin-bottom: 0;
@@ -15,6 +15,9 @@
         @include rob-light(30px, 20px);
         margin: 110px 0 20px;
         color: #333;
+        @media #{$mobile} {
+            margin: 20px 0;
+        }
     }
     & p {
         @include rob-light(20px, 20px);

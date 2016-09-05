@@ -5,6 +5,7 @@
         margin: 105px 0 20px;
         color: #333333;
         @media #{$mobile} {
+            margin: 0;
             font-size: 20px;
             line-height: 25px;
         }

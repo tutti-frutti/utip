@@ -3,6 +3,9 @@
     background: url("../img/basic-funct-bg.jpg") 0 0 no-repeat;
     background-size: cover;
     text-align: center;
+    @media #{$mobile} {
+        height: auto;
+    }
     &__list {
         font-size: 0;
     }

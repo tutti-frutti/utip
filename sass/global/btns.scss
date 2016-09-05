@@ -1,6 +1,9 @@
 .btn-wrapper {
 	max-width: 300px;
     margin: 0 auto 60px;
+    @media #{$mobile} {
+        margin-bottom: 20px;
+    }
     &--decor-st-page {
         max-width: 630px;
         text-align: right;
@@ -173,6 +176,7 @@
     color: #3869b8;
     @media #{$mobile} {
         margin: 30px auto 20px;
+        font-size: 14px;
     }
     &--width-st-page {
         width: 100px;

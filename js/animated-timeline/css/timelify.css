@@ -180,3 +180,27 @@
             border-bottom: 1em solid #e57373; }
 
 /*# sourceMappingURL=timelify.css.map */
+
+
+@media (max-width: 767px) {
+    .timeline .timeline-items .timeline-item {
+        left: 0;
+        width: auto;
+    }
+    
+    .timeline .timeline-items .timeline-item.inverted {
+        left: 0;
+        text-align: center;
+    }
+    
+    .timeline .timeline-items .timeline-item.inverted::after {
+        content: none;
+    }
+    .timeline::before {
+        content: none;
+    }
+    
+    .timeline {
+        margin-top: 0;
+    }
+}

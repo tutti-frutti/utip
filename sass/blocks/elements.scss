@@ -1,11 +1,58 @@
+.text-formating,
+.text-decoration,
+.elements,
+.form {
+    border-bottom: 1px solid #e4e5e8;
+}
+
+
 .standart-page__left {
     display: inline-block;
+    margin-top: 100px;
+    padding-right: 35px;
     width: 70%;
+    font-size: 0;
+    vertical-align: top;
+}
+
+// Right column, navigation
+
+.standart-page__right {
+    display: inline-block;
+    margin-top: 100px;
+    width: 29%;
+    font-size: 0;
+    height: 100px;
+    vertical-align: top;
+}
+
+.aside {
+    margin: 40px 0;
+    width: 300px;
+    height: 400px;
+    background: #f4f4f6;
+}
+
+.nav-aside {
+    border-left: 1px solid #e4e5e8;
+    & h3 {
+        padding-left: 40px;
+    }
+    & a {
+        @include rob-reg(14px, 16px);
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 40px;
+        color: #3869b8;  
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .headlines {
     margin-bottom: 20px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #e4e5e8;
 }
 
 h1 {
@@ -15,14 +62,13 @@ h1 {
 
 p.lead {
     @include rob-light(20px, 24px);
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     color: #8c91a0;
 }
 
 p.standart {
     @include rob-reg(14px, 18px);
-    margin: 20px 0;
+    margin: 10px 0;
     color: #333333;
 }
 
@@ -396,33 +442,12 @@ cite {
     }
 }
 
-// checkboxes and radio
-
-//input[type="checkbox"] {
-//    display: none;
-//}
-//
-//input[type="checkbox"] + label {
-//    display: block;
-//    position: relative;
-//    cursor: pointer;
-//}
-//
-//input[type="checkbox"] + label::before {
-//    position: absolute;
-//    content: '';
-//    top: 0;
-//    left: 0;
-//    width: 16px;
-//    height: 16px;
-//    background: #4f7ec9;
-//}
+// checkboxes
 
 .checkbox {
     cursor: pointer;
     & input {
         display: none;
-        
         &:checked + .box {
             background: #4f7ec9;
             border: 1px solid #4f7ec9;
@@ -439,6 +464,9 @@ cite {
         &:hover {
             border: 1px solid #4f7ec9;
         }
+        &:disabled {
+            cursor: none;
+        }
         &::after {
             position: absolute;
             content: '';
@@ -451,3 +479,36 @@ cite {
     }
 } // checkbox
 
+// radio
+
+//input[type="radio"] {
+//    display: none;
+//}
+//
+//input[type="radio"] + label {
+//  position: relative;
+//  display: block;
+//  cursor: pointer;
+//}
+//
+//input[type="radio"] + label::before {
+//  position: absolute;
+//  content: "";
+//  top: 0;
+//  left: 0;
+//  width: 16px;
+//  height: 16px;
+//  border: 1px solid #c3c5cd;
+//  border-radius: 50%;
+//}
+//
+//input[type="radio"]:checked + label::after {
+//position: absolute;
+//  content: "";
+//  top: 0;
+//  left: 0;
+//  width: 2px;
+//  height: 2px;
+//  background: #62d1ba;
+//  border-radius: 50%;
+//}

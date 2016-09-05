@@ -3,6 +3,9 @@
         @include rob-light(30px, 30px);
         margin: 110px 0 35px;
         color: #333;
+        @media #{$mobile} {
+            margin: 20px 0 0;
+        }
     }
 }
 
@@ -25,18 +28,30 @@
     }
     &--ta-left {
         text-align: left;
+        @media #{$mobile} {
+            text-align: center;
+        }
     }
     &--ta-right {
         text-align: right;
+        @media #{$mobile} {
+            text-align: center;
+        }
     }
     &--mt {
         margin-top: -50px;
     }
     &--mt-second {
         margin-top: -150px;
+        @media #{$mobile} {
+            margin-top: -40px;
+        }
     }
     &--mt-third {
         margin-top: -150px;
+         @media #{$mobile} {
+            margin-top: -40px;
+        }
     }
     &--mt-fourth {
         margin-top: -50px;
@@ -60,6 +75,9 @@
             width: 8px;
             height: 8px;
             background: url("../img/dot.png") 0 0 no-repeat;
+                @media #{$mobile} {
+                    content: none;
+                }
             }
         }
         &::before {
@@ -70,6 +88,9 @@
             width: 8px;
             height: 8px;
             background: url("../img/dot.png") 0 0 no-repeat;
+            @media #{$mobile} {
+                    content: none;
+                }
         }
     }
 }

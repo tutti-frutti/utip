@@ -9,10 +9,15 @@
         
     }
     &--bg-img {
-        min-height: 700px;
+        height: 700px;
         line-height: 700px;
         text-align: left;
         background: url("../img/advice-bg.jpg") center -35px no-repeat;
         background-size: cover;
+        @media #{$mobile} {
+            height: 500px;
+            line-height: 0;
+            text-align: center;
+        }
     }
 }

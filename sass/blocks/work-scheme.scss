@@ -1,9 +1,15 @@
 .work-scheme {
     & h2 {
         margin-bottom: 50px;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
     }
     & .page-descr {
         margin: 100px 0 -1px;
+        @media #{$mobile} {
+            margin-top: 30px;
+        }
     }
     &--zero-mb {
         margin-bottom: 0;

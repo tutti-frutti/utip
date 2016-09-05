@@ -5,6 +5,9 @@
     text-align: center;
 	background: url("../img/terms-bg.jpg") 0 0 no-repeat;
     background-size: cover;
+    @media #{$mobile} {
+        margin-bottom: 20px;
+    }
     & h2 {
         @include rob-reg(30px, 36px);
         margin-top: 0;

@@ -3,6 +3,9 @@
     margin-bottom: 70px;
     background: url("../img/header-bg.jpg") center center no-repeat;
     background-size: cover;
+    @media #{$mobile} {
+        margin-bottom: 30px;
+    }
     &--binare-bg {
         margin-bottom: 0;
         background: url("../img/binare-bg.jpg") center center no-repeat;
@@ -29,6 +32,9 @@
         @media #{$mobile} {
             text-align: center;
         }
+        @media #{$tablet} {
+            padding: 0 5px;
+        }
     }
     &__logo {
         display: inline-block;
@@ -39,6 +45,9 @@
             display: block;
             padding-top: 20px;
             width: auto;
+        }
+        @media #{$tablet} {
+            width: 15%;
         }
     }
     &__slogan {
@@ -51,7 +60,7 @@
             display: block;
             margin-left: 0;
             text-align: center;
-            line-height: 28px;
+            line-height: 36px;
         }
         &--bigger {
             @include rob-light(50px, 54px);

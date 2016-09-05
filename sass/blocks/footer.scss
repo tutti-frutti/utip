@@ -6,6 +6,9 @@
         margin-top: 20px;
         text-align: center;
     }
+    @media #{$tablet} {
+            padding: 0 5px;
+        }
     &__wrapper {
         display: inline-block;
         max-width: 960px;
