@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/SlickNav/dist/slicknav.css">
+    <link type="text/css" rel="stylesheet" href="js/accordion/css/jquery-ui-1.8.16.custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="/js/SlickNav/dist/jquery.slicknav.min.js"></script>
+    <script src="js/SlickNav/dist/jquery.slicknav.min.js"></script>
+    <script src="js/accordion/js/jquery-1.6.2.min.js"></script>
+    <script src="js/accordion/js/jquery-ui-1.8.16.custom.min.js"></script>
     <title>Utip</title>
 </head>
 
@@ -165,8 +168,27 @@
 
                         <h3>Надстрочные и подстрочные индексы</h3>
                         <p class="standart">Важно следить за тем, чтобы элементы надстрочных и подстрочных индексов не увеличивали высоту строки, потому что это портит вид текстового блока. Пример: 2<sup>3</sup>. Еще пример: H<sub>2</sub>SO<sub>4</sub>. В обоих случаях высота строки от индексов не должна меняться. Если отступ между первой и второй строками увеличился, значит, что-то </p>
+                        
+                        <!--Accordion-->
 
-                        <h3>Раскрывающийся контент</h3>                        
+                        <h3>Раскрывающийся контент</h3>
+                        
+                        <h2 class="demoHeaders">Аккордеон</h2>
+                        <div id="accordion">
+                          <div>
+                            <h3><a href="#">Первая вкладка</a></h3>
+                            <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+                          </div>
+                          <div>
+                            <h3><a href="#">Вторая вкладка</a></h3>
+                            <div>Phasellus mattis tincidunt nibh.</div>
+                          </div>
+                          <div>
+                            <h3><a href="#">Третья вкладка</a></h3>
+                            <div>Nam dui erat, auctor a, dignissim quis.</div>
+                          </div>
+                        </div>
+                                                                        
                         </div>
 
                         <div class="text-decoration" id="text-decor">
@@ -659,7 +681,14 @@
                 </footer>
 
     </main>
-
+    
+    <script>$(function () {
+    // Accordion
+    $("#accordion").accordion({
+        header: "h3"
+    });
+});
+</script>
     <script src="js/script.js"></script>
 </body>
 
