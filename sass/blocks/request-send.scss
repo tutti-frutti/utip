@@ -1,0 +1,24 @@
+.request-send {
+    h3 {
+        @include rob-light(30px, 30px);
+        position: relative;
+        padding-top: 105px;
+        margin-bottom: 10px;
+        color: #333;
+        &::before {
+            position: absolute;
+            content: '';
+            margin-left: -40px;
+            top: 0;
+            left: 50%;
+            width: 80px;
+            height: 80px;
+            background: url("../img/request-send-ic.png") 0 0 no-repeat;
+        }
+    }
+    p {
+        @include rob-reg(14px, 16px);
+        padding-bottom: 110px;
+        color: #8c91a0;
+    }
+}

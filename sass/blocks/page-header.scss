@@ -5,8 +5,17 @@
     font-size: 0;
     &__logo {
         display: inline-block;
-        width: 30%;
+        width: 29%;
         line-height: normal;
         vertical-align: middle;
+        @media #{$mobile} {
+            display: block;
+            padding-top: 20px;
+            width: auto;
+            text-align: center;
+        }
+         @media #{$tablet} {
+            width: 15%;
+        }
     }
 }

@@ -32,6 +32,58 @@
             z-index: -10;    
         }
     }
+    &__icon-1 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -10px;
+            left: 50%;
+            top: 15px;
+            width: 22px;
+            height: 22px;
+            background: url("../img/form-ic-1.png") 0 0 no-repeat;
+            z-index: 5;
+        }
+    }
+    &__icon-2 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -13px;
+            left: 50%;
+            top: 16px;
+            width: 28px;
+            height: 22px;
+            background: url("../img/form-ic-2.png") 0 0 no-repeat;
+            z-index: 5
+        }
+    }
+    &__icon-3 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -14px;
+            left: 50%;
+            top: 14px;
+            width: 30px;
+            height: 26px;
+            background: url("../img/form-ic-3.png") 0 0 no-repeat;
+            z-index: 5
+        }
+    }
+    &__icon-4 {
+        &::after {
+            position: absolute;
+            content: '';
+            margin-left: -14px;
+            left: 50%;
+            top: 15px;
+            width: 30px;
+            height: 26px;
+            background: url("../img/form-ic-4.png") 0 0 no-repeat;
+            z-index: 5
+        }
+    }
     &__form {
         position: relative;
         display: inline-block;
@@ -44,6 +96,9 @@
         text-align: center;
         background: #fff;
         box-shadow: 0 8px 25px 3px #e8e8ea;
+        &--consult { // for request send, step 3 - consult
+            margin-left: 34%;
+        }
         &--decor-st-page { // for standart page
             margin: 0;
             padding: 0;
@@ -53,7 +108,7 @@
         }
         & label {
             @include rob-italic(14px, 14px);
-            padding-left: 30px;
+//            padding-left: 30px;
             color: #8c91a0;
         }
         @media #{$mobile} {
@@ -131,10 +186,17 @@
         }
     }
     &__state-example {
-        & input.focus {
+        input.focus {
             @include rob-reg(16px, 16px);
             border: 1px solid #c9d8ef;
             color: #000;
+            outline: none;
+        }
+        input.mistake {
+            @include rob-reg(16px, 16px);
+            border: 1px solid #f7d5e1;
+            background: #fceef3;
+            color: red;
             outline: none;
         }
     }
@@ -177,7 +239,7 @@
             position: absolute;
             content: '';
             top: 25%;
-            right: 65%;
+            right: 66%;
             width: 100%;
             height: 3px;
             border-bottom: 3px solid #7096d4;
@@ -185,19 +247,33 @@
                 border: none;
             }
         }
+        &--consult {
+            &::before {
+                right: 43%;
+            }
+        }
+        
         &::after {
             position: absolute;
             content: '';
             top: 25%;
             left: 35%;
-            width: 85%;
+            width: 68%;
             height: 3px;
             border-bottom: 3px dotted #c3c5cd;
             @media #{$mobile} {
                 border: none;
             }
         }
+        
+        &--consult {
+            &::after {
+                left: 58%;
+                width: 44%;
+            }
+        }
     }
+        
     &__item {
         @include rob-light(16x, 16px);
         position: relative;
@@ -250,57 +326,7 @@
     }
 
         
-    }
-    &__icon-1 {
-        &::after {
-            position: absolute;
-            content: '';
-            margin-left: -10px;
-            left: 50%;
-            top: 15px;
-            width: 22px;
-            height: 22px;
-            background: url("../img/form-ic-1.png") 0 0 no-repeat;
-            z-index: 5;
-        }
-    }
-    &__icon-2 {
-        &::after {
-            position: absolute;
-            content: '';
-            margin-left: -13px;
-            left: 50%;
-            top: 16px;
-            width: 28px;
-            height: 22px;
-            background: url("../img/form-ic-2.png") 0 0 no-repeat;
-            z-index: 5
-        }
-    }
-    &__icon-3 {
-        &::after {
-            position: absolute;
-            content: '';
-            margin-left: -14px;
-            left: 50%;
-            top: 14px;
-            width: 30px;
-            height: 26px;
-            background: url("../img/form-ic-3.png") 0 0 no-repeat;
-            z-index: 5
-        }
-    }
-    &__icon-4 {
-        &::after {
-            position: absolute;
-            content: '';
-            margin-left: -14px;
-            left: 50%;
-            top: 15px;
-            width: 30px;
-            height: 26px;
-            background: url("../img/form-ic-4.png") 0 0 no-repeat;
-            z-index: 5
-        }
-    }
+    
+    
+}
 }
