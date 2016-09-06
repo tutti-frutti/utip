@@ -9,10 +9,3 @@ $(function(){
 		$('#menu').slicknav();
 	});
 $('.timeline').timelify();
-
-$(function () {
-    // Accordion
-    $("#accordion").accordion({
-        header: "h3"
-    });
-});
