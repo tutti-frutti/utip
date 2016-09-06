@@ -4,11 +4,17 @@
     border-top: 1px solid transparent;
 	background: #f4f4f6;
     overflow: hidden;
-    &--bg-none {
+    &--bg-none { // for standart page
         position: static;
         max-width: 450px;
         height: 370px;
-        background: none; // for standart page
+        background: none; 
+    }
+    &--bg-none-2 { // for standart page
+        position: static;
+        max-width: 450px;
+        height: 210px;
+        background: none; 
     }
     @media #{$mobile} {
         text-align: center;
@@ -44,6 +50,11 @@
             width: auto;
             text-align: left;
             box-shadow: none;
+        }
+        & label {
+            @include rob-italic(14px, 14px);
+            padding-left: 30px;
+            color: #8c91a0;
         }
         @media #{$mobile} {
             margin: 20px 0;
@@ -117,6 +128,14 @@
         text-align: left;
         @media #{$mobile} {
             text-align: center;
+        }
+    }
+    &__state-example {
+        & input.focus {
+            @include rob-reg(16px, 16px);
+            border: 1px solid #c9d8ef;
+            color: #000;
+            outline: none;
         }
     }
     &__descr {

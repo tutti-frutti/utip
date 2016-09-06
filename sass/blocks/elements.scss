@@ -11,7 +11,7 @@
     margin-top: 100px;
     padding-right: 35px;
     width: 70%;
-    font-size: 0;
+//    font-size: 0;
     vertical-align: top;
 }
 
@@ -354,6 +354,11 @@ cite {
 
 // dropdown menu
 
+.menu-wrapper-top {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
 .menu-wrapper {
     display: inline-block;
     margin-right: 30px;
@@ -365,7 +370,7 @@ cite {
         position: relative;
     }
     & .menu-dropdown {
-        display: none;
+        display: none; // change to "none" !
         position: absolute;
         top: 40px;
         text-align: left;
@@ -407,7 +412,7 @@ cite {
         border-radius: 50px;
         background: #8e93a2;
         color: #fff;
-        &:before {
+        &::before {
             position: absolute;
             content: '';
             top: 13px;
@@ -415,9 +420,13 @@ cite {
             width: 16px;
             height: 16px;
             background: url("../img/list-arr.png") 0 0 no-repeat;
+            
         }
         &:hover {
             background: #797f90;
+            &::before {
+                transform: rotate(180deg);
+            }
         }
     }
     &--decor-2-top {
@@ -439,45 +448,119 @@ cite {
             height: 16px;
             background: url("../img/list-arr-blue.png") 0 0 no-repeat;
         }
+        &:hover {
+            &::before {
+                transform: rotate(180deg);
+            }
+        }
     }
 }
 
-// checkboxes
+// accordion
 
-.checkbox {
-    cursor: pointer;
-    & input {
-        display: none;
-        &:checked + .box {
-            background: #4f7ec9;
-            border: 1px solid #4f7ec9;
-        }
-    } //input
-    
-    & .box {
-        position: relative;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        background: #fff;
-        border: 1px solid #c7c9d0;
-        &:hover {
-            border: 1px solid #4f7ec9;
-        }
-        &:disabled {
-            cursor: none;
-        }
-        &::after {
-            position: absolute;
-            content: '';
-            top: 3px;
-            left: 1px;
-            width: 11px;
-            height: 8px;
-            background: url("../img/check-ic.png") 0 0 no-repeat;
+.accordion {
+    & h3 {
+        @include rob-light(20px, 20px);
+        color: #3869b8;
+        &:focus {
+            outline: none;
         }
     }
-} // checkbox
+    & p {
+        @include rob-reg(14px, 14px);
+        color: #8c91a0;
+    }
+}
+
+
+// checkboxes
+
+.checkboxes,
+.radio {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.wrap-check {
+    width: 110px;
+    margin-bottom: 10px;
+	label {
+        @include rob-reg(14px, 14px);
+        position: relative;
+        color: #333333;
+    }
+    input {
+        display: none;
+    }
+    
+    label::before {
+        display: inline-block;
+        margin-right: 20px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 1px solid #c3c5cd;
+        vertical-align: middle;
+    }
+    input:checked + label:before{
+        background: #4f7ec9;
+        border: 1px solid #4f7ec9;
+    }
+    input:checked + label::after {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        left: 4px;
+        top: 6px;
+        width: 11px;
+        height: 8px;
+        vertical-align: middle;
+        background: url("../img/check-ic.png") 0 0 no-repeat;
+    }
+}
+
+//radiobutton
+
+.wrap-radio {
+    width: 110px;
+    margin-bottom: 10px;
+    label {
+        @include rob-reg(14px, 14px);
+        position: relative;
+        cursor: pointer;
+        color: #333333;
+    } 
+    input {
+        display: none;
+    }
+    label::before {
+        display: inline-block;
+        margin-right: 20px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 1px solid #c6c8d0;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+    input:checked + label:before {
+        border: 1px solid #4f7ec9;
+        background: #4f7ec9;
+    }
+    input:checked + label::after {
+        display: inline-block;
+        position: absolute;
+        content: '';
+        left: 5px;
+        top: 5px;
+        width: 8px;
+        height: 8px;
+        background: #fff;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+}
+
 
 // radio
 

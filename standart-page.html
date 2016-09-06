@@ -4,14 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
+    <!--    <link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/SlickNav/dist/slicknav.css">
-    <link type="text/css" rel="stylesheet" href="js/accordion/css/jquery-ui-1.8.16.custom.css">
+    <link rel="stylesheet" href="js/animated-timeline/css/timelify.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.0.custom/jquery-ui.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/SlickNav/dist/jquery.slicknav.min.js"></script>
-    <script src="js/accordion/js/jquery-1.6.2.min.js"></script>
-    <script src="js/accordion/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="js/animated-timeline/js/jquery.timelify.js"></script>
+    <script src="js/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+
+    <!--    <script src="js/accordion/js/jquery-1.6.2.min.js"></script>-->
+    <!--    <script src="js/accordion/js/jquery-ui-1.8.16.custom.min.js"></script>-->
     <title>Utip</title>
 </head>
 
@@ -81,7 +85,7 @@
             <div class="center">
                 <div class="standart-page__left">
                     <!--Headlines-->
-                    <div class="headlines" id="headlines" >
+                    <div class="headlines" id="headlines">
                         <h1>H1. Длинный заголовок типовой страницы, чтобы настроить интерлиньяж</h1>
 
                         <p class="lead">Лид — это первый абзац статьи, информативный отрывок позволяющий захватить внимание читателя на данном материале. Необязательный элемент.</p>
@@ -113,15 +117,15 @@
                         <h4>h4. Однако, в реальной ситуации подобных скопленийзаголовков лучше избегать</h4>
                         <p class="standart">Если за заголовком более низкого уровня сразу следует заголовок более высокого, это нарушает композиционную связность элементов оформления и логику повествования. Поэтому после заголовка должен следовать текст (или иной контент), который этот заголовок и подчиненные ему подзаголовки, если они есть.</p>
                     </div>
-                    
+
                     <!--Форматирование текста-->
 
                     <div class="text-formating" id="text-form">
                         <h2>Форматирование текста</h2>
                         <h3>Списки</h3>
-                        
+
                         <!--ul-->
-                        
+
                         <h5>Ненумерованный список:</h5>
                         <ul class="main-menu">
                             <li>Если за заголовком более низкого уровня сразу следует заголовок более высокого, это нарушает композиционную связность элементов оформления и логику повествования. Поэтому после заголовка должен следовать текст (или иной контент), который этот заголовок и подчиненные ему подзаголовки, если они есть.
@@ -132,7 +136,7 @@
                             </li>
                             <li>Если пункты списка короткие, не являются самостоятельной законченной конструкцией и грамматически тесно связаны с предшествующей списку вводной фразой, они должны начинаться со строчной буквы и заканчиваться точкой с запятой (в конце последнего пункта — точка).</li>
                         </ul>
-                        
+
                         <!--ol-->
 
                         <h5>Нумерованный список:</h5>
@@ -155,7 +159,7 @@
 
                         <h3>Ссылки</h3>
                         <p class="standart">На сайте может встречаться несколько видов ссылок. Например, ссылка на Яндекс является внешней. Внутренние ссылки могут открываться по умолчанию в текущем окне (например, переход на главную страницу) или в новом окне (например, для показа изображений в оригинальном размере).</p>
-                        
+
                         <!--???-->
 
                         <h3>Сноски</h3>
@@ -168,43 +172,52 @@
 
                         <h3>Надстрочные и подстрочные индексы</h3>
                         <p class="standart">Важно следить за тем, чтобы элементы надстрочных и подстрочных индексов не увеличивали высоту строки, потому что это портит вид текстового блока. Пример: 2<sup>3</sup>. Еще пример: H<sub>2</sub>SO<sub>4</sub>. В обоих случаях высота строки от индексов не должна меняться. Если отступ между первой и второй строками увеличился, значит, что-то </p>
-                        
+
                         <!--Accordion-->
 
                         <h3>Раскрывающийся контент</h3>
-                        
-                        <h2 class="demoHeaders">Аккордеон</h2>
-                        <div id="accordion">
-                          <div>
-                            <h3><a href="#">Первая вкладка</a></h3>
-                            <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
-                          </div>
-                          <div>
-                            <h3><a href="#">Вторая вкладка</a></h3>
-                            <div>Phasellus mattis tincidunt nibh.</div>
-                          </div>
-                          <div>
-                            <h3><a href="#">Третья вкладка</a></h3>
-                            <div>Nam dui erat, auctor a, dignissim quis.</div>
-                          </div>
-                        </div>
-                                                                        
-                        </div>
 
-                        <div class="text-decoration" id="text-decor">
+                        <div class="accordion">
+                            <div id="accordion">
+                                <h3>Раскрывающийся контент</h3>
+                                <div>
+                                    <p>
+                                        Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.
+                                    </p>
+                                </div>
+                                <h3>Раскрывающийся контент</h3>
+                                <div>
+                                    <p>
+                                        Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.
+                                    </p>
+                                </div>
+                                <h3>Раскрывающийся контент</h3>
+                                <div>
+                                    <p>
+                                        Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End text formating-->
+
+
+
+                    <div class="text-decoration" id="text-decor">
                         <h2>Оформление текста</h2>
                         <p class="standart">Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и <em>курсивное</em> начертания.</p>
-                        
+
                         <!--Comment-->
 
                         <h3>Комментарий</h3>
                         <p class="comment">Элемент «Комментарий» применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</p>
-                        
+
                         <!--Important-->
 
                         <h3>Важно</h3>
                         <p class="important">Элемент «Важно», который используется для выделения особо важной информации. И еще немного текста, чтобы получилось несколько строк для наглядности</p>
-                        
+
                         <!--Address-->
 
                         <h3>Адреса</h3>
@@ -251,12 +264,14 @@
                             <blockquote>Цитата — дословная выдержка (отрывок) из какого-либо текста. И еще текста, чтобы получилось несколько строк для наглядности</blockquote>
                             <cite>wikipedia.org</cite>
                         </div>
+                    </div>
                 </div>
-                </div>
-                
+
+
                 <div class="standart-page__right">
                     <ul class="nav-aside">
-                        <li><h3>Навигация</h3></li>
+                        <li>
+                            <h3>Навигация</h3></li>
                         <li><a href="#headlines">Заголовки</a></li>
                         <li><a href="#text-form">Форматирование текста</a></li>
                         <li><a href="#text-decor">Оформление текста</a></li>
@@ -264,315 +279,415 @@
                         <li><a href="#st-form">Форма</a></li>
                         <li><a href="#">Палитра</a></li>
                     </ul>
-                    
+
                     <div class="aside"></div>
                     <div class="aside"></div>
                 </div>
-                
-                
+
+
                 <div class="elements" id="elem">
 
-                <h3>Элементы</h3>
-                <h4>Картинки</h4>
+                    <h3>Элементы</h3>
+                    <h4>Картинки</h4>
 
-                <div class="img-sign  img-sign--big">
-                    <img src="img/img-960x400.jpg" alt="big img">
-                    <span class="sign">Подпись большого изображения</span>
-                </div>
+                    <div class="img-sign  img-sign--big">
+                        <img src="img/img-960x400.jpg" alt="big img">
+                        <span class="sign">Подпись большого изображения</span>
+                    </div>
 
-                <div class="img-sign  img-sign--med">
-                    <img src="img/img-630x400.jpg" alt="medium img">
-                    <span class="sign">Подпись среднего изображения</span>
-                </div>
+                    <div class="img-sign  img-sign--med">
+                        <img src="img/img-630x400.jpg" alt="medium img">
+                        <span class="sign">Подпись среднего изображения</span>
+                    </div>
 
-                <div class="img-sign  img-sign--small">
-                    <img src="img/img-300x190.jpg" alt="small img">
-                    <span class="sign">Подпись небольшого изображения</span>
-                </div>
+                    <div class="img-sign  img-sign--small">
+                        <img src="img/img-300x190.jpg" alt="small img">
+                        <span class="sign">Подпись небольшого изображения</span>
+                    </div>
 
-                <h3>Таблицы</h3>
+                    <h3>Таблицы</h3>
 
-                <div class="table-wrapper">
-                    <table class="table">
-                        <tr class="table__head">
-                            <td>id</td>
-                            <td>Имя</td>
-                            <td>Фамилия</td>
-                            <td>Логин</td>
-                            <td>Активный</td>
-                            <td>Руководитель</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>John</td>
-                            <td>Boo</td>
-                            <td>johny81</td>
-                            <td>
-                                <label class="checkbox" for="check-1">
-                                <input type="checkbox" name="check" id="check-1">
-                                <span class="box"></span>
-                                </label>
-                            </td>
-                            <td>
-                                <input type="radio" name="radio" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Mary</td>
-                            <td>Brown</td>
-                            <td>missmary</td>
-                            <td>
-                                <label class="checkbox" for="check-2">
-                                <input type="checkbox" name="check" id="check-2">
-                                <span class="box"></span>
-                                </label>
-                            </td>
-                            <td>
-                                <input type="radio" name="radio" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>James</td>
-                            <td>Mooray</td>
-                            <td>jijames</td>
-                            <td>
-                                <label class="checkbox" for="check-3">
-                                <input type="checkbox" name="check" id="check-3">
-                                <span class="box"></span>
-                                </label>
-                            </td>
-                            <td>
-                                <input type="radio" name="radio" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Michael</td>
-                            <td>Robinson</td>
-                            <td>Rob1n</td>
-                            <td>
-                                <label class="checkbox" for="check-4">
-                                <input type="checkbox" name="check" id="check-4">
-                                <span class="box"></span>
-                                </label>
-                            </td>
-                            <td>
-                                <input type="radio" name="radio" id="">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Bob</td>
-                            <td>Robson</td>
-                            <td>bobby88</td>
-                            <td>
-                                <label class="checkbox" for="check-5">
-                                <input type="checkbox" name="check" id="check-5">
-                                <span class="box"></span>
-                                </label>
-                            </td>
-                            <td>
-                                <input type="radio" name="radio" id="">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                    <div class="table-wrapper">
+                        <table class="table">
+                            <tr class="table__head">
+                                <td>id</td>
+                                <td>Имя</td>
+                                <td>Фамилия</td>
+                                <td>Логин</td>
+                                <td>Активный</td>
+                                <td>Руководитель</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Boo</td>
+                                <td>johny81</td>
+                                <td>
+                                    <label class="checkbox" for="check-1">
+                                        <input type="checkbox" name="check" id="check-1">
+                                        <span class="box"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="radio" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Brown</td>
+                                <td>missmary</td>
+                                <td>
+                                    <label class="checkbox" for="check-2">
+                                        <input type="checkbox" name="check" id="check-2">
+                                        <span class="box"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="radio" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>James</td>
+                                <td>Mooray</td>
+                                <td>jijames</td>
+                                <td>
+                                    <label class="checkbox" for="check-3">
+                                        <input type="checkbox" name="check" id="check-3">
+                                        <span class="box"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="radio" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Michael</td>
+                                <td>Robinson</td>
+                                <td>Rob1n</td>
+                                <td>
+                                    <label class="checkbox" for="check-4">
+                                        <input type="checkbox" name="check" id="check-4">
+                                        <span class="box"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="radio" id="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bob</td>
+                                <td>Robson</td>
+                                <td>bobby88</td>
+                                <td>
+                                    <label class="checkbox" for="check-5">
+                                        <input type="checkbox" name="check" id="check-5">
+                                        <span class="box"></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="radio" id="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <div class="table-wrapper">
-                    <table class="table  table-short">
-                        <tr class="table__head ">
-                            <td>id</td>
-                            <td>Имя</td>
-                            <td>Комментарий</td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>John</td>
-                            <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Mary</td>
-                            <td>Однострочный текст для примера</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>James</td>
-                            <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>Michael</td>
-                            <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>Bob</td>
-                            <td>Однострочный текст для примера</td>
-                        </tr>
-                    </table>
-                </div>
-                
-                <!--TABs-->
+                    <div class="table-wrapper">
+                        <table class="table  table-short">
+                            <tr class="table__head ">
+                                <td>id</td>
+                                <td>Имя</td>
+                                <td>Комментарий</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Однострочный текст для примера</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>James</td>
+                                <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Michael</td>
+                                <td>И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bob</td>
+                                <td>Однострочный текст для примера</td>
+                            </tr>
+                        </table>
+                    </div>
 
-                <h4>Вкладки</h4>
-                <div class="center">
-                    <div class="tabs">
-                        <input type="radio" name="tab" id="tab-1" checked>
-                        <label for="tab-1">Home</label>
-                        <input type="radio" name="tab" id="tab-2">
-                        <label for="tab-2">Profile</label>
-                        <input type="radio" name="tab" id="tab-3">
-                        <label for="tab-3">Message</label>
-                        <input type="radio" name="tab" id="tab-4">
-                        <label for="tab-4">Action</label>
-                        <input type="radio" name="tab" id="tab-5">
-                        <label for="tab-5">About</label>
+                    <!--TABs-->
 
-                        <div class="content">
-                            <article class="tab-1">content for HOME</article>
-                            <article class="tab-2">content for PROFILE</article>
-                            <article class="tab-3">content for MESSAGE</article>
-                            <article class="tab-4">content for ACTION</article>
-                            <article class="tab-5">content for ABOUT</article>
+                    <h4>Вкладки</h4>
+                    <div class="center">
+                        <div class="tabs">
+                            <input type="radio" name="tab" id="tab-1" checked>
+                            <label for="tab-1">Home</label>
+                            <input type="radio" name="tab" id="tab-2">
+                            <label for="tab-2">Profile</label>
+                            <input type="radio" name="tab" id="tab-3">
+                            <label for="tab-3">Message</label>
+                            <input type="radio" name="tab" id="tab-4">
+                            <label for="tab-4">Action</label>
+                            <input type="radio" name="tab" id="tab-5">
+                            <label for="tab-5">About</label>
+
+                            <div class="content">
+                                <article class="tab-1">content for HOME</article>
+                                <article class="tab-2">content for PROFILE</article>
+                                <article class="tab-3">content for MESSAGE</article>
+                                <article class="tab-4">content for ACTION</article>
+                                <article class="tab-5">content for ABOUT</article>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!--Pagination-->
 
-                    <h4>Пагинация</h4>
-                    <div class="pagination">
-                        <ul class="pag">
-                            <li><a href="#">Вперед</a></li>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#" class="active">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">Назад</a></li>
-                        </ul>
-                    </div>
+                        <!--Pagination-->
+
+                        <h4>Пагинация</h4>
+                        <div class="pagination">
+                            <ul class="pag">
+                                <li><a href="#">Вперед</a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#" class="active">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">...</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">Назад</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <!--Form standart page-->
 
                     <div class="form" id="st-form">
-                    <h3>Формы</h3>
-                    <h4>Пример простой формы</h4>
-
-                    <div class="appeal appeal--bg-none">
-                        <div class="center">
-                            <div class="appeal__form  appeal__form--decor-st-page">
-                                <form class="" action="">
-                                    <div class="appeal__inputs-wrapper">
-                                        <input type="text" name="" id="" placeholder="Поле ввода">
-                                        <input type="tel" name="" id="" placeholder="Поле ввода">
-                                        <input type="email" name="" id="" placeholder="Поле ввода" disabled>
-                                    </div>
-                                    <textarea name="" id="" cols="" rows="" placeholder="Текстовое поле"></textarea>
-                                    <label class="checkbox" for="form">
-                                    <input type="checkbox" name="check" id="form">
-                                    <span class="box"></span>
-                                    </label>
-                                    <div class="btn-wrapper  btn-wrapper--decor-st-page">
-                                    <button class="btn btn-cansel" type="submit">Отмена</button>
-                                    <button class="btn btn-submit  btn-submit--narrow" type="submit">Отправить</button>
-                                    </div>
-                                </form>
+                        <h3>Формы</h3>
+                        <h4>Пример простой формы</h4>
+                        <!--styles at appeal.scss-->
+                        <div class="appeal appeal--bg-none">
+                            <div class="center">
+                                <div class="appeal__form  appeal__form--decor-st-page">
+                                    <form class="" action="">
+                                        <div class="appeal__inputs-wrapper">
+                                            <input type="text" name="" id="" placeholder="Поле ввода">
+                                            <input type="tel" name="" id="" placeholder="Поле ввода">
+                                            <input type="email" name="" id="" placeholder="Поле ввода" disabled>
+                                        </div>
+                                        <textarea name="" id="" cols="" rows="" placeholder="Текстовое поле"></textarea>
+                                        <label class="checkbox" for="form">
+                                            <input type="checkbox" name="check" id="form">
+                                            <span class="box"></span>
+                                        </label>
+                                        <div class="btn-wrapper  btn-wrapper--decor-st-page">
+                                            <button class="btn btn-cansel" type="submit">Отмена</button>
+                                            <button class="btn btn-submit  btn-submit--narrow" type="submit">Отправить</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                <!--Buttons-->
-                <!--gray color-->
-                   
-                       <div class="btn-kit">
-                           <a href="#" class="btn btn-cansel  btn-cansel--width-st-page">Кнопка</a>
-                           <a href="#" class="btn btn-cansel  btn-cansel--width-st-page btn-cansel--disabled">Кнопка</a>
-                       </div>
-                       
-                <!--blue color-->
-                      
-                       <div class="btn-kit">
-                           <a href="#" class="btn btn-send  btn-send--width-st-page">Кнопка</a>
-                           <a href="#" class="btn btn-send  btn-send--width-st-page btn-cansel--disabled">Кнопка</a>
-                       </div>    
-                       
-                       <!--green color-->
-                      
-                       <div class="btn-kit">
-                           <a href="#" class="btn btn-try  btn-try--width-st-page">Кнопка</a>
-                           <a href="#" class="btn btn-try  btn-try--width-st-page btn-try--disabled">Кнопка</a>
-                       </div>
-                       
-                       <!--white bg-->
-                       
+
+                        <h4>Поле ввода</h4>
+                        <!--styles at appeal.scss-->
+                        <div class="appeal appeal--bg-none-2">
+                            <div class="center">
+                                <div class="appeal__form  appeal__form--decor-st-page">
+                                    <form class="" action="">
+                                        <div class="appeal__inputs-wrapper">
+                                            <div class="appeal__state-example">
+                                                <input type="text" name="" id="stand" placeholder="Поле ввода">
+                                                <label for="stand">Обычно</label>
+                                                <input class="focus" type="text" name="" id="focus" placeholder="Набранный текст">
+                                                <label for="focus">В фокусе</label>
+                                                <input type="text" name="" id="dis" placeholder="Поле ввода" disabled>
+                                                <label for="dis">Неактивно</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Buttons-->
+                        <!--gray color-->
+
+                        <h3>Кнопки</h3>
+                        <div class="btn-kit-1">
+                            <div class="btn-kit">
+                                <a href="#" class="btn btn-cansel  btn-cansel--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-cansel  btn-cansel--width-st-page  btn-cansel--hover">Кнопка</a>
+                                <a href="#" class="btn btn-cansel  btn-cansel--width-st-page  btn-cansel--active">Кнопка</a>
+                                <a href="#" class="btn btn-cansel  btn-cansel--width-st-page btn-cansel--disabled">Кнопка</a>
+                            </div>
+
+                            <!--blue color-->
+
+                            <div class="btn-kit">
+                                <a href="#" class="btn btn-send  btn-send--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-send  btn-send--width-st-page btn-send--hover">Кнопка</a>
+                                <a href="#" class="btn btn-send  btn-send--width-st-page  btn-send--active">Кнопка</a>
+                                <a href="#" class="btn btn-send  btn-send--width-st-page btn-cansel--disabled">Кнопка</a>
+                            </div>
+
+                            <!--green color-->
+
+                            <div class="btn-kit">
+                                <a href="#" class="btn btn-try  btn-try--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-try  btn-try--width-st-page  btn-try--hover">Кнопка</a>
+                                <a href="#" class="btn btn-try  btn-try--width-st-page  btn-try--active">Кнопка</a>
+                                <a href="#" class="btn btn-try  btn-try--width-st-page btn-try--disabled">Кнопка</a>
+                            </div>
+
+                            <div class="btn-kit">
+                                <span>Обычно</span>
+                                <span>Ховер</span>
+                                <span>Активно</span>
+                                <span>Неактивно</span>
+                            </div>
+                        </div>
+
+                        <!--white bg-->
                         <div class="btn-kit-2">
-                           <a href="#" class="btn btn-type-1  btn-type-1--width-st-page">Кнопка</a>
-                           <a href="#" class="btn btn-type-1  btn-type-1--width-st-page btn-type-1--disabled">Кнопка</a>
-                       </div> 
-                       
-                       <!--transparent bg-->
-                       
-                       <div class="btn-kit-2 fill">
-                           <a href="#" class="btn btn-details  btn-details--width-st-page">Кнопка</a>
-                           <a href="#" class="btn btn-details  btn-details--width-st-page btn-details--disabled">Кнопка</a>
-                       </div>
-                       
+                            <div class="btn-kit-tr">
+                                <a href="#" class="btn btn-type-1  btn-type-1--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-type-1  btn-type-1--width-st-page btn-type-1--hover">Кнопка</a>
+                                <a href="#" class="btn btn-type-1  btn-type-1--width-st-page btn-type-1--active">Кнопка</a>
+                                <a href="#" class="btn btn-type-1  btn-type-1--width-st-page btn-type-1--disabled">Кнопка</a>
+                            </div>
+
+                            <!--transparent bg-->
+
+                            <div class="btn-kit-tr fill">
+                                <a href="#" class="btn btn-details  btn-details--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-details  btn-details--width-st-page  btn-details--hover">Кнопка</a>
+                                <a href="#" class="btn btn-details  btn-details--width-st-page  btn-details--active">Кнопка</a>
+                                <a href="#" class="btn btn-details  btn-details--width-st-page btn-details--disabled">Кнопка</a>
+                            </div>
+
+                            <!--square btn-->
+                            <div class="btn-kit-tr">
+                                <a href="#" class="btn btn-square  btn-square--width-st-page">Кнопка</a>
+                                <a href="#" class="btn btn-square  btn-square--width-st-page  btn-square--hover">Кнопка</a>
+                                <a href="#" class="btn btn-square  btn-square--width-st-page  btn-square--active">Кнопка</a>
+                                <a href="#" class="btn btn-square  btn-square--width-st-page btn-square--disabled">Кнопка</a>
+                            </div>
+                            <div class="btn-kit">
+                                <span>Обычно</span>
+                                <span>Ховер</span>
+                                <span>Активно</span>
+                                <span>Неактивно</span>
+                            </div>
+                        </div>
+
                         <h3>Выпадающий список</h3>
-                        <div class="menu-wrapper">
-                        <ul class="menu menu--decor-1-top">
-                            <li>Выпадающий список
-                                <ul class="menu-dropdown  menu-dropdown--decor-1-drop">
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
+
+                        <div class="all-menu">
+                            <div class="menu-wrapper-top">
+                                <ul class="menu menu--decor-1-top">
+                                    <li>Выпадающий список</li>
                                 </ul>
-                            </li>
-                        </ul>
-                        </div>
-                        
-                        <div class="menu-wrapper">
-                        <ul class="menu menu--decor-2-top">
-                            <li>Выпадающий список
-                                <ul class="menu-dropdown  menu-dropdown--decor-2-drop">
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
-                                    <li><a href="#">Элемент списка</a></li>
+                            </div>
+                            <div class="menu-wrapper-top">
+                                <ul class="menu menu--decor-2-top">
+                                    <li>Выпадающий список</li>
                                 </ul>
-                            </li>
-                        </ul>
+                            </div>
                         </div>
-                        
-                        <!--checkboxes and radio-->
-                        
-                        <h3>Переключатели</h3>
-                        
-                        <div class="checkboxes">
-                           
-                            <label class="checkbox" for="st-1">
-                            <input type="checkbox" name="check" id="st-1">
-                            <span class="box"></span></label>
+                        <div class="menu-wrapper">
+                            <ul class="menu menu--decor-1-top">
+                                <li>Выпадающий список
+                                    <ul class="menu-dropdown  menu-dropdown--decor-1-drop">
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-wrapper">
+                            <ul class="menu menu--decor-2-top">
+                                <li>Выпадающий список
+                                    <ul class="menu-dropdown  menu-dropdown--decor-2-drop">
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Form end-->
+
+                    <!--checkboxes and radio-->
+
+                    <h3>Переключатели</h3>
+
+                    <div class="checkboxes">
+                            <h4>Чекбоксы</h4>
                             
-                            <label class="checkbox" for="st-2" disabled>
-                            <input type="checkbox" name="check" id="st-2">
-                            <span class="box"></span></label>
-                       </div>
-                       
-                       <div class="radio">
-                           <input type="radio" name="test" id="rs-1">
-                           <label for="rs-1"></label>
-                           
-                           <input type="radio" name="test" id="rs-1">
-                           <label for="rs-1"></label>
-                       </div>
-                       </div>
+                            <div class="wrap-check">
+                            <input type="checkbox" id="act-1">
+                            <label for="act-1">Активно</label>
+                            </div>
+                            
+                            <div class="wrap-check">
+                            <input type="checkbox" id="act-2">
+                            <label for="act-2">Активно</label>
+                            </div>
+                            
+                            <div class="wrap-check">
+                            <input type="checkbox" id="act-3">
+                            <label for="act-3">Активно</label>
+                            </div>
+                            
+                            <div class="wrap-check">
+                            <input type="checkbox" id="act-4" disabled>
+                            <label for="act-4">Неактивно</label>
+                            </div>
+                    </div>
+
+                    <div class="radio">
+                       <h4>Переключатели</h4>
+                        
+                        <div class="wrap-radio">
+                        <input type="radio" name="test" id="rs-1">
+                        <label for="rs-1">Активно</label>
+                        </div>
+                        
+                        <div class="wrap-radio">
+                        <input type="radio" name="test" id="rs-2">
+                        <label for="rs-2">активно</label>
+                        </div>
+                        
+                        <div class="wrap-radio">
+                        <input type="radio" name="test" id="rs-3">
+                        <label for="rs-3">активно</label>
+                        </div>
+                        
+                        <div class="wrap-radio">
+                        <input type="radio" name="test" id="rs-4" disabled>
+                        <label for="rs-4">Неактивно</label>
+                        </div>
+                    </div>
+                </div>
 
                 <!--Form-->
 
@@ -592,8 +707,8 @@
 
                         <div class="appeal__descr">
                             <h3 class="appeal__title">
-                You want to start cooperate?
-            </h3>
+                                    You want to start cooperate?
+                                </h3>
                             <p class="appeal__text">
                                 We will be happy to answer your questions and tell you more about our solution.
                             </p>
@@ -679,16 +794,10 @@
                         </div>
                     </div>
                 </footer>
+            </div>
+            <!--end center-->
 
     </main>
-    
-    <script>$(function () {
-    // Accordion
-    $("#accordion").accordion({
-        header: "h3"
-    });
-});
-</script>
     <script src="js/script.js"></script>
 </body>
 

@@ -10,9 +10,6 @@ $(function(){
 	});
 $('.timeline').timelify();
 
-//$(function () {
-//    // Accordion
-//    $("#accordion").accordion({
-//        header: "h3"
-//    });
-//});
+$( function() {
+    $( "#accordion" ).accordion();
+  } );

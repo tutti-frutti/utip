@@ -36,6 +36,17 @@
         background: #e4e5e8;
         color: #8c91a0;
     }
+    //state classes
+    &--hover {
+        background: #4f7ec9;
+    }
+    &--active {
+        background: #2f5899;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
     &--width-st-page {
         width: 100px;
         margin: 5px 0;
@@ -62,6 +73,22 @@
         background: #e4e5e8;
         color: #8c91a0;
     }
+     //state classes
+    &--hover {
+        background: #4fc95f;
+    }
+    &--active {
+        background: #2f993d;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+    // diff width
     &--width-st-page {
         width: 100px;
         margin: 5px 0;
@@ -102,9 +129,18 @@
         cursor: default;
         border: 2px solid #567fc3;
     }
+    //state classes
+    &--hover {
+        border: 2px solid #cdd9ed;
+        color: #cdd9ed;
+    }
+    &--active {
+        background: #6a8fca;
+        border: 2px solid #6a8fca;
+    }
     &--width-st-page {
         width: 100px;
-        margin: 5px 0;
+        margin: 5px;
     }
 }
 
@@ -158,6 +194,13 @@
         background: #e4e5e8;
         color: #8c91a0;
     }
+    //state classes
+    &--hover {
+        background: #a4a8b4;
+    }
+    &--active {
+        background: #797f90;
+    }
     &--width-st-page {
         width: 100px;
         margin: 5px 0;
@@ -208,9 +251,66 @@
         border: 2px solid #e4e5e8;
         color: #8c91a0;
     }
+    //state classes
+    &--hover {
+        border: 2px solid #c9d8ef;
+    }
+    &--active {
+        background: #c9d8ef;
+        border: 2px solid #c9d8ef;
+    }
     &--width-st-page {
         width: 100px;
         margin: 5px 0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 5px 0;
+    }
+}
+
+.btn-square {
+	display: inline-block;
+    margin: 10px 0;
+    width: 75px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #e4e5e8;
+    color: #fff;
+    @media #{$mobile} {
+        margin: 30px auto 20px;
+        font-size: 14px;
+    }
+    &:hover {
+        background: #c9d8ef;
+    }
+    &:active {
+        background: #aac2e6;
+    }
+    &--disabled {
+        pointer-events: none;
+        cursor: default;
+        background: #e4e5e8;
+        border: 2px solid #e4e5e8;
+        color: #8c91a0;
+    }
+    //state classes
+    &--hover {
+        background: #c9d8ef;
+    }
+    &--active {
+        background: #aac2e6;
+    }
+    &--width-st-page {
+        width: 100px;
+        margin: 10px 0;
     }
 }
 
@@ -218,15 +318,23 @@
     display: inline-block;
     margin: 0 10px;
     width: 100px;
+    span {
+        display: block;
+        margin: 35px 0;
+        @include rob-italic(14px, 14px);
+        color: #8c91a0;
+        
+    }
 }
 
-.btn-kit-2 {
+.btn-kit-tr {
     display: inline-block;
     margin: 0 10px;
     width: 100px;
 }
 
 .fill {
-    width: 100px;
+    width: 120px;
     background: #3869b8;
+    text-align: center;
 }
