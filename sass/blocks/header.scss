@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     height: 700px;
     margin-bottom: 70px;
     background: url("../img/header-bg.jpg") center center no-repeat;
@@ -51,11 +52,19 @@
         }
     }
     &__slogan {
-        @include rob-light(40px, 42px);
         display: inline-block;
-        margin-top: 130px;
-        margin-left: 28%;
-        color: #fff;
+        margin-top: 76px;
+        margin-left: 7.7%;
+        width: 80%;
+        &--index-decor {
+            margin-left: 27.5%;
+            margin-top: -6px;
+        }
+        h2 {
+            @include rob-light(40px, 52px);
+            color: #fff;
+        }
+        
         @media #{$mobile} {
             display: block;
             margin-left: 0;
@@ -63,7 +72,7 @@
             line-height: 36px;
         }
         &--bigger {
-            @include rob-light(50px, 54px);
+            @include rob-light(50px, 56px);
             margin-left: 0;
             color: #fff;
         }

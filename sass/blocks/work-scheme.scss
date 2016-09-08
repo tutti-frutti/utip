@@ -1,6 +1,8 @@
 .work-scheme {
     & h2 {
-        margin-bottom: 50px;
+        @include rob-light(30px, 30px);
+        margin: 105px 0 57px;
+        color: #333333;
         @media #{$mobile} {
             margin-bottom: 20px;
         }
@@ -12,11 +14,11 @@
         }
     }
     &--zero-mb {
-        margin-bottom: 0;
+        margin-bottom: 1px;
     }
     &__img {
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 65px;
         &--zero-mb {
             margin: 0 auto;
         }

@@ -1,9 +1,18 @@
 .toogle-menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
     display: none;
     height: 900px;
     line-height: 900px;
     background: url("../img/menu-bg.jpg") center center no-repeat;
     background-size: cover;
+    &__close {
+        position: absolute;
+        top: -380px;
+        right: 47px;
+    }
     &__wrapper {
         display: inline-block;
         width: 100%;

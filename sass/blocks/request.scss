@@ -1,5 +1,5 @@
 .request {
-    margin-top: 65px;
+    margin-top: 81px;
     margin-left: 14%;
 	width: 33%;
     @media #{$mobile} {
@@ -17,12 +17,12 @@
         color: #fff;
     }
     & h3 {
-        @include rob-light(20px, 26px);
-        margin-bottom: 15px;
+        @include rob-light(20px, 29px);
+        margin: 10px 0 13px;
         color: #fff;
     }
     & p {
-        @include rob-light(14px, 18px);
+        @include rob-light(14px, 21px);
         margin-bottom: 20px;
         color: #fff;
     }
@@ -35,7 +35,10 @@
 
 .binary-request {
     &--pos-right {
-        margin: 140px 0 0 auto;
+//        margin: 140px 0 0 auto;
+        float: right;
+        margin-top: 87px;
+        margin-right: 3.8%;
         max-width: 560px;
         width: 100%;
         @media #{$mobile} {
@@ -50,7 +53,7 @@
     }
     & h1 {
         @include rob-light(50px, 52px);
-        margin: 0 0 25px;
+        margin: 0 0 19px;
         color: #fff;
     }
     & > .btn-wrapper {

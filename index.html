@@ -20,22 +20,30 @@
         <div class="header__logo"><a href="#"><img src="/img/utip-logo.png" alt="UTIP"></a></div>
         <nav class="nav">
             <ul class="nav__list" id="menu">
+               <a href="#" class="open-menu"><img src="img/button-menu-ic.png" alt="Открыть меню"></a>
                 <li class="nav__item"><a href="platform.html" class="nav__link">Products &amp; Services</a></li>
                 <li class="nav__item"><a href="crm.html" class="nav__link">Technologies</a></li>
                 <li class="nav__item"><a href="company-create.html" class="nav__link">Company</a></li>
                 <li class="nav__item"><a href="binary-options.html" class="nav__link">Contacts</a></li>
-                <li class="nav__item nav__lang"><a href="#" class="nav__link">EN</a>
+                <li class="nav__item nav__lang">
+                  
+                   <a href="#" class="nav__link lang_show">EN</a>
                     <ul class="nav__sub">
-                        <li class="nav__sub-item"><a href="#" class="nav__sub-link">English</a></li>
-                        <li class="nav__sub-item"><a href="#" class="nav__sub-link">Русский</a></li>
+                        <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="EN">English</a></li>
+                        <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="RU">Русский</a></li>
                     </ul>
                    
                 </li>
             </ul>
         </nav>
         </div>
-        <h2 class="header__slogan"><span class="header__slogan header__slogan--bigger"><a href="standart-page.html">A wide range</a></span><br> of <a href="form-test.html">solutions for brokers</a></h2>
+        <div class="header__slogan  header__slogan--index-decor">
+        <h2><span class="header__slogan header__slogan--bigger"><a href="standart-page.html">A wide range</a></span><br> of <a href="form-test.html">solutions for brokers</a></h2>
       </div>
+        </div>
+      
+      
+      
     </header>
     
     <!--Main content-->
@@ -45,6 +53,7 @@
     <!--Menu shown on click, hidden by default-->
     
     <div class="toogle-menu">
+       <div class="toogle-menu__close"><a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a></div>
         <div class="center  center--narrow">
             <div class="toogle-menu__wrapper">
                 <div class="toogle-menu__product">Products</div>
@@ -93,12 +102,13 @@
     
     <!--Forex platform-->
     
-    
+        <div class="forex-platform">
         <div class="platform">
           <div class="center">
            <div class="page-descr">
-                <h2 class="page-descr__title">Forex platform</h2>
-                <p class="page-descr__text"> The UTIP Trading Platform is designed to provide customer service in the financial markets.UTIP is a full cycle trading platform, meaning you will not need any other additional software to service customers.The UTIP Trader client terminal is functional and user-</p>
+                <h2 class="page-descr__title">Forex platform</h2> 
+                <!--DELETE CLASS ^-->
+                <p class="page-descr__text"> The UTIP Trading Platform is designed to provide customer service in the financial markets.UTIP is a full cycle trading platform, meaning you will not need any other additional software to service customers.The UTIP Trader client terminal is functional and user-friendly, allowing the traders to quickly get used to the fascinating  world of financial markets.</p>
           </div>
            
            <div class="btn-wrapper">
@@ -108,12 +118,12 @@
             
             <div class="platform__primary"><img src="img/forex-platf.png" alt="Forex Platform"></div>
         </div>
-        
+    </div>
     </div>
     
     <!--Binary platform-->
     
-    
+        <div class="binary-platform">
         <div class="platform  platform--bg-fiolet">
            <div class="center">
             <div class="page-descr">
@@ -126,11 +136,12 @@
         </div>
             <div class="platform__secondary"><img src="img/binary-platf.png" alt="Binary Platform"></div>
         </div>
-        
+    </div>
     </div>
     
     <!--Advice creating company-->
     
+    <div class="advice-create">
     <div class="platform  platform--bg-img">
        <div class="center">
        <div class="page-descr  page-descr--left">
@@ -142,6 +153,7 @@
         <a href="#" class="btn btn-details">Details about</a>
            </div>
         </div>
+    </div>
     </div>
     
     <!--News block-->
@@ -241,7 +253,7 @@
         
         <div class="footer__wrapper">
         <ul class="footer__products">
-            <li class="footer__item footer__title">Products</li>
+            <li class="footer__title">Products</li>
             <li class="footer__item"><a href="#">UTIP Trading Platform</a></li>
             <li class="footer__item"><a href="#">UTIP Web Terminal </a></li>
             <li class="footer__item"><a href="#">Binary Options</a></li>
@@ -252,7 +264,7 @@
         </ul>
         
         <ul class="footer__solutions">
-            <li class="footer__item footer__title">Solutions</li>
+            <li class="footer__title">Solutions</li>
             <li class="footer__item"><a href="#">Website</a></li>
             <li class="footer__item"><a href="#">Consulting</a></li>
             <li class="footer__item"><a href="#">Multi-levelaffiliate</a></li>
@@ -260,7 +272,7 @@
         </ul>
         
         <ul class="footer__about">
-            <li class="footer__item footer__title">About</li>
+            <li class="footer__title">About</li>
             <li class="footer__item"><a href="#">History</a></li>
             <li class="footer__item"><a href="#">Certificates and awards</a></li>
             <li class="footer__item"><a href="#">Geography</a></li>
@@ -269,7 +281,7 @@
         </ul>
         
         <ul class="footer__contacts">
-            <li class="footer__item footer__title">Contacts</li>
+            <li class="footer__title">Contacts</li>
             <li class="footer__item"><span class="footer__cont">Skype:</span><a href="">utip-sale</a></li>
             <li class="footer__item"><span class="footer__cont">E-mail:</span><a href="mailto:info@utip.org">info@utip.org</a></li>
             <li class="footer__item"><span class="footer__cont">Phone:</span> +7 (342) 201-70-55</li>

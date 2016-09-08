@@ -1,6 +1,13 @@
 .interface-extend {
+    & h2 {
+        @include rob-light(40px, 40px);
+        margin: 0 0 11px;
+        text-align: center;
+        color: #8c91a0;
+    }
     & p {
-        @include rob-reg(14px, 18px);
+        @include rob-reg(14px, 20px);
+        margin: 0 auto 20px;
         max-width: 380px;
         color: #8c91a0;
         opacity: 1;
@@ -8,8 +15,16 @@
 }
 
 .interface-simple {
+    & h2 {
+        @include rob-light(40px, 40px);
+        padding-top: 106px;
+        margin: 0 0 16px;
+        text-align: center;
+        color: #fff;
+    }
     & p {
-        @include rob-reg(14px, 18px);
+        @include rob-reg(14px, 20px);
+        margin: 0 auto 18px;
         max-width: 380px;
         color: #fff;
         opacity: .6;

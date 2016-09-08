@@ -9,6 +9,7 @@
             width: 83%;
         }
     &__list {
+        position: relative;
         @media #{$mobile} {
             display: none;
         }
@@ -18,7 +19,7 @@
     }
     &__item {
         display: inline-block;
-        padding: 0 20px;
+        padding: 0 21px;
         border-right: 1px solid #a2c2cd;
         &:last-child {
             margin-right: 0;
@@ -42,17 +43,31 @@
     &__sub {
         display: none;
         position: absolute;
+        font-size: 14px;
     }
     &__lang {
         position: relative;
-        &::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            right: 0;
-            width: 16px;
-            height: 16px;
-            background: url("../img/nav-arr-down.png") 0 0 no-repeat;
+        
+    }
+    &__link{
+        &.lang_show{
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                top: 0;
+                right: -20px;
+                width: 16px;
+                height: 16px;
+                transform: rotate(0);
+                transition: all 0.3s;
+                background: url("../img/nav-arr-down.png") 0 0 no-repeat;
+            }
+            &.active{
+                &:before{
+                    transform: rotate(180deg);
+                }
+            }
         }
     }
 }

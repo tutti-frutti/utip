@@ -20,6 +20,7 @@
         <div class="header__logo"><a href="index.html"><img src="/img/utip-logo.png" alt="UTIP"></a></div>
         <nav class="nav">
             <ul class="nav__list" id="menu">
+               <li class="nav__item"><a href="#" class="nav__link open-menu"><img src="/img/button-menu-ic.png" alt="Открыть меню"></a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Products &amp; Services</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Technologies</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
@@ -39,11 +40,11 @@
            
         <div class="request">
            <h1 class="request__title">Forex platform</h1>
-           <h3 class="request__sub-title">The UTIP Trading Platform is designed to provide customer service in the financial </h3>
+           <h3 class="request__sub-title">The UTIP Trading Platform is designed to provide customer service in the financial markets</h3>
            <p class="request__descr">UTIP is a full cycle trading platform, meaning you will not need any other additional software to service customers.The UTIP Trader client terminal is functional and user-friendly, allowing the traders to quickly get used to the fascinating world of the financial markets.
            </p>
             <div class="btn-wrapper">
-                <a href="#" class="btn btn-send">Отправить запрос</a>
+                <a href="#" class="btn btn-send  btn-send--indent">Отправить запрос</a>
                 <a href="#" class="btn btn-try">Try demo</a>
            </div>
         </div>
@@ -55,30 +56,88 @@
     
     <main>
     
+    <!--Menu shown on click, hidden by default-->
+    
+    <div class="toogle-menu">
+       <div class="toogle-menu__close"><a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a></div>
+        <div class="center  center--narrow">
+            <div class="toogle-menu__wrapper">
+                <div class="toogle-menu__product">Products</div>
+                <div class="toogle-menu__left">
+                  
+                   <div class="toogle-menu__trading">
+                    <h4>Trading Platform</h4>
+                    <p>On the FOREX market</p>
+                    </div>
+                    
+                    <div class="toogle-menu__binary">
+                    <h4>Binary options</h4>
+                    <p>On the FOREX market in the UTIP trader terminal</p>
+                    </div>
+                </div>
+                <div class="toogle-menu__right">
+                    <div class="toogle-menu__links">
+                        <h3>CRM</h3>
+                        <a href="#">For brokers &amp; traders</a>
+                    </div>
+                    <div class="toogle-menu__links">
+                        <h3>Pro investor</h3>
+                        <a href="#">Trust Managment Service</a>
+                    </div>
+                    <div class="toogle-menu__links">
+                        <h3>Personal account</h3>
+                        <a href="#">Description</a>
+                    </div>
+                </div>
+                <div class="toogle-menu__service">Service</div>
+                <div class="toogle-menu__left-down">
+                    <div class="toogle-menu__brokerage">
+                    <h4>Start your brokerage</h4>
+                    <p>Description description description</p>
+                    </div>
+                </div>
+                <div class="toogle-menu__right-down">
+                    <div class="toogle-menu__links">
+                        <h3>Website development</h3>
+                        <a href="#">Description Description</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!--Reward block-->
     
     
     <div class="reward">
        <div class="center">
+       
+       <div class="reward__prize">
+           <div class="reward__img"><img src="img/Award_2014.png" alt="Prize"></div>
+           <div class="reward__descr">
+           <h4 class="reward__title">The best forex platform</h4>
+           <p>at the FOREX EXPO<br> 2013 and 2014 exhibition</p>
+           </div>
+       </div>
+       
         <ul class="reward__list">
-            <li class="reward__item  reward__item--narrow"><img src="/img/Award_2014.png" alt="prize"></li>
-            <li class="reward__item  reward__item--border  reward__item--wide">
-                <h4 class="reward__title">The best forex platform</h4>
-                <p>at the FOREX EXPO<br> 
-                    2013 and 2014 exhibition
-                </p>
-            </li>
-            <li class="reward__item  reward__item--border">
+            <li class="reward__item">
+                <div class="reward__block">
                 <strong>1000k+</strong>
                 <span>Trading accounts</span>
-            </li>
-            <li class="reward__item  reward__item--border">
-                <strong>10</strong> years<br>    
-                <span>In the forex industry</span>
+                </div>
             </li>
             <li class="reward__item">
+               <div class="reward__block">
+                <strong>10</strong> years<br>    
+                <span>In the forex industry</span>
+            </div>
+            </li>
+            <li class="reward__item">
+               <div class="reward__block  reward__block--zero-margin">
                 <strong>100+</strong><br>
                 <span>Brokers worldwide</span>
+                </div>
             </li>
         </ul>
     </div>
@@ -90,7 +149,7 @@
         <div class="work-scheme">
             <div class="page-descr">
                 <h2 class="page-descr__title  page-descr__title--smaller">Work scheme</h2>
-                <img class="work-scheme__img" src="img/work-scheme-bg.png" alt="Work scheme">
+                <img class="work-scheme__img" src="img/work-scheme.jpg" alt="Work scheme">
           </div>
         </div>
     </div>

@@ -6,7 +6,7 @@
     background-size: cover;
     & h2 {
         @include rob-light(30px, 30px);
-        margin: 100px 0 80px;
+        margin: 105px 0 99px;
         color: #fff;
         @media #{$mobile} {
             margin: 20px 0;
@@ -22,7 +22,7 @@
         position: relative;
         width: 20%;
         height: 150px;
-        padding: 60px 10px 30px;
+        padding: 60px 20px 30px;
         text-align: center;
         vertical-align: top;
         color: #fff;

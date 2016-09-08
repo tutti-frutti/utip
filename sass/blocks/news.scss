@@ -1,6 +1,5 @@
 .news {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 103px 0 80px;
     border-bottom: 1px solid #e4e5e8;
     @media #{$mobile} {
         margin: 20px 0;
@@ -30,13 +29,14 @@
     &__more {
         @include rob-bold(16px, 18px);
         display: inline-block;
-        padding: 10px;
+        padding: 6px 10px;
+        vertical-align: top;
         color: #fff;
         background: #e4e5e8;
         
     }
     &__list {
-        margin-bottom: 80px;
+        margin-bottom: 107px;
         @media #{$mobile} {
             margin-bottom: 20px;
         }
@@ -46,6 +46,7 @@
         width: 30%;
         margin-right: 4%;
         text-align: left;
+        vertical-align: top;
         &:last-child {
             margin-right: 0;
         }
@@ -69,7 +70,7 @@
         & a {
             @include rob-reg(20px, 22px);
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 14px;
             color: #3869b8;
         }
     }

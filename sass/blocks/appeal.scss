@@ -18,6 +18,7 @@
     }
     @media #{$mobile} {
         text-align: center;
+        height: 820px;
     }
     &::before {
         position: absolute;
@@ -46,6 +47,7 @@
         }
     }
     &__icon-2 {
+        margin-right: 19%;
         &::after {
             position: absolute;
             content: '';
@@ -59,6 +61,7 @@
         }
     }
     &__icon-3 {
+        margin-right: 18.5%;
         &::after {
             position: absolute;
             content: '';
@@ -87,11 +90,11 @@
     &__form {
         position: relative;
         display: inline-block;
-        margin-top: 60px;
-        margin-bottom: 40px;
-        margin-right: 5%;
-        margin-left: 10%;
-        padding: 20px 20px 0;
+        margin-top: 68px;
+        margin-bottom: 37px;
+        margin-right: 6.5%;
+        margin-left: 12%;
+        padding: 16px 18px 0;
         width: 50%;
         text-align: center;
         background: #fff;
@@ -116,7 +119,10 @@
             padding: 20px 10px 0;
             width: 90%;
             text-align: center;
-            
+        }
+        
+        @media #{$tablet} {
+            margin-right: 4.5%;
         }
         &::before {
             position: absolute;
@@ -202,20 +208,21 @@
     }
     &__descr {
         display: inline-block;
-        margin-top: 170px;
-        width: 34%;
+        margin-top: 149px;
+        width: 31%;
         vertical-align: top;
         @media #{$mobile} {
             margin-top: 0;
             width: auto;
         }
         & h3 {
-            @include rob-light(30px, 32px);
+            @include rob-light(30px, 35px);
+            margin-bottom: 18px;
             color: #333333;
         }
         & p {
         @include rob-reg(14px, 18px);
-        width: 90%;
+        width: 100%;
         color: #8c91a0;
         @media #{$mobile} {
             padding: 10px;
@@ -230,7 +237,7 @@
     }
     &__list {
         position: relative;
-        margin-left: 3%;
+        margin-left: 6%;
 //        height: 80px;
         @media #{$mobile} {
             margin-left: 0;

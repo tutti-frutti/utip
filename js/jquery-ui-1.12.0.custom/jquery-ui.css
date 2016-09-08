@@ -94,12 +94,13 @@
 	display: block;
 	cursor: pointer;
 	position: relative;
-	margin: 2px 0 0 0;
-	padding: .5em .5em .5em .7em;
-	font-size: 100%;
+	margin: 14px 0 0 0;
+/*	padding: .5em .5em .5em .7em;*/
+	font-size: 90%;
 }
 .ui-accordion .ui-accordion-content {
-	padding: 1em 2.2em;
+/*	padding: 1em 2.2em;*/
+    padding-left: 10px;
 	border-top: 0;
 	overflow: auto;
 }

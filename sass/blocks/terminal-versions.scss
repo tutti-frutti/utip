@@ -1,6 +1,6 @@
 .terminal-versions {
     position: relative;
-    height: 750px;
+//    height: 750px;
     text-align: center;
     background: #302c38;
     &::before {
@@ -25,10 +25,10 @@
         display: block;
     }   
     & label {
-        @include rob-light(18px, 18px);
+        @include rob-light(20px, 20px);
         display: inline-block;
-        padding: 40px 0;
-        margin: 0 9%;
+        padding: 48px 0 30px;
+        margin: 0 5.2%;
         cursor: pointer;
         color: #c3c2c6;
         background: #302c38;
@@ -36,11 +36,11 @@
     &__tabs {
         position: relative;
         & article {
-            position: absolute;
+//            position: absolute;
             top: 0;
             left: 0;
             display: none;
-            padding: 70px 40px;
+//            padding: 70px 40px;
             width: 100%;
             @media #{$mobile} {
                 padding-top: 20px;
@@ -49,10 +49,10 @@
     }
     &__pc {
         & p {
-            @include rob-reg(14px, 18px);
-            margin: 0 auto;
-            margin-bottom: 30px;
-            width: 48%;
+            @include rob-reg(14px, 20px);
+            margin: 58px auto 30px;
+            width: 38%;
+            text-align: center;
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
@@ -60,7 +60,9 @@
         }
     }
     &__pc-img {
-        margin-top: 54px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 62px;
     }
     &__mobile-img {
         display: block;
@@ -68,14 +70,15 @@
         margin-top: 37px;
     }
     &__web-img {
+        display: block;
+        margin: 0 auto;
         margin-top: 80px;
     }
     &__mobile {
         & p {
             @include rob-reg(14px, 18px);
-            margin: 0 auto;
-            margin-bottom: 30px;
-            width: 48%;
+            margin: 60px auto 30px;
+            width: 38%;
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
@@ -85,8 +88,7 @@
     &__web {
         & p {
             @include rob-reg(14px, 18px);
-            margin: 0 auto;
-            margin-bottom: 30px;
+            margin: 60px auto 30px;
             width: 48%;
             color: #9289a3;
             @media #{$mobile} {

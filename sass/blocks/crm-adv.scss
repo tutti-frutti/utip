@@ -11,7 +11,7 @@
     &__item {
         display: inline-block;
         position: relative;
-        padding: 90px 25px 0;
+        padding: 90px 12px 0;
         width: 25%;
         height: 320px;
         vertical-align: top;
@@ -31,7 +31,7 @@
             color: #333333;
         }
         & p {
-            @include rob-reg(14px, 18px);
+            @include rob-reg(14px, 21px);
             color: #8c91a0;
         }
         &--ic-1 {

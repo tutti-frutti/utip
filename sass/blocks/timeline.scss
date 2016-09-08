@@ -1,7 +1,7 @@
 .timeline-head {
     & h2 {
         @include rob-light(30px, 30px);
-        margin: 110px 0 35px;
+        margin: 105px 0 35px;
         color: #333;
         @media #{$mobile} {
             margin: 20px 0 0;
@@ -39,7 +39,7 @@
         }
     }
     &--mt {
-        margin-top: -50px;
+        margin-top: -35px;
     }
     &--mt-second {
         margin-top: -150px;
@@ -48,13 +48,13 @@
         }
     }
     &--mt-third {
-        margin-top: -150px;
+        margin-top: -177px;
          @media #{$mobile} {
             margin-top: -40px;
         }
     }
     &--mt-fourth {
-        margin-top: -50px;
+        margin-top: -65px;
     }
     & > h3 {
         @include rob-light(16px, 16px);
@@ -63,7 +63,8 @@
     &__item {
         @include rob-reg(14px, 18px);
         position: relative;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        margin-left: -3px;
         color: #8c91a0;
         &--dot-right {
             position: relative;
