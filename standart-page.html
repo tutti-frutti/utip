@@ -19,36 +19,6 @@
 </head>
 
 <body>
-
-    <!--Header & nav-->
-
-    <header class="header">
-        <div class="center-wide">
-            <div class="header__top">
-                <div class="header__logo">
-                    <a href="index.html"><img src="/img/utip-logo.png" alt="UTIP"></a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list" id="menu">
-                       <li class="nav__item"><a href="#" class="nav__link open-menu"><img src="/img/button-menu-ic.png" alt="Открыть меню"></a></li>
-                        <li class="nav__item"><a href="platform.html" class="nav__link">Products &amp; Services</a></li>
-                        <li class="nav__item"><a href="crm.html" class="nav__link">Technologies</a></li>
-                        <li class="nav__item"><a href="company-create.html" class="nav__link">Company</a></li>
-                        <li class="nav__item"><a href="binary-options.html" class="nav__link">Contacts</a></li>
-                        <li class="nav__item nav__lang"><a href="#" class="nav__link">EN
-                    <ul class="nav__sub">
-                        <li class="nav__sub-item"><a href="" class="nav__sub-link">English</a></li>
-                        <li class="nav__sub-item"><a href="" class="nav__sub-link">Русский</a></li>
-                    </ul>
-                    </a>
-                    </li>
-                    </ul>
-                </nav>
-            </div>
-            <h2 class="header__slogan"><span class="header__slogan header__slogan--bigger"><a href="standart-page.html">A wide range</a></span><br> of solutions for brokers</h2>
-        </div>
-    </header>
-
     <!--Main content-->
 
     <main>
@@ -112,18 +82,20 @@
                     <a href="index.html"><img src="/img/utip-logo.png" alt="UTIP"></a>
                 </div>
                 <nav class="nav">
-                    <ul class="nav__list" id="menu">
+                    <ul class="nav__list">
                        <li class="nav__item"><a href="#" class="nav__link open-menu"><img src="/img/button-menu-ic.png" alt="Открыть меню"></a></li>
                         <li class="nav__item"><a href="platform.html" class="nav__link">Products &amp; Services</a></li>
                         <li class="nav__item"><a href="crm.html" class="nav__link  nav__link--active">Technologies</a></li>
                         <li class="nav__item"><a href="company-create.html" class="nav__link">Company</a></li>
                         <li class="nav__item"><a href="binary-options.html" class="nav__link">Contacts</a></li>
-                        <li class="nav__item nav__lang"><a href="#" class="nav__link">EN
-                    <ul class="nav__sub">
-                        <li class="nav__sub-item"><a href="" class="nav__sub-link">English</a></li>
-                        <li class="nav__sub-item"><a href="" class="nav__sub-link">Русский</a></li>
+                        <li class="nav__item nav__lang">
+                        
+                        <a href="#" class="nav__link lang_show">EN</a>
+                    <ul class="nav__sub  nav__sub--indent">
+                        <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color"data-lang="EN">English</a></li>
+                        <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color"data-lang="RU">Русский</a></li>
                     </ul>
-                    </a>
+                    
                     </li>
                     </ul>
                 </nav>
@@ -134,6 +106,27 @@
 
         <div class="standart-page">
             <div class="center">
+               <!--Navigation on right side-->
+
+                <div class="standart-page__right">
+                    <ul class="nav-aside">
+                        <li>
+                            <div class="head-3">
+                            <h3>Навигация</h3>
+                            </div>
+                            </li>
+                        <li><a href="#headlines">Заголовки</a></li>
+                        <li><a href="#text-form">Форматирование текста</a></li>
+                        <li><a href="#text-decor">Оформление текста</a></li>
+                        <li><a href="#elem">Элементы</a></li>
+                        <li><a href="#st-form">Форма</a></li>
+                        <li><a href="#colors">Палитра</a></li>
+                    </ul>
+
+                    <div class="aside"></div>
+                    <div class="aside"></div>
+                </div>
+                
                 <div class="standart-page__left">
                     <!--Headlines-->
                     <div class="headlines" id="headlines">
@@ -320,35 +313,45 @@
 
 
                     <div class="text-decoration" id="text-decor">
+                       <div class="head-2  head-2--indent-2">
                         <h2>Оформление текста</h2>
+                        </div>
                         
-                        <div class="standart">
+                        <div class="standart standart--mt-10">
                         <p>Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и <em>курсивное</em> начертания.</p>
                         </div>
 
                         <!--Comment-->
 
+                        <div class="head-3 head-3--indent-2">
                         <h3>Комментарий</h3>
+                        </div>
                         
-                        <div class="comment">
+                        <div class="comment  comment--indent">
                         <p>Элемент «Комментарий» применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</p>
                         </div>
 
                         <!--Important-->
 
+                        <div class="head-3  head-3--indent-3">
                         <h3>Важно</h3>
+                        </div>
                         
-                        <div class="important">
+                        <div class="important  important--indent">
                         <p>Элемент «Важно», который используется для выделения особо важной информации. И еще немного текста, чтобы получилось несколько строк для наглядности</p>
                         </div>
 
                         <!--Address-->
 
+                        <div class="head-3  head-3--indent-4">
                         <h3>Адреса</h3>
-                        <ul class="address-menu">
+                    </div>
+                        <ul class="address-menu  address-menu--indent">
                             <li>
                                 <ul class="sub-address">
+                                   <div class="head-5">
                                     <h5>Центральный офис в Москве</h5>
+                                    </div>
                                     <li>Студия Артемия Лебедева</li>
                                     <li>Газетный переулок, дом 5</li>
                                     <li>Москва, 125009</li>
@@ -356,9 +359,11 @@
                                     <li><a href="#">Как добраться</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="address-menu__kiev">
                                 <ul class="sub-address">
+                                   <div class="head-5">
                                     <h5>Киевский офис</h5>
+                                    </div>
                                     <li>Студия Артемия Лебедева</li>
                                     <li>ул. Антоновича (Горького),</li>
                                     <li>26/26, кв. 33</li>
@@ -367,9 +372,11 @@
                                     <li><a href="#">Как добраться</a></li>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="address-menu__ny">
                                 <ul class="sub-address">
+                                   <div class="head-5">
                                     <h5>Нью-Йорский офис</h5>
+                                    </div>
                                     <li>Art. Lebedev Studio</li>
                                     <li>125 Maiden Lane</li>
                                     <li>Suite 15D</li>
@@ -379,13 +386,14 @@
                             </li>
                         </ul>
 
-                        <div class="standart">
+                        <div class="standart  standart--mt-11">
                         <p>Также надо следить за форматом телефонных номеров. Он должен быть единым для всего сайта, при этом следует избегать неоправданного использования скобок — в них помещается часть номера, которую в определенных ситуациях набирать необязательно. Кстати, код 495 в Москве в ближайшее время станет обязательным для набора. Правильно:8 495 926-18-00 или +7 495 926-18-00. Неправильно:+7 (495) 926-18-00 или 8 (495) 926-18-00</p>
                         </div>
 
+                        <div class="head-3  head-3--indent-5">
                         <h3>Цитаты</h3>
-                        
-                        <div class="standart">
+                    </div>
+                        <div class="standart  standart--mt-12">
                         <p>Используйте элемент «Комментарий» внутри цитаты для выделения информации об источнике.</p>
                         </div>
 
@@ -395,30 +403,15 @@
                         </div>
                     </div>
                 </div>
-                
-                <!--Navigation on right side-->
-
-                <div class="standart-page__right">
-                    <ul class="nav-aside">
-                        <li>
-                            <h3>Навигация</h3></li>
-                        <li><a href="#headlines">Заголовки</a></li>
-                        <li><a href="#text-form">Форматирование текста</a></li>
-                        <li><a href="#text-decor">Оформление текста</a></li>
-                        <li><a href="#elem">Элементы</a></li>
-                        <li><a href="#st-form">Форма</a></li>
-                        <li><a href="#colors">Палитра</a></li>
-                    </ul>
-
-                    <div class="aside"></div>
-                    <div class="aside"></div>
-                </div>
-
 
                 <div class="elements" id="elem">
 
-                    <h3>Элементы</h3>
-                    <h4>Картинки</h4>
+                    <div class="head-2">
+                    <h2>Элементы</h2>
+                    </div>
+                    <div class="head-3  head-3--indent-6">
+                    <h3>Картинки</h3>
+                    </div>
 
                     <div class="img-sign  img-sign--big">
                         <img src="img/img-960x400.jpg" alt="big img">
@@ -435,7 +428,9 @@
                         <span class="sign">Подпись небольшого изображения</span>
                     </div>
 
+                    <div class="head-3  head-3--indent-7">
                     <h3>Таблицы</h3>
+                    </div>
 
                     <div class="table-wrapper">
                         <table class="table">
@@ -577,9 +572,11 @@
 
                     <!--TABs-->
 
-                    <h4>Вкладки</h4>
+                    <div class="head-3 head-3--indent-8">
+                    <h3>Вкладки</h3>
+                    </div>
                     <div class="center">
-                        <div class="tabs">
+                        <div class="tabs  tabs--indent">
                             <input type="radio" name="tab" id="tab-1" checked>
                             <label for="tab-1">Home</label>
                             <input type="radio" name="tab" id="tab-2">
@@ -602,7 +599,9 @@
 
                         <!--Pagination-->
 
-                        <h4>Пагинация</h4>
+                        <div class="head-3  head-3--indent-10">
+                        <h3>Пагинация</h3>
+                        </div>
                         <div class="pagination">
                             <ul class="pag">
                                 <li><a href="#">Вперед</a></li>
@@ -619,20 +618,24 @@
                     <!--Form standart page-->
 
                     <div class="form" id="st-form">
-                        <h3>Формы</h3>
-                        <h4>Пример простой формы</h4>
+                       <div class="head-2  head-2--indent-3">
+                        <h2>Формы</h2>
+                        </div>
+                        <div class="head-3  head-3--indent-9">
+                        <h3>Пример простой формы</h3>
+                        </div>
                         <!--styles at appeal.scss-->
                         <div class="appeal appeal--bg-none">
                             <div class="center">
                                 <div class="appeal__form  appeal__form--decor-st-page">
                                     <form class="" action="">
-                                        <div class="appeal__inputs-wrapper">
+                                        <div class="appeal__inputs-wrapper  appeal__inputs-wrapper--st-page">
                                             <input type="text" name="" id="" placeholder="Поле ввода">
                                             <input type="tel" name="" id="" placeholder="Поле ввода">
-                                            <input type="email" name="" id="" placeholder="Поле ввода" disabled>
+                                            <input type="email" name="" id="" placeholder="Поле ввода">
                                         </div>
                                         <textarea name="" id="" cols="" rows="" placeholder="Текстовое поле"></textarea>
-                                        <div class="wrap-check">
+                                        <div class="wrap-check  wrap-check--indent">
                             <input type="checkbox" id="page-form">
                             <label for="page-form"></label>
                             </div>
@@ -645,7 +648,9 @@
                             </div>
                         </div>
 
+                        <div class="head-4">
                         <h4>Поле ввода</h4>
+                        </div>
                         <!--styles at appeal.scss-->
                         <div class="appeal appeal--bg-none-2">
                             <div class="center">
@@ -657,8 +662,8 @@
                                                 <label for="stand">Обычно</label>
                                                 <input class="focus" type="text" name="" id="focus" placeholder="Набранный текст">
                                                 <label for="focus">В фокусе</label>
-                                                <input class="mistake" type="text" name="" id="focus" placeholder="Поле ввода">
-                                                <label for="focus">С ошибкой</label>
+                                                <input class="mistake" type="text" name="" id="mistake" placeholder="Поле ввода">
+                                                <label for="mistake">С ошибкой</label>
                                                 <input type="text" name="" id="dis" placeholder="Поле ввода" disabled>
                                                 <label for="dis">Неактивно</label>
                                             </div>
@@ -671,7 +676,9 @@
                         <!--Buttons-->
                         <!--gray color-->
 
+                        <div class="head-3">
                         <h3>Кнопки</h3>
+                        </div>
                         <div class="btn-kit-1">
                             <div class="btn-kit">
                                 <a href="#" class="btn btn-cansel  btn-cansel--width-st-page">Кнопка</a>
@@ -739,7 +746,9 @@
                             </div>
                         </div>
 
+                        <div class="head-3">
                         <h3>Выпадающий список</h3>
+                        </div>
 
                         <div class="all-menu">
                             <div class="menu-wrapper-top">
@@ -785,10 +794,14 @@
 
                     <!--checkboxes and radio-->
 
+                    <div class="head-3">
                     <h3>Переключатели</h3>
+                    </div>
 
                     <div class="checkboxes">
+                           <div class="head-4">
                             <h4>Чекбоксы</h4>
+                        </div>
                             
                             <div class="wrap-check">
                             <input type="checkbox" id="act-1" checked>
@@ -812,7 +825,9 @@
                     </div>
 
                     <div class="radio">
+                      <div class="head-4">
                        <h4>Переключатели</h4>
+                        </div>
                         
                         <div class="wrap-radio">
                         <input type="radio" name="test" id="rs-1" checked>
@@ -836,7 +851,9 @@
                     </div>
                 </div> <!--Elements end-->
                 
+                <div class="head-3">
                 <h3>Палитра</h3>
+                </div>
                 
                 <div class="palette" id="colors">
                     <img src="/img/palette.jpg" alt="Палитра">

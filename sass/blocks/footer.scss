@@ -26,6 +26,9 @@
         &:last-child {
             margin-right: 0;
         }
+        @media #{$tablet} {
+            margin-right: 4px;
+        }
     }
     &__solutions {
         display: inline-block;
@@ -65,7 +68,9 @@
         margin-top: -14px;
         width: 144px;
         vertical-align: top;
-        
+        @media #{$tablet} {
+            margin-top: 0;
+        }
     }
     &__item {
         @include rob-reg(11px, 19px);
@@ -80,11 +85,17 @@
         & a {
             @include rob-reg(12px, 19px);
             color: #3869b8;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     &__cont {
         @include rob-reg(12px, 19px);
         color: #8c91a0;
+        @media #{$mobile} {
+            display: block;
+        }
     }
     &__title {
         @include rob-reg(16px, 16px);

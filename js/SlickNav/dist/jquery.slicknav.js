@@ -151,7 +151,7 @@
                     if (!$(this).is('ul')) {
                         nodes.push(this);
                     } else {
-                        return false;
+                        //return false;
                     }
 
                     if($(this).is("a")) {

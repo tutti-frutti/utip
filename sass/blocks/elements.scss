@@ -8,26 +8,36 @@
     padding-bottom: 38px;
 }
 
+.text-decoration {
+    padding-bottom: 62px;
+}
+
 
 .standart-page__left {
     display: inline-block;
     margin-top: 100px;
     padding-right: 35px;
-    
     width: 68.4%;
-//    font-size: 0;
     vertical-align: top;
+    @media #{$mobile} {
+        padding: 0 5px;
+        width: auto;
+    }
 }
 
 // Right column, navigation
 
 .standart-page__right {
-    display: inline-block;
-    margin-top: 100px;
+    float: right;
+    margin-top: 67px;
     width: 29%;
     font-size: 0;
-    height: 100px;
+//    height: 100px;
     vertical-align: top;
+    @media #{$mobile} {
+        display: block;
+        width: auto;
+    }
 }
 
 .aside {
@@ -38,15 +48,16 @@
 }
 
 .nav-aside {
+    margin-bottom: 50px;
     border-left: 1px solid #e4e5e8;
     & h3 {
-        padding-left: 40px;
+        padding-left: 36px;
     }
     & a {
         @include rob-reg(14px, 16px);
         display: block;
-        margin-bottom: 20px;
-        padding-left: 40px;
+        margin-bottom: 24px;
+        padding-left: 37px;
         color: #3869b8;  
         &:hover {
             text-decoration: underline;
@@ -101,22 +112,43 @@
     &--mt-9 {
         margin-top: -11px;
     }
+    &--mt-10 {
+        margin-top: -13px;
+    }
+    &--mt-11 {
+        margin-top: 18px;
+    }
+    &--mt-12 {
+        margin-top: -9px;
+    }
     p {
     @include rob-reg(14px, 24px);
     color: #333333;
 }
 } 
 
-.comment p {
-    @include rob-italic(14px, 14px);
+.comment {
+    &--indent {
+        margin-top: -8px;
+    }
+ p {
+    @include rob-italic(14px, 24px);
     color: #8c91a0;
 }
+}
 
-.important p {
-    @include rob-italic(14px, 20px);
-    padding: 20px;
+.important {
+    &--indent {
+        margin-top: -9px;
+        margin-left: -3px;
+        max-width: 620px;
+    }
+ p {
+    @include rob-italic(14px, 24px);
+    padding: 12px 23px;
     color: #d45884;
     background: #fceef3;
+}
 }
 
 .head-1 {
@@ -131,6 +163,14 @@
     &--indent {
         margin-top: 30px;
     }
+    &--indent-2 {
+        margin-top: 34px;
+        margin-left: -2px;
+    }
+    &--indent-3 {
+        margin-top: 74px;
+        margin-left: -2px;
+    }
     margin-top: 32px;
     h2 {
     @include rob-light(30px, 36px);
@@ -140,7 +180,7 @@
 
 .head-3 {
     &--indent {
-        margin-top: -8px;
+        margin-top: -10px;
     }
     &--indent-top {
         margin-top: -11px;
@@ -149,6 +189,39 @@
     &--indent-top-1 {
         margin-top: 42px;
         margin-left: -3px;
+    }
+    &--indent-2 {
+        margin-top: 31px;
+        margin-left: -3px;
+    }
+    &--indent-3 {
+        margin-top: 31px;
+        margin-left: -3px;
+    }
+    &--indent-4 {
+        margin-top: 35px;
+        margin-left: -1px;
+    }
+    &--indent-5 {
+        margin-top: 33px;
+        margin-left: -2px;
+    }
+    &--indent-6 {
+        margin-top: -15px;
+        margin-left: -2px;
+    }
+    &--indent-7 {
+        margin-top: 35px;
+        margin-left: -2px;
+    }
+    &--indent-8 {
+        margin-top: 37px;
+    }
+    &--indent-9 {
+        margin-top: -13px;
+    }
+    &--indent-10 {
+        margin-top: 40px;
     }
     margin-top: 33px;
 	h3 {
@@ -177,6 +250,9 @@
         margin-top: 32px;
     }
     &--indent-top-1 {
+        margin-top: 36px;
+    }
+    &--indent-top-2 {
         margin-top: 36px;
     }
     margin-top: 31px;
@@ -274,6 +350,15 @@ sup a {
     color: #8c91a0;
 }
 
+.address-menu {
+    &--indent {
+        margin-top: -45px;
+    }
+    &__kiev {
+        margin-left: 10px;
+    }
+}
+
 .address-menu > li {
     @include rob-reg(14px, 18px);
     display: inline-block;
@@ -288,15 +373,19 @@ sup a {
 
 .sub-address li {
     @include rob-reg(14px, 18px);
-    margin: 5px 0;
+    margin: 6px 0;
     list-style: none;
     color: #8c91a0;
+    &:first-of-type {
+        margin-top: -12px;
+    }
 }
 
 blockquote {
-    @include rob-light(16px, 20px);
+    @include rob-light(16px, 26px);
     position: relative;
-    padding: 20px;
+    margin: 13px 0;
+    padding: 13px 20px;
     color: #8c91a0;
     background: #f4f4f6;
     &::before {
@@ -312,7 +401,7 @@ blockquote {
 
 cite {
     @include rob-italic(14px, 18px);
-    padding: 0 40px;
+    padding: 6px 0;
     float: right;
     color: #8c91a0;
 }
@@ -322,9 +411,11 @@ cite {
         max-width: 960px;
     }
     &--med {
+        margin-top: 19px;
         max-width: 630px;
     }
     &--small {
+        margin-top: 21px;
         max-width: 300px;
     }
 }
@@ -332,7 +423,7 @@ cite {
 .sign {
     @include rob-italic(14px, 18px);
     display: block;
-    margin: 5px 0;
+    margin: 11px 0;
     text-align: right;
     color: #8c91a0;
 }
@@ -351,7 +442,7 @@ cite {
         color: #8c91a0;
     }
     & tr {
-        @include rob-reg(14px, 18px);
+        @include rob-reg(14px, 24px);
         height: 40px;
         border-bottom: 1px solid #e4e5e8;
         &:nth-child(odd) {
@@ -364,18 +455,20 @@ cite {
     }
     & td {
         &:nth-child(1) {
-            width: 10%;
+            width: 8%;
             text-align: center;
         }
         &:nth-child(2) {
-            padding-left: 10px;
+            padding-left: 30px;
             width: 20%;
         }
         &:nth-child(3) {
             width: 20%;
+            padding-left: 24px;
         }
          &:nth-child(4) {
             width: 15%;
+             padding-left: 16px;
         }
          &:nth-child(5) {
             margin-right: 3%;
@@ -390,12 +483,17 @@ cite {
 }
 
 .table-short {
+    margin-top: 38px;
     & td {
         &:nth-child(3) {
             padding: 5px 0;
             width: 65%;
+            @media #{$mobile} {
+        padding-left: 15px;
+    }
         }
     }
+    
 }
 
 // tabs styles
@@ -403,7 +501,10 @@ cite {
 .tabs {
     position: relative;
     max-width: 630px;
-    height: 100px;
+//    height: 100px;
+    &--indent {
+        margin-top: 36px;
+    }
     &::before {
         position: absolute;
         content: '';
@@ -430,8 +531,9 @@ cite {
  label {
     @include rob-light(16px, 20px);
     display: inline-block;
-    padding: 0 15px 15px;
+    padding: 0 15px 15px 15px;
     cursor: pointer;
+     color: #8c91a0;
      &:hover {
          color: #3869b8;
      }
@@ -454,6 +556,7 @@ cite {
 // pagination
 
 .pagination {
+    margin-top: 40px;
     padding-bottom: 18px;
     max-width: 630px;
     text-align: center;
@@ -462,7 +565,7 @@ cite {
     display: inline-block;
     & a {
         @include rob-light(16px, 16px);
-        padding: 0 10px 15px;
+        padding: 0 10px 15px 15px;
         color: #8c91a0;
         &:hover {
             color: #5c84c5;
@@ -605,8 +708,12 @@ cite {
 }
 
 .wrap-check {
-    width: 110px;
-    margin-bottom: 10px;
+    width: 130px;
+    margin: 10px 0;
+    padding-left: 14px;
+    &--indent {
+        margin-left: -14px;
+    }
 	label {
         @include rob-reg(14px, 14px);
         position: relative;

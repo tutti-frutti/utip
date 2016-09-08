@@ -7,7 +7,7 @@
     &--bg-none { // for standart page
         position: static;
         max-width: 450px;
-        height: 370px;
+        height: 390px;
         background: none; 
     }
     &--bg-none-2 { // for standart page
@@ -23,7 +23,7 @@
     &::before {
         position: absolute;
             content: '';
-            right: 165px;
+            right: 316px;
             bottom: 106px;
             width: 10px;
             height: 19px;
@@ -186,7 +186,11 @@
         }
     }
     &__inputs-wrapper {
+        
         text-align: left;
+        &--st-page {
+            margin-top: -5px;
+        }
         @media #{$mobile} {
             text-align: center;
         }

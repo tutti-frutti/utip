@@ -23,7 +23,9 @@ $(document).ready(function(){
         $(".nav__sub").slideUp();
         e.preventDefault();
     });
-    
+    $('.open-menu').click(function(){
+        console.log(true)
+    })
 });
 
 $(function(){

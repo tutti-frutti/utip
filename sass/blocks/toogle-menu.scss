@@ -8,16 +8,29 @@
     line-height: 900px;
     background: url("../img/menu-bg.jpg") center center no-repeat;
     background-size: cover;
+    @media #{$mobile} {
+        padding: 10px;
+        text-align: center;
+    }
     &__close {
         position: absolute;
         top: -380px;
         right: 47px;
+        img {
+            &:hover {
+            opacity: .65;
+        }
+        
+        }
     }
     &__wrapper {
         display: inline-block;
         width: 100%;
         line-height: normal;
         vertical-align: middle;
+        @media #{$tablet} {
+            padding: 25px;
+        }
     }
     &__product {
         @include rob-light(20px, 20px);

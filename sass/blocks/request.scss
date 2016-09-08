@@ -15,16 +15,27 @@
         @include rob-light(50px, 50px);
         margin: 0 0 15px;
         color: #fff;
+        @media #{$mobile} {
+            font-size: 40px;
+        }
     }
     & h3 {
         @include rob-light(20px, 29px);
         margin: 10px 0 13px;
         color: #fff;
+        @media #{$mobile} {
+            font-size: 18px;
+            line-height: 21px;
+        }
     }
     & p {
         @include rob-light(14px, 21px);
         margin-bottom: 20px;
         color: #fff;
+        @media #{$mobile} {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
     & .btn-wrapper {
         margin-left: 0;

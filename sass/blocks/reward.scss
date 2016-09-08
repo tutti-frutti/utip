@@ -3,6 +3,13 @@
     line-height: 280px;
     text-align: center;
     background: #f4f4f6;
+    @media #{$mobile} {
+        line-height: normal;
+}
+    @media #{$tablet} {
+        line-height: normal;
+        padding-top: 60px;
+    }
     &__prize {
         display: inline-block;
     }
@@ -14,22 +21,16 @@
     &__item {
         @include rob-reg(20px, 20px);
         display: inline-block;
-//        margin: 0 10px;
-//        padding-top: 10px;
         text-align: left;
-//        width: 168px;
-//        height: 80px;
         border-left: 1px solid #e4e5e8;
         vertical-align: middle;
-//        &:first-child {
-//            border: 0;
-//        }
         @media #{$mobile} {
             display: block;
             margin: 0 auto;
             text-align: center;
             line-height: none;
             vertical-align: top;
+            border: 0;
         }
         &:last-child {
             padding-right: 0;
@@ -56,12 +57,19 @@
             @media #{$mobile} {
                 margin: 0 auto;
             }
+            @media #{$tablet} {
+                width: 260px;
+                margin: 10px;
+            }
         }
         &--border {
             border-right: 1px solid #e4e5e8;
             border-left: 0;
             @media #{$mobile} {
                 border: none;
+            }
+            @media #{$tablet} {
+                border: 0;
             }
         }
     }
@@ -85,6 +93,10 @@
         max-width: 100px;
         max-height: 160px;
         vertical-align: middle;
+        @media #{$mobile} {
+            display: block;
+            margin: 20px auto;
+        }
     }
     &__descr {
         display: inline-block;
@@ -95,6 +107,10 @@
         text-align: left;
         &--indent {
             margin-right: 27px;
+        }
+        @media #{$mobile} {
+            text-align: center;
+            margin-right: 0;
         }
     }
     & h4 {
