@@ -6,6 +6,7 @@
     display: none;
     height: 900px;
     line-height: 900px;
+    text-align: center;
     background: url("../img/menu-bg.jpg") center center no-repeat;
     background-size: cover;
     @media #{$mobile} {
@@ -25,11 +26,13 @@
     }
     &__wrapper {
         display: inline-block;
+        max-width: 600px;
         width: 100%;
+        text-align: left;
         line-height: normal;
         vertical-align: middle;
         @media #{$tablet} {
-            padding: 25px;
+            padding: 15px;
         }
     }
     &__product {
