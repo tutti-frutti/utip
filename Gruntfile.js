@@ -6,6 +6,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.initConfig({
     sass: {
@@ -29,6 +30,10 @@ module.exports = function(grunt) {
           dest: "build"
         }]
       }
+    },
+      
+      сlean: {
+      build: ["build"]
     },
       
     postcss: {
@@ -78,4 +83,13 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask("build", [
+    "clean",
+    "copy",
+    "sass",
+    "postcss",
+    "csso",
+    "imagemin"
+  ]);
 };
+
