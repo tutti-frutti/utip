@@ -694,6 +694,7 @@ cite {
     }
     & p {
         @include rob-reg(14px, 24px);
+        padding: 10px 0;
         color: #8c91a0;
     }
 }

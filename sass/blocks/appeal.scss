@@ -208,6 +208,10 @@
             background: #fceef3;
             color: red;
             outline: none;
+            &:focus {
+                border: 1px solid #f7d5e1;
+                color: red;
+            }
         }
     }
     &__descr {
@@ -335,9 +339,5 @@
                 z-index: 1;
         }
     }
-
-        
-    
-    
-}
+  }
 }

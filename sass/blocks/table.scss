@@ -1,0 +1,92 @@
+.d-table-wrapper {
+    max-width: 630px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.d-table {
+    @include rob-reg(14px, 40px);
+    display: table;
+    &__head {
+        color: #8c91a0;
+    }
+    @media #{$mobile-sm} {
+        width: 100%;
+    }
+}
+
+.row {
+    display: table-row;
+    border-bottom: 1px solid #e4e5e8;
+    &:nth-child(odd) {
+        background: #f9f9fb;
+    }
+    
+    &:hover {
+        background: #eff3fb;
+    }
+}
+
+.cell {
+    display: table-cell;
+    height: 40px;
+    @media #{$mobile-sm} {
+        height: 30px;
+    }
+    
+    &:nth-child(1) {
+        width: 10%;
+        text-align: center;
+            @media #{$mobile-sm} {
+            display: block;
+            width: 100%;
+            text-align: center;
+    }
+    }
+    &:nth-child(2) {
+        width: 18%;
+        padding-left: 2%;
+        @media #{$mobile-sm} {
+            display: block;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+}
+    }
+    &:nth-child(3) {
+        width: 18%;
+        padding-left: 2%;
+        @media #{$mobile-sm} {
+            display: block;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+}
+    }
+    &:nth-child(4) {
+        width: 18%;
+        padding-left: 2%;
+        @media #{$mobile-sm} {
+            display: block;
+            padding-left: 0;
+            width: 100%;
+            text-align: center;
+}
+    }
+    &:nth-child(5) {
+        text-align: center;
+        @media #{$mobile-sm} {
+            display: block;
+            width: 100%;
+            text-align: center;
+}
+        }
+    &:nth-child(6) {
+        text-align: center;
+        @media #{$mobile-sm} {
+            display: block;
+            width: 100%;
+            text-align: center;
+}
+        }
+}

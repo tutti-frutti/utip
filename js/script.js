@@ -37,5 +37,13 @@ $(function(){
 $('.timeline').timelify();
 
 $( function() {
-    $( "#accordion" ).accordion();
+    $( "#accordion" ).accordion({
+        heightStyle: "content",
+//        icons: {
+//            header: ".ui-icon-triangle-1-e",
+//            headerSelected: ".ui-icon-triangle-1-e"
+//        }
+    });
   });
+
+//ui-icon-zoomout
