@@ -5,12 +5,19 @@
     vertical-align: middle;
     text-align: right;
     font-size: 0;
+    
     @media #{$mobile} {
-            width: auto;
-            text-align: center;
+           display: block;
+           width: auto;
+           margin-top: 18px; 
+           text-align: center;
+        &--bg {
+        background: gray;
+    }
+        
         }
     @media #{$tablet} {
-            width: 80%;
+            width: 88%;
         }
     &__list {
         position: relative;
@@ -51,6 +58,9 @@
         }
         &--active {
             border-bottom: 3px solid #9cb4dc;
+            @media #{$mobile} {
+                border: none;
+            }
         }
     }
     &__sub {

@@ -28,6 +28,9 @@
         @include rob-light(40px, 44px);
         margin: 95px 0 13px;
         color: #333333;
+        @media #{$mobile} {
+            padding-top: 30px;
+        }
     }
     p {
         @include rob-reg(14px, 20px);

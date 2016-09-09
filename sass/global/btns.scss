@@ -10,6 +10,14 @@
         text-align: right;
     }
 }
+.btn-kit-1,
+.btn-kit-2, 
+.menu-wrapper,
+.all-menu {
+    @media #{$mobile} {
+        text-align: center;
+    }
+}
 
 .btn {
 	@include rob-reg(16px, 40px);

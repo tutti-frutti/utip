@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-sass");
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.initConfig({
     sass: {
@@ -15,6 +16,21 @@ module.exports = function(grunt) {
       }
     },
 
+      copy: {
+      build: { 
+        files: [{ 
+          expand: true,
+          src: [
+            "fonts/**/*.{woff, woff2}",
+            "img/**",
+            "js/**",
+            "*.html"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+      
     postcss: {
       style: {
         options: {

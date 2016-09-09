@@ -4,22 +4,30 @@
     border-top: 1px solid transparent;
 	background: #f4f4f6;
     overflow: hidden;
-    &--bg-none { // for standart page
-        position: static;
-        max-width: 450px;
-        height: 390px;
-        background: none; 
-    }
-    &--bg-none-2 { // for standart page
-        position: static;
-        max-width: 450px;
-        height: 210px;
-        background: none; 
-    }
     @media #{$mobile} {
         text-align: center;
         height: 820px;
     }
+    &--bg-none { // for standart page
+        @media #{$mobile} {
+            position: static;
+            max-width: 450px;
+            height: 430px;
+            background: none; 
+    }
+        }
+        
+    &--bg-none-2 { // for standart page
+        position: static;
+        max-width: 450px;
+        height: 210px;
+        background: none;
+        @media #{$mobile} {
+        text-align: center;
+        height: 330px;
+    }
+    }
+    
     &::before {
         position: absolute;
             content: '';
@@ -30,7 +38,12 @@
             background: url("../img/form-arr-right.png") 0 0 no-repeat;
             z-index: 5;
         @media #{$mobile} {
-            z-index: -10;    
+//            z-index: -10;
+            content: none;
+        }
+        @media #{$tablet} {
+//            z-index: -10;
+            content: none;
         }
     }
     &__icon-1 {
