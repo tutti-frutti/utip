@@ -9,6 +9,9 @@
         height: 820px;
     }
     &--bg-none { // for standart page
+        position: static;
+        background: none;
+        height: 430px;
         @media #{$mobile} {
             position: static;
             max-width: 450px;
@@ -20,7 +23,7 @@
     &--bg-none-2 { // for standart page
         position: static;
         max-width: 450px;
-        height: 210px;
+        height: 280px;
         background: none;
         @media #{$mobile} {
         text-align: center;
@@ -31,7 +34,7 @@
     &::before {
         position: absolute;
             content: '';
-            right: 316px;
+            right: 160px;
             bottom: 106px;
             width: 10px;
             height: 19px;
@@ -118,7 +121,7 @@
         &--decor-st-page { // for standart page
             margin: 0;
             padding: 0;
-            width: auto;
+//            width: auto;
             text-align: left;
             box-shadow: none;
         }

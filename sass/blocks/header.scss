@@ -4,9 +4,10 @@
 //    margin-bottom: 70px;
     background: url("../img/header-bg.jpg") center center no-repeat;
     background-size: cover;
+    color: red;
     @media #{$mobile} {
 //        margin-bottom: 30px;
-        max-height: 450px;
+        max-height: 500px;
     }
     &--binare-bg {
         margin-bottom: 0;

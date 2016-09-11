@@ -6,36 +6,29 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-sass");
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.initConfig({
     sass: {
       style: {
         files: {
-          "css/style.css": "sass/style.scss"
+          "build/css/style.css": "sass/style.scss"
         }
       }
     },
+      
+    csso: {
+        style: {
+            options: {
+                report: "gzip"
+            },
+            files: {
+                "build/css/style.min.css": ["build/css/style.css"]
+            }
+        }
+    },
 
-      copy: {
-      build: { 
-        files: [{ 
-          expand: true,
-          src: [
-            "fonts/**/*.{woff, woff2}",
-            "img/**",
-            "js/**",
-            "*.html"
-          ],
-          dest: "build"
-        }]
-      }
-    },
-      
-      сlean: {
-      build: ["build"]
-    },
-      
     postcss: {
       style: {
         options: {
@@ -49,20 +42,17 @@ module.exports = function(grunt) {
             ]})
           ]
         },
-        src: "css/*.css"
+        src: "build/css/*.css"
       }
     },
 
     browserSync: {
       server: {
         bsFiles: {
-          src: [
-            "*.html",
-            "css/*.css"
-          ]
+          src: ["build/*.html", "build/css/*.css"]
         },
         options: {
-          server: ".",
+          server: "build",
           watchTask: true,
           notify: false,
           open: true,
@@ -72,24 +62,55 @@ module.exports = function(grunt) {
     },
 
     watch: {
+        html: {
+            files: ["*.html"],
+            tasks: ["copy:html"]
+        },
       style: {
         files: ["sass/**/*.{scss,sass}"],
-        tasks: ["sass", "postcss"],
+        tasks: ["sass", "postcss", "csso"],
         options: {
           spawn: false
         }
       }
-    }
+    },
+      
+    copy: {
+        build: {
+            files: [{
+                expand: true,
+                src: [
+                    "fonts/**/*.{woff, woff2}",
+                    "img/**",
+                    "js/**",
+                    "*.html"
+                ],
+                dest: "build"
+            }]
+        },
+        html: {
+            files: [{
+                expand: true,
+                src: ["*.html"],
+                dest: "build"
+            }]
+        }
+    },
+      
+      clean: {
+          build: ["build"],
+      }
+      
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
+  grunt.registerTask('default', ['copy']);
   grunt.registerTask("build", [
     "clean",
     "copy",
     "sass",
     "postcss",
     "csso",
-    "imagemin"
+//    "imagemin"
   ]);
 };
-

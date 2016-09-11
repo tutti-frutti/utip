@@ -6,6 +6,12 @@ $(document).ready(function(){
         $(this).toggleClass('active');
     });
     
+    $(".footer__link").click(function(event){
+        event.preventDefault();
+        $(".footer__sub").slideToggle(200);
+        $(this).toggleClass('active');
+    });
+    
     $(".open-menu").click(function(event){
         event.preventDefault();
         $(".toogle-menu").show("500");
