@@ -51,5 +51,3 @@ $( function() {
 //        }
     });
   });
-
-//ui-icon-zoomout
