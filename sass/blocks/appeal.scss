@@ -8,6 +8,27 @@
         text-align: center;
         height: 820px;
     }
+    &__icon {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            right: -33px;
+            bottom: 44px;
+            width: 10px;
+            height: 19px;
+            background: url("../img/form-arr-right.png") 0 0 no-repeat;
+            z-index: 5;
+        @media #{$mobile} {
+//            z-index: -10;
+            content: none;
+        }
+        @media #{$tablet} {
+//            z-index: -10;
+            content: none;
+        }
+        }
+    }
     &--bg-none { // for standart page
         position: static;
         background: none;
@@ -32,22 +53,22 @@
     }
     
     &::before {
-        position: absolute;
-            content: '';
-            right: 160px;
-            bottom: 106px;
-            width: 10px;
-            height: 19px;
-            background: url("../img/form-arr-right.png") 0 0 no-repeat;
-            z-index: 5;
-        @media #{$mobile} {
-//            z-index: -10;
-            content: none;
-        }
-        @media #{$tablet} {
-//            z-index: -10;
-            content: none;
-        }
+//        position: absolute;
+//            content: '';
+//            right: 160px;
+//            bottom: 106px;
+//            width: 10px;
+//            height: 19px;
+//            background: url("../img/form-arr-right.png") 0 0 no-repeat;
+//            z-index: 5;
+//        @media #{$mobile} {
+////            z-index: -10;
+//            content: none;
+//        }
+//        @media #{$tablet} {
+////            z-index: -10;
+//            content: none;
+//        }
     }
     &__icon-1 {
         &::after {
