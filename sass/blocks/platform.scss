@@ -34,6 +34,7 @@
     }
     p {
         @include rob-reg(14px, 20px);
+        padding: 0 10px;
         max-width: 600px;
         margin: 0 auto 20px;
         opacity: .6;
@@ -48,11 +49,12 @@
     }
     p {
         @include rob-reg(14px, 20px);
+        padding: 0 10px;
         max-width: 600px;
         margin: 0 auto 20px;
         opacity: .6;
+        color: #fff;
     }
-}
 
 .advice-create {
     h2 {
@@ -60,4 +62,5 @@
         margin-bottom: 18px;
         color: #fff;
     }
+}
 }

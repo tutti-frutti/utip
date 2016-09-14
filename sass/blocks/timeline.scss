@@ -5,6 +5,7 @@
         color: #333;
         @media #{$mobile} {
             margin: 20px 0 0;
+            padding: 0 10px;
         }
     }
 }
@@ -55,6 +56,9 @@
     }
     &--mt-fourth {
         margin-top: -65px;
+        @media #{$mobile} {
+            margin-top: -25px;
+        }
     }
     & > h3 {
         @include rob-light(16px, 16px);

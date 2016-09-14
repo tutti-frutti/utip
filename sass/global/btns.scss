@@ -131,7 +131,7 @@
 	display: inline-block;
     width: 140px;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     border: 2px solid #9fb5da;
     color: #9fb5da;
     background: transparent;
@@ -238,6 +238,7 @@
     color: #3869b8;
     @media #{$mobile} {
         margin: 30px auto 20px;
+        width: 300px;
         font-size: 14px;
     }
     &--width-st-page {

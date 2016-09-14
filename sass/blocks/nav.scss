@@ -30,11 +30,26 @@
         display: inline-block;
         padding: 0 21px;
         border-right: 1px solid #a2c2cd;
-        &:nth-child(1) {
-            border: none;
-            padding-right: 0;
+        & img {
+            margin-right: 5px;
             &:hover {
-                opacity: .65;
+                opacity: .8;
+            }
+        }
+        
+        &:nth-child(1) {
+            @include rob-reg(16px, 16px);
+//            border: none;
+            border-right: 1px solid #a2c2cd;
+            padding-right: 21px;
+            cursor: pointer;
+            color: #fff;
+            @media #{$mobile} {
+                border: none;
+                padding-right: 8px;
+            }
+            &:hover {
+                text-decoration: underline;
             }
         }
         &:last-child {

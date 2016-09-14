@@ -30,6 +30,7 @@
         background-size: cover;
     }
     &__top {
+        padding: 0 15px;
         height: 70px;
         line-height: 70px;
         @media #{$mobile} {
@@ -59,6 +60,9 @@
         margin-top: 76px;
         margin-left: 7.7%;
         width: 70%;
+        @media #{$mobile} {
+            margin-top: 110px;
+        }
         &--index-decor {
             margin-left: 27.5%;
             margin-top: 27px;

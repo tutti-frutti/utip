@@ -21,6 +21,9 @@
         margin: 0 0 16px;
         text-align: center;
         color: #fff;
+        @media #{$mobile} {
+            padding-top: 30px;
+        }
     }
     & p {
         @include rob-reg(14px, 20px);
