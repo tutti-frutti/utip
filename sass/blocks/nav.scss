@@ -84,6 +84,7 @@
         position: absolute;
         right: -1px;
         font-size: 14px;
+        box-shadow: 0px 4px 22px -6px #c5c5c5;
         &--indent {
             margin-top: 26px;
         }
@@ -96,7 +97,7 @@
             background: #7c98a4;
         }
         &--white {
-            box-shadow: 0 0 20px -3px #bebebe;
+//            box-shadow: 0 0 20px -3px #bebebe;
             background: #fff;
             color: #000;
             &:hover {

@@ -3,13 +3,22 @@
     margin-bottom: 3px;
     height: 770px;
     text-align: center;
-    background: url("../img/geography-bg.png") center no-repeat;
-    background-size: cover;
+//    &__img {
+//        height: 580px;
+//        width: auto;
+//        background: url("../img/map.svg") center center no-repeat;
+//        background-size: contain;
+//    }
+//    background-size: cover;
+    background: url("../img/map.svg") center center no-repeat;
     @media #{$mobile} {
         margin-bottom: 0;
         height: 480px;
-        background: url("../img/geography-bg.png") center no-repeat;
-        background-size: cover;
+//        background: url("../img/map.svg") center center no-repeat;
+//        background-size: contain;
+    }
+    @media #{$tablet} {
+//        background: url("../img/map.svg") 0 -100px no-repeat;
     }
     & h2 {
         @include rob-light(30px, 20px);

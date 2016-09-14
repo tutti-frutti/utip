@@ -32,6 +32,10 @@ $(document).ready(function(){
     $('.open-menu').click(function(){
         console.log(true)
     })
+    
+    $('select').selectric({
+          maxHeight: 800,
+      });
 });
 
 $(function(){
@@ -45,9 +49,11 @@ $('.timeline').timelify();
 $( function() {
     $( "#accordion" ).accordion({
         heightStyle: "content",
-//        icons: {
-//            header: ".ui-icon-triangle-1-e",
-//            headerSelected: ".ui-icon-triangle-1-e"
-//        }
     });
+    
+    $(function(){
+  
+        
+});
+    
   });

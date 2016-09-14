@@ -1,14 +1,16 @@
 .footer {
     margin-top: 19px;
+    padding: 0 20px;
 	min-height: 380px;
     line-height: 378px;
     border-bottom: 1px solid #e4e5e8;
     @media #{$mobile} {
         margin-top: 20px;
+        padding-top: 30px;
         text-align: center;
     }
     @media #{$tablet} {
-            padding: 0 5px;
+            padding: 0 20px;
         }
     &__wrapper {
         display: inline-block;
@@ -26,8 +28,12 @@
         &:last-child {
             margin-right: 0;
         }
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
         @media #{$tablet} {
-            margin-right: 4px;
+            margin-right: 4%;
+            margin-bottom: 30px;
         }
     }
     &__solutions {
@@ -36,6 +42,12 @@
         width: 144px;
         vertical-align: top;
         margin-right: 5.8%;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
+        @media #{$tablet} {
+            margin-right: 4%;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -46,6 +58,12 @@
         width: 144px;
         vertical-align: top;
         margin-right: 5.6%;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
+        @media #{$tablet} {
+            margin-right: 4%;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -56,6 +74,12 @@
         width: 144px;
         vertical-align: top;
         margin-right: 5.9%;
+        @media #{$mobile} {
+            margin-bottom: 20px;
+        }
+        @media #{$tablet} {
+            margin-right: 4%;
+        }
         &:last-child {
             margin-right: 0;
             @media #{$mobile} {
@@ -69,7 +93,8 @@
         width: 144px;
         vertical-align: top;
         @media #{$tablet} {
-            margin-top: 0;
+            margin-top: -14px;
+            margin-right: 4%;
         }
     }
     &__item {

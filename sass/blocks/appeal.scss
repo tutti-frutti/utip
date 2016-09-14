@@ -6,29 +6,30 @@
     overflow: hidden;
     @media #{$mobile} {
         text-align: center;
-        height: 820px;
+        height: 640px; // was 820px
+    }
+    @media #{$mobile-sm} {
+        height: 580px;
     }
     &__icon {
         position: relative;
         &::before {
             position: absolute;
             content: '';
-            right: -33px;
+            right: 0px;
             bottom: 44px;
             width: 10px;
             height: 19px;
             background: url("../img/form-arr-right.png") 0 0 no-repeat;
             z-index: 5;
         @media #{$mobile} {
-//            z-index: -10;
             content: none;
         }
         @media #{$tablet} {
-//            z-index: -10;
-            content: none;
-        }
+//            content: none;
         }
     }
+}
     &--bg-none { // for standart page
         position: static;
         background: none;
@@ -50,26 +51,8 @@
         text-align: center;
         height: 330px;
     }
-    }
-    
-    &::before {
-//        position: absolute;
-//            content: '';
-//            right: 160px;
-//            bottom: 106px;
-//            width: 10px;
-//            height: 19px;
-//            background: url("../img/form-arr-right.png") 0 0 no-repeat;
-//            z-index: 5;
-//        @media #{$mobile} {
-////            z-index: -10;
-//            content: none;
-//        }
-//        @media #{$tablet} {
-////            z-index: -10;
-//            content: none;
-//        }
-    }
+  }
+
     &__icon-1 {
         &::after {
             position: absolute;
@@ -142,13 +125,12 @@
         &--decor-st-page { // for standart page
             margin: 0;
             padding: 0;
-//            width: auto;
+            width: 45%;
             text-align: left;
             box-shadow: none;
         }
         & label {
             @include rob-italic(14px, 14px);
-//            padding-left: 30px;
             color: #8c91a0;
         }
         @media #{$mobile} {
@@ -171,6 +153,9 @@
             height: 20px;
             background: url("../img/form-bottom-arr.png") 0 0 no-repeat;
             z-index: 1;
+            @media #{$mobile-sm} {
+                content: none;
+            }
         }
         & input[type="text"],
           input[type="tel"],
@@ -252,11 +237,11 @@
         }
     }
     &__descr {
-        display: inline-block;
+        float: right;
         margin-top: 149px;
         width: 31%;
-        vertical-align: top;
         @media #{$mobile} {
+            float: none;
             margin-top: 0;
             width: auto;
         }
@@ -283,7 +268,9 @@
     &__list {
         position: relative;
         margin-left: 6%;
-//        height: 80px;
+        @media #{$mobile-sm} {
+            display: none;
+        }
         @media #{$mobile} {
             margin-left: 0;
         }
@@ -296,7 +283,8 @@
             height: 3px;
             border-bottom: 3px solid #7096d4;
             @media #{$mobile} {
-                border: none;
+                top: 33%;
+                right: 60%;
             }
         }
         &--consult {
@@ -310,11 +298,12 @@
             content: '';
             top: 25%;
             left: 35%;
-            width: 68%;
+            width: 65%;
             height: 3px;
             border-bottom: 3px dotted #c3c5cd;
             @media #{$mobile} {
-                border: none;
+                top: 33%;
+                left: 40%;
             }
         }
         

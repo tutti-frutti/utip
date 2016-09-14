@@ -32,7 +32,7 @@
     float: right;
     margin-top: 67px;
     width: 29%;
-    font-size: 0;
+//    font-size: 0;
 //    height: 100px;
     vertical-align: top;
     @media #{$mobile} {
@@ -107,6 +107,7 @@
     &--mt-3 {
         margin-top: -9px;
     }
+    
     &--mt-4 {
         margin-top: -10px;
     }
@@ -706,6 +707,32 @@ cite {
                 transform: rotate(180deg);
             }
         }
+    }
+}
+
+// select
+
+.select-1 {
+    width: 225px;
+    overflow: hidden;
+    border-radius: 50px;
+    & select {
+        @include rob-reg(16px, 16px);
+        padding-left: 20px;
+        width: 225px;
+//        height: 40px;
+        border-radius: 50px;
+        line-height: 40px;
+        outline: none;
+        background: #8e93a2;
+        color: #fff;
+    }
+    & option {
+        @include rob-reg(13px, 16px);
+        width: 225px !important;
+        background: #fff;
+        color: #333333;
+        border: none;
     }
 }
 
