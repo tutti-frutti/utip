@@ -226,10 +226,17 @@
     height: 90%; }
     .platform__primary-screen img {
       max-width: 100%; }
-  .platform__primary-mob {
+  .platform__primary-mobile {
     position: absolute;
+    max-width: 220px;
+    width: 100%;
     bottom: 0;
     right: 0; }
+  .platform__primary-mobile-screen {
+    position: absolute;
+    top: 21%;
+    left: 7%;
+    width: 86%; }
   .platform img {
     display: block;
     margin: 0 auto; }
@@ -1352,20 +1359,35 @@
         width: auto;
         margin-top: 30px;
         padding: 0 15px; } }
-  .terminal-versions__web p {
-    font-family: "Roboto";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    margin: 60px auto 30px;
-    width: 48%;
-    color: #9289a3; }
-    @media (max-width: 767px) {
-      .terminal-versions__web p {
-        width: auto;
-        margin-top: 30px;
-        padding: 0 15px; } }
+  .terminal-versions__web {
+    position: relative; }
+    .terminal-versions__web p {
+      font-family: "Roboto";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 18px;
+      margin: 60px auto 30px;
+      width: 48%;
+      color: #9289a3; }
+      @media (max-width: 767px) {
+        .terminal-versions__web p {
+          width: auto;
+          margin-top: 30px;
+          padding: 0 15px; } }
+  .terminal-versions__images {
+    position: relative;
+    margin: 0 auto;
+    max-width: 990px;
+    width: 100%; }
+  .terminal-versions__images-svg {
+    position: absolute;
+    top: 13%;
+    left: 2%;
+    width: 68%; }
+  .terminal-versions__images-back {
+    position: absolute;
+    top: 0; }
 
 .work-scheme h2 {
   font-family: "Roboto";

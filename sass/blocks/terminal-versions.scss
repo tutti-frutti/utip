@@ -107,6 +107,7 @@
         }
     }
     &__web {
+        position: relative;
         & p {
             @include rob-reg(14px, 18px);
             margin: 60px auto 30px;
@@ -119,4 +120,21 @@
             }
         }
     }
+    &__images {
+        position: relative;
+        margin: 0 auto;
+        max-width: 990px;
+        width: 100%;
+    }
+    &__images-svg {
+        position: absolute;
+        top: 13%;
+        left: 2%;
+        width: 68%;
+    }
+    &__images-back {
+        position: absolute;
+        top: 0;
+    }
+    
 }
