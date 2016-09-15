@@ -37,7 +37,7 @@
         @media #{$mobile} {
             position: static;
             max-width: 450px;
-            height: 430px;
+            height: 490px;
             background: none; 
     }
         }
@@ -128,6 +128,9 @@
             width: 45%;
             text-align: left;
             box-shadow: none;
+             @media #{$tablet} {
+                 width: 60%;
+    }
         }
         & label {
             @include rob-italic(14px, 14px);

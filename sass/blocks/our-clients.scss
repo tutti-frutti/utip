@@ -1,14 +1,18 @@
 .our-clients {
+        position: relative;
+        z-index: 100;
+        background: #fff; 
     &__list {
         margin-bottom: 72px;
     }
     text-align: center;
     & h2 {
         @include rob-light(30px, 30px);
-        margin: 97px 0 63px;
+        margin: 0 0 63px;
+        padding-top: 97px;
         color: #2b2d33;
         @media #{$mobile} {
-            margin-top: 30px;
+            padding-top: 30px;
         }
     }
     &__logo {

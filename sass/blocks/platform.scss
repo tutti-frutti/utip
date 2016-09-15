@@ -1,10 +1,35 @@
 .platform {
+    position: relative;
+    z-index: 100;
     text-align: center;
+    &__primary {
+        position: relative;
+        max-width: 760px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__primary-screen {
+        position: absolute;
+        left: 5.19%;
+        top: 10%;
+        width: 89.6%;
+        height: 90%;
+        & img {
+            max-width: 100%;
+        }
+    }
+    &__primary-mob {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
     
     & img {
+//        position: relative;
         display: block;
         margin: 0 auto;
     }
+    
     &--bg-fiolet {
         background: #302c38;
         
@@ -42,6 +67,8 @@
 }
 
 .binary-platform {
+    position: relative;
+    z-index: 100;
 	h2 {
         @include rob-light(40px, 44px);
         padding: 94px 0 13px;
@@ -55,12 +82,16 @@
         opacity: .6;
         color: #fff;
     }
-
+}
 .advice-create {
+    position: relative;
+    z-index: 100;
     h2 {
         @include rob-light(40px, 44px);
         margin-bottom: 18px;
         color: #fff;
     }
-}
+    p {
+//        color: #fff;
+    }
 }

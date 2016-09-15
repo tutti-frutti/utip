@@ -21,8 +21,12 @@
     width: 68.4%;
     vertical-align: top;
     @media #{$mobile} {
-        padding: 0 5px;
+        padding: 0 15px;
         width: auto;
+    }
+     @media #{$tablet} {
+        padding: 0 15px;
+//        width: auto;
     }
 }
 
@@ -196,6 +200,7 @@
 }
 
 .head-3 {
+    padding-left: 15px;
     &--indent {
         margin-top: -10px;
     }
@@ -710,33 +715,74 @@ cite {
     }
 }
 
-// select
+// select-1 -------------------------------------------------
 
 .select-1 {
+    display: inline-block;
     width: 225px;
-    overflow: hidden;
-    border-radius: 50px;
-    & select {
+    & .selectric {
         @include rob-reg(16px, 16px);
         padding-left: 20px;
-        width: 225px;
-//        height: 40px;
         border-radius: 50px;
-        line-height: 40px;
-        outline: none;
         background: #8e93a2;
         color: #fff;
+        &:hover {
+            background: #797f90;
+        }
+        & .button:after {
+            border-top-color: #fff;
+        }
+        &-hover {
+            & .selectric {
+                & .button:after {
+                    border-top-color: #fff;
+                    transform: rotate(180deg);
+                }
+            }  
+        }
     }
-    & option {
-        @include rob-reg(13px, 16px);
-        width: 225px !important;
-        background: #fff;
-        color: #333333;
-        border: none;
+     & .selectric-items li {
+            @include rob-reg(14px, 20px);
+             padding-left: 25px;
+             color: #333333;
     }
 }
 
-// accordion
+// select-2 -------------------------------------------------
+
+.select-2 {
+    display: inline-block;
+    width: 160px;
+    & .selectric {
+        @include rob-reg(14px, 16px);
+        border-radius: 50px;
+        background: transparent;
+        color: #3869b8;
+        border: none;
+        & .button {
+            right: -18px;
+        }
+        & .button:after {
+            border-top-color: #3869b8;
+        }
+        &-hover {
+            & .selectric {
+                & .button:after {
+                    border-top-color: #3869b8;
+                    transform: rotate(180deg);
+                }
+            }  
+        }
+    }
+     & .selectric-items li {
+            @include rob-reg(14px, 20px);
+         width: 160px;
+             padding-left: 15px;
+             color: #333333;
+    }
+}
+
+// accordion -------------------------------------------------
 
 .accordion {
     & h3 {
@@ -754,7 +800,7 @@ cite {
 }
 
 
-// checkboxes
+// checkboxes -------------------------------------------------
 
 .checkboxes,
 .radio {
@@ -819,7 +865,7 @@ cite {
     }
 }
 
-//radiobutton
+//radiobutton -------------------------------------------------
 
 .wrap-radio {
     width: 110px;
@@ -868,4 +914,82 @@ cite {
         cursor: not-allowed;
         background: #c3c5cd;
     }
+}
+
+// pallete -------------------------------------------------
+
+.square {
+    display: inline-block;
+    margin-right: -4px;
+    width: 50px;
+    height: 50px;
+}
+
+.pallete div {
+    margin-top: -2px;
+}
+
+.light-gray-1 {
+    background: #f4f4f6;
+}
+.light-gray-2 {
+    background: #f5f4f6;
+}
+.light-gray-3 {
+    background: #e4e5e8;
+}
+.light-gray-4 {
+    background: #e5e3e9;
+}
+.light-gray-5 {
+    background: #c3c5cd;
+}
+.light-gray-6 {
+    background: #c6c1cf;
+}
+.medium-gray-1 {
+    background: #8c91a0;
+}
+.light-violet-1 {
+    background: #9289a3;
+}
+.light-blue-1 {
+    background: #c9d8ef;
+}
+.light-blue-2 {
+    background: #6d94d3;
+}
+
+.deep-gray-1 {
+    background: #5b5d6c;
+}
+.deep-violet-1 {
+    background: #605870;
+}
+.medium-blue-2 {
+    background: #4f7ec9;
+}
+
+
+.deep-gray-2 {
+    background: #494b57;
+}
+.deep-violet-2 {
+    background: #4d465a;
+}
+.medium-blue-3 {
+    background: #3869b8;
+}
+.green {
+    background: #38b849;
+}
+
+.deep-black {
+    background: #2e3036;
+}
+.deep-violet-3 {
+    background: #302c38;
+}
+.deep-blue {
+    background: #2f5899;
 }

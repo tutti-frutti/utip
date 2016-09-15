@@ -2,8 +2,14 @@
 	min-height: 499px;
     border-top: 1px solid transparent;
     text-align: center;
-    background: url("../img/adv-bg.png") 0 0 no-repeat;
+    background-image: linear-gradient(to right, #3c69b9, #7b70c3);
     background-size: cover;
+    &__bg {
+        width: 100%;
+        min-height: 499px;
+        border-top: 1px solid transparent;
+        background: url("../img/svg-bg.svg") 0 bottom no-repeat;
+    }
     & h2 {
         @include rob-light(30px, 30px);
         margin: 105px 0 99px;

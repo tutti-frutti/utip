@@ -1,7 +1,9 @@
 .crm-adv {
+    position: relative;
     min-height: 499px;
     line-height: 499px;
     background: #f4f4f6;
+    z-index: 100;
     &__list {
         display: inline-block;
         line-height: normal;

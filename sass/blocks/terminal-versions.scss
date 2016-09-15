@@ -36,11 +36,9 @@
     &__tabs {
         position: relative;
         & article {
-//            position: absolute;
             top: 0;
             left: 0;
             display: none;
-//            padding: 70px 40px;
             width: 100%;
             @media #{$mobile} {
                 padding-top: 20px;
@@ -56,6 +54,8 @@
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
+                margin-top: 30px;
+                padding: 0 15px;
             }
         }
     }
@@ -68,11 +68,30 @@
         display: block;
         margin: 0 auto;
         margin-top: 37px;
+        @media #{$mobile} {
+            margin-top: 10px;
+        }
     }
+    &__mobile-screen {
+        position: relative;
+        max-width: 238px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__mobile-screen-bg {
+            position: absolute;
+            top: 7%;
+            left: 9%;
+            width: 81%;
+            
+        }
     &__web-img {
         display: block;
         margin: 0 auto;
         margin-top: 80px;
+        @media #{$mobile} {
+            margin-top: 20px;
+        }
     }
     &__mobile {
         & p {
@@ -82,6 +101,8 @@
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
+                margin-top: 30px;
+                padding: 0 15px;
             }
         }
     }
@@ -93,6 +114,8 @@
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
+                margin-top: 30px;
+                padding: 0 15px;
             }
         }
     }

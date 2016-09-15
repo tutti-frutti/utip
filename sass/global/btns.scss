@@ -114,15 +114,23 @@
     &--width-binary {
         margin-bottom: 69px;
         width: 160px;
+        @media #{$mobile} {
+            margin-bottom: 30px;
+        }
     }
     &--width {
+        margin-bottom: 60px;
         width: 165px;
+        @media #{$mobile} {
+            margin-bottom: 30px;
+        }
     }
     &--geo {
         width: 170px;
     }
     &--width-andr {
         margin-right: 5px;
+        margin-bottom: 10px;
         width: 225px;
     }
 }

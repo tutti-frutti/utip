@@ -4,6 +4,10 @@
         margin: 0 0 11px;
         text-align: center;
         color: #8c91a0;
+        @media #{$mobile} {
+            font-size: 30px;
+            padding: 0 15px 0;
+        }
     }
     & p {
         @include rob-reg(14px, 20px);
@@ -11,6 +15,9 @@
         max-width: 380px;
         color: #8c91a0;
         opacity: 1;
+        @media #{$mobile} {
+            padding: 0 15px 0;
+        }
     }
 }
 
@@ -23,6 +30,7 @@
         color: #fff;
         @media #{$mobile} {
             padding-top: 30px;
+            font-size: 30px;
         }
     }
     & p {
@@ -31,5 +39,8 @@
         max-width: 380px;
         color: #fff;
         opacity: .6;
+        @media #{$mobile} {
+            padding: 0 15px 0;
+        }
     }
 }
