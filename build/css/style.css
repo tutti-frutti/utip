@@ -218,6 +218,8 @@
     max-width: 760px;
     width: 100%;
     margin: 0 auto; }
+  .platform__wrapper-img {
+    position: relative; }
   .platform__primary-screen {
     position: absolute;
     left: 5.19%;
@@ -232,6 +234,10 @@
     width: 100%;
     bottom: 0;
     right: 0; }
+    @media (max-width: 767px) {
+      .platform__primary-mobile {
+        width: 40%;
+        height: 68%; } }
   .platform__primary-mobile-screen {
     position: absolute;
     top: 21%;
@@ -350,7 +356,7 @@
         text-align: center; } }
     @media (min-width: 768px) and (max-width: 1025px) {
       .page-descr--left {
-        padding: 0 5px; } }
+        padding: 0 15px; } }
   .page-descr__title--white {
     margin: 0;
     color: #fff; }
@@ -383,14 +389,15 @@
       opacity: .7; }
 
 .news {
-  margin: 103px 0 80px;
+  margin: 103px 0 0px;
   border-bottom: 1px solid #e4e5e8; }
   @media (max-width: 767px) {
     .news {
       margin: 20px 0; } }
   @media (min-width: 768px) and (max-width: 1025px) {
     .news {
-      padding: 0 5px; } }
+      padding: 0 10px;
+      margin: 30px 0 0px; } }
   .news__header {
     display: inline-block;
     width: 100%;
@@ -427,6 +434,9 @@
     @media (max-width: 767px) {
       .news__list {
         margin-bottom: 20px; } }
+    @media (min-width: 768px) and (max-width: 1025px) {
+      .news__list {
+        margin-bottom: 50px; } }
   .news__item {
     display: inline-block;
     width: 30%;
@@ -1302,6 +1312,8 @@
       @media (max-width: 767px) {
         .terminal-versions__tabs article {
           padding-top: 20px; } }
+  .terminal-versions__pc img {
+    margin-bottom: -5px; }
   .terminal-versions__pc p {
     font-family: "Roboto";
     font-weight: normal;
@@ -1350,8 +1362,8 @@
     font-weight: normal;
     font-style: normal;
     font-size: 14px;
-    line-height: 18px;
-    margin: 60px auto 30px;
+    line-height: 20px;
+    margin: 58px auto 30px;
     width: 38%;
     color: #9289a3; }
     @media (max-width: 767px) {
@@ -1366,9 +1378,9 @@
       font-weight: normal;
       font-style: normal;
       font-size: 14px;
-      line-height: 18px;
-      margin: 60px auto 30px;
-      width: 48%;
+      line-height: 20px;
+      margin: 58px auto 30px;
+      width: 38%;
       color: #9289a3; }
       @media (max-width: 767px) {
         .terminal-versions__web p {
@@ -1380,6 +1392,8 @@
     margin: 0 auto;
     max-width: 990px;
     width: 100%; }
+    .terminal-versions__images img {
+      margin-bottom: -5px; }
   .terminal-versions__images-svg {
     position: absolute;
     top: 13%;
@@ -1672,7 +1686,7 @@
   @media (max-width: 767px) {
     .geography {
       margin-bottom: 0;
-      height: 500px; } }
+      height: 550px; } }
   .geography h2 {
     font-family: "Roboto";
     font-weight: 300;
@@ -2175,7 +2189,7 @@
     .nav-aside {
       margin-top: 30px; } }
   .nav-aside h3 {
-    padding-left: 36px; }
+    padding-left: 20px; }
     @media (max-width: 767px) {
       .nav-aside h3 {
         padding-left: 0; } }

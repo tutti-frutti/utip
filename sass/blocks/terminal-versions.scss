@@ -1,6 +1,5 @@
 .terminal-versions {
     position: relative;
-//    height: 750px;
     text-align: center;
     background: #302c38;
     &::before {
@@ -46,6 +45,9 @@
         }
     }
     &__pc {
+        img {
+            margin-bottom: -5px;
+        }
         & p {
             @include rob-reg(14px, 20px);
             margin: 58px auto 30px;
@@ -95,8 +97,8 @@
     }
     &__mobile {
         & p {
-            @include rob-reg(14px, 18px);
-            margin: 60px auto 30px;
+            @include rob-reg(14px, 20px);
+            margin: 58px auto 30px;
             width: 38%;
             color: #9289a3;
             @media #{$mobile} {
@@ -109,9 +111,9 @@
     &__web {
         position: relative;
         & p {
-            @include rob-reg(14px, 18px);
-            margin: 60px auto 30px;
-            width: 48%;
+            @include rob-reg(14px, 20px);
+            margin: 58px auto 30px;
+            width: 38%;
             color: #9289a3;
             @media #{$mobile} {
                 width: auto;
@@ -125,6 +127,9 @@
         margin: 0 auto;
         max-width: 990px;
         width: 100%;
+        img {
+            margin-bottom: -5px;
+        }
     }
     &__images-svg {
         position: absolute;

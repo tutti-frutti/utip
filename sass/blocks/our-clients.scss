@@ -14,6 +14,9 @@
         @media #{$mobile} {
             padding-top: 30px;
         }
+        @media #{$tablet} {
+//            padding-top: 30px;
+        }
     }
     &__logo {
         display: inline-block;
