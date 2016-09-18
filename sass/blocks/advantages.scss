@@ -9,6 +9,9 @@
         min-height: 499px;
         border-top: 1px solid transparent;
         background: url("../img/svg-bg.svg") 0 bottom no-repeat;
+        @media #{$desktop} {
+            background-size: contain;
+        }
     }
     & h2 {
         @include rob-light(30px, 30px);

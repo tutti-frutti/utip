@@ -11,6 +11,9 @@
         min-height: 700px;
         border-top: 1px solid transparent;
         background: url("../img/svg-bg.svg") 0 bottom no-repeat;
+        @media #{$desktop} {
+            background-size: contain;
+        }
     }
     &__list {
         font-size: 0;

@@ -1443,6 +1443,9 @@
     min-height: 499px;
     border-top: 1px solid transparent;
     background: url("../img/svg-bg.svg") 0 bottom no-repeat; }
+    @media (min-width: 1300px) {
+      .advantages__bg {
+        background-size: contain; } }
   .advantages h2 {
     font-family: "Roboto";
     font-weight: 300;
@@ -1906,6 +1909,9 @@
     min-height: 700px;
     border-top: 1px solid transparent;
     background: url("../img/svg-bg.svg") 0 bottom no-repeat; }
+    @media (min-width: 1300px) {
+      .basic-functions__bg {
+        background-size: contain; } }
   .basic-functions__list {
     font-size: 0; }
   .basic-functions__item {
@@ -2051,6 +2057,9 @@
     width: 100%;
     min-height: 500px;
     background: url("../img/svg-bg.svg") 0 bottom no-repeat; }
+    @media (min-width: 1300px) {
+      .numbers__bg {
+        background-size: contain; } }
   .numbers h2 {
     font-family: "Roboto";
     font-weight: 300;
