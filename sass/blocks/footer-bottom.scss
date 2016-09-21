@@ -1,6 +1,13 @@
 .footer-bottom {
 	min-height: 100px;
     line-height: 100px;
+    &__logo {
+        a {
+            img {
+                border: none;
+            }
+        }
+    }
     @media #{$mobile} {
         padding: 0 10px;
     }

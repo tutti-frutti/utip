@@ -22,10 +22,12 @@ $(document).ready(function(){
     
     $(".open-menu").click(function(event){
         event.preventDefault();
+        $("html").css("overflow", "hidden");
         $(".toogle-menu").show("500");
         $(".close-menu").click(function(event){
             event.preventDefault;
             $(".toogle-menu").hide("500");
+            $("html").css("overflow", "auto");
         });
     });
     

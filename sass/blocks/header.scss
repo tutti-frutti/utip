@@ -46,6 +46,11 @@
         width: 29%;
         line-height: normal;
         vertical-align: middle;
+        a {
+            img {
+                border: none;
+            }
+        }
         @media #{$mobile} {
             display: block;
             padding-top: 20px;

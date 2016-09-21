@@ -1,6 +1,8 @@
 .numbers {
     min-height: 500px;
     text-align: center;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#3c69b9', endColorstr='#7b70c3');/*For IE7-8-9*/ 
+height: 1%;/*For IE7*/ 
     background-image: linear-gradient(to right, #3c69b9, #7b70c3);
     background-size: cover;
     &__bg {

@@ -39,6 +39,8 @@
     width: 29%;
     line-height: normal;
     vertical-align: middle; }
+    .header__logo a img {
+      border: none; }
     @media (max-width: 767px) {
       .header__logo {
         display: block;
@@ -160,7 +162,8 @@
     position: absolute;
     right: -1px;
     font-size: 14px;
-    box-shadow: 0px 4px 22px -6px #c5c5c5; }
+    box-shadow: 0px 4px 22px -6px #c5c5c5;
+    z-index: 1; }
     .nav__sub--indent {
       margin-top: 26px; }
   .nav__sub-item {
@@ -502,6 +505,8 @@
     margin-bottom: 33px;
     width: 225px;
     vertical-align: middle; }
+    .our-clients__logo a img {
+      border: none; }
     .our-clients__logo:nth-child(4n) {
       margin-right: 0; }
     @media (max-width: 767px) {
@@ -1015,6 +1020,8 @@
 .footer-bottom {
   min-height: 100px;
   line-height: 100px; }
+  .footer-bottom__logo a img {
+    border: none; }
   @media (max-width: 767px) {
     .footer-bottom {
       padding: 0 10px; } }
@@ -1436,6 +1443,10 @@
   min-height: 499px;
   border-top: 1px solid transparent;
   text-align: center;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#3c69b9', endColorstr='#7b70c3');
+  /*For IE7-8-9*/
+  height: 1%;
+  /*For IE7*/
   background-image: linear-gradient(to right, #3c69b9, #7b70c3);
   background-size: cover; }
   .advantages__bg {
@@ -1764,15 +1775,17 @@
   line-height: 20px; }
   .designation--fl-right {
     float: right;
-    margin-right: 8%;
-    margin-top: 16%;
+    margin-right: 13.5%;
+    margin-top: 13.6%;
     width: 310px;
     text-align: left;
     line-height: normal;
     vertical-align: middle; }
     @media (max-width: 767px) {
       .designation--fl-right {
-        margin-right: 0; } }
+        margin: 30% auto 0;
+        float: none;
+        text-align: center; } }
   .designation h2 {
     font-family: "Roboto";
     font-weight: 300;
@@ -1898,6 +1911,10 @@
 
 .basic-functions {
   min-height: 700px;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#3c69b9', endColorstr='#7b70c3');
+  /*For IE7-8-9*/
+  height: 1%;
+  /*For IE7*/
   background-image: linear-gradient(to right, #3c69b9, #7b70c3);
   background-size: cover;
   text-align: center; }
@@ -2051,6 +2068,10 @@
 .numbers {
   min-height: 500px;
   text-align: center;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#3c69b9', endColorstr='#7b70c3');
+  /*For IE7-8-9*/
+  height: 1%;
+  /*For IE7*/
   background-image: linear-gradient(to right, #3c69b9, #7b70c3);
   background-size: cover; }
   .numbers__bg {
@@ -3061,24 +3082,38 @@ cite {
   background: #2f5899; }
 
 .toogle-menu {
-  position: relative;
-  top: 0;
-  right: 0;
-  width: auto;
+  position: absolute;
   display: none;
-  height: 900px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   line-height: 900px;
   text-align: center;
-  background: url("../img/menu-bg.jpg") center center no-repeat;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
   background-size: cover; }
   @media (max-width: 767px) {
     .toogle-menu {
+      position: fixed;
+      height: 100%;
       padding: 10px;
-      text-align: center; } }
+      text-align: center;
+      line-height: 0; } }
+  @media (max-width: 767px) {
+    .toogle-menu__scroll {
+      overflow-y: scroll;
+      height: 100%; } }
   .toogle-menu__close {
     position: absolute;
-    top: -380px;
-    right: 47px; }
+    top: -400px;
+    right: 47px;
+    z-index: 100; }
+    .toogle-menu__close a img {
+      border: none; }
+    @media (max-width: 767px) {
+      .toogle-menu__close {
+        top: 25px; } }
     .toogle-menu__close img:hover {
       opacity: .65; }
   .toogle-menu__wrapper {
@@ -3145,7 +3180,12 @@ cite {
     margin-top: 40px; }
   .toogle-menu__trading {
     position: relative;
-    margin-bottom: 50px; }
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid transparent; }
+    .toogle-menu__trading:hover {
+      border-bottom: 1px solid #767b7e; }
     .toogle-menu__trading::before {
       position: absolute;
       content: '';
@@ -3174,7 +3214,13 @@ cite {
       color: #fff;
       opacity: .60; }
   .toogle-menu__binary {
-    position: relative; }
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid transparent; }
+    .toogle-menu__binary:hover {
+      border-bottom: 1px solid #767b7e; }
     .toogle-menu__binary::before {
       position: absolute;
       content: '';
@@ -3203,7 +3249,13 @@ cite {
       color: #fff;
       opacity: .60; }
   .toogle-menu__brokerage {
-    position: relative; }
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid transparent; }
+    .toogle-menu__brokerage:hover {
+      border-bottom: 1px solid #767b7e; }
     .toogle-menu__brokerage::before {
       position: absolute;
       content: '';
@@ -3230,28 +3282,32 @@ cite {
       padding-left: 80px;
       color: #fff;
       opacity: .60; }
-  .toogle-menu__links h3 {
-    font-family: "Roboto";
-    font-weight: normal;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 16px;
-    margin: 5px 0;
-    color: #fff; }
-  .toogle-menu__links a {
-    font-family: "Roboto";
-    font-weight: 300;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 14px;
-    display: inline-block;
-    padding-bottom: 10px;
-    cursor: pointer;
-    color: #fff;
-    border-bottom: 1px solid transparent;
-    opacity: .60; }
-    .toogle-menu__links a:hover {
-      border-bottom: 1px solid #fff; }
+  .toogle-menu__links {
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid transparent; }
+    .toogle-menu__links:hover {
+      border-bottom: 1px solid #767b7e; }
+    .toogle-menu__links h3 {
+      font-family: "Roboto";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 16px;
+      margin: 5px 0;
+      color: #fff; }
+    .toogle-menu__links span {
+      font-family: "Roboto";
+      font-weight: 300;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 14px;
+      display: inline-block;
+      padding-bottom: 10px;
+      cursor: pointer;
+      color: #fff;
+      border-bottom: 1px solid transparent;
+      opacity: .60; }
   .toogle-menu__right {
     display: inline-block;
     margin-top: 40px;

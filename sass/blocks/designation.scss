@@ -2,14 +2,17 @@
     @include rob-light(20px, 20px);
     &--fl-right {
         float: right;
-        margin-right: 8%;
-        margin-top: 16%;
+        margin-right: 13.5%;
+        margin-top: 13.6%;
         width: 310px;
         text-align: left;
         line-height: normal;
         vertical-align: middle;
         @media #{$mobile} {
-            margin-right: 0;
+//            margin-right: 0;
+            margin: 30% auto 0;
+            float: none;
+            text-align: center;
         }
     }
     & h2 {
