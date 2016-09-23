@@ -13,83 +13,81 @@
 </head>
 
 <body>
-
+    
     <!--Menu shown on click, hidden by default-->
-
+    
     <div class="toogle-menu">
-       <div class="toogle-menu__scroll">
-        <div class="toogle-menu__close">
-            <a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a>
-        </div>
+       <div class="toogle-menu__close"><a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a></div>
         <div class="center  center--narrow">
             <div class="toogle-menu__wrapper">
                 <div class="toogle-menu__product">Products</div>
-
                 <div class="toogle-menu__left">
-                    <a href="#" class="toogle-menu__trading">
-                        <h4>Trading Platform</h4>
-                        <p>On the FOREX market</p>
-                    </a>
-
-                    <a href="#" class="toogle-menu__binary">
-                        <h4>Binary options</h4>
-                        <p>On the FOREX market in the UTIP trader terminal</p>
-                    </a>
+                  
+                   <div class="toogle-menu__trading">
+                    <h4>Trading Platform</h4>
+                    <p>On the FOREX market</p>
+                    </div>
+                    
+                    <div class="toogle-menu__binary">
+                    <h4>Binary options</h4>
+                    <p>On the FOREX market in the UTIP trader terminal</p>
+                    </div>
                 </div>
                 <div class="toogle-menu__right">
-                    <a href="#" class="toogle-menu__links">
+                    <div class="toogle-menu__links">
                         <h3>CRM</h3>
-                        <span>For brokers &amp; traders</span>
-                    </a>
-                    <a href="#" class="toogle-menu__links">
+                        <a href="#">For brokers &amp; traders</a>
+                    </div>
+                    <div class="toogle-menu__links">
                         <h3>Pro investor</h3>
-                        <span>Trust Managment Service</span>
-                    </a>
-                    <a href="#" class="toogle-menu__links">
+                        <a href="#">Trust Managment Service</a>
+                    </div>
+                    <div class="toogle-menu__links">
                         <h3>Personal account</h3>
-                        <span>Description</span>
-                    </a>
+                        <a href="#">Description</a>
+                    </div>
                 </div>
                 <div class="toogle-menu__service">Service</div>
                 <div class="toogle-menu__left-down">
-                    <a href="#" class="toogle-menu__brokerage">
-                        <h4>Start your brokerage</h4>
-                        <p>Description description description</p>
-                    </a>
+                    <div class="toogle-menu__brokerage">
+                    <h4>Start your brokerage</h4>
+                    <p>Description description description</p>
+                    </div>
                 </div>
                 <div class="toogle-menu__right-down">
-                    <a href="#" class="toogle-menu__links">
+                    <div class="toogle-menu__links">
                         <h3>Website development</h3>
-                        <span>Description Description</span>
-                    </a>
+                        <a href="#">Description Description</a>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
     </div>
+
     <!--Header & nav-->
 
     <header class="header  header--binare-bg">
         <div class="center-wide">
             <div class="header__top">
                 <div class="header__logo">
-                    <a href="index.html"><img src="img/utip-logo.png" alt="UTIP"></a>
+                    <a href="index.html"><img src="/img/utip-logo.png" alt="UTIP"></a>
                 </div>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item open-menu"><img src="img/button-menu-ic.png" alt="Открыть меню">Products &amp; Services</li>
+                       <li class="nav__item"><a href="#" class="nav__link open-menu"><img src="/img/button-menu-ic.png" alt="Открыть меню"></a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Products &amp; Services</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Technologies</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Company</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
                         <li class="nav__item nav__lang">
-
-                            <a href="#" class="nav__link lang_show">EN</a>
-                            <ul class="nav__sub">
-                                <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="EN">English</a></li>
-                                <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="RU">Русский</a></li>
-                            </ul>
-
-                        </li>
+                  
+                   <a href="#" class="nav__link lang_show">EN</a>
+                    <ul class="nav__sub">
+                        <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="EN">English</a></li>
+                        <li class="nav__sub-item"><a href="#" class="nav__sub-link" data-lang="RU">Русский</a></li>
+                    </ul>
+                   
+                </li>
                     </ul>
                 </nav>
             </div>
@@ -112,39 +110,71 @@
     <!--Main content-->
 
     <main>
+        
+        
 
+        <!--Reward block-->
+
+
+<!--
         <div class="reward">
             <div class="center">
 
-                <div class="reward__prize">
-                    <div class="reward__img"><img src="img/Award_2014.png" alt="Prize"></div>
-                    <div class="reward__descr  reward__descr--indent">
-                        <h4 class="reward__title">The best binary options<br> trading platform</h4>
-                        <p>at the FOREX EXPO 2014 exhibition</p>
-                    </div>
-                </div>
-
                 <ul class="reward__list">
-                    <li class="reward__item">
-                        <div class="reward__block  reward__block--indent-binary">
-                            <strong>5%</strong> from PL
-                        </div>
+                    <li class="reward__item  reward__item--narrow"><img src="/img/Award_2014.png" alt="prize"></li>
+                    <li class="reward__item  reward__item--border  reward__item--wide">
+                        <h4 class="reward__title">The best binary options trading platform</h4>
+                        <p>at the FOREX EXPO 2014 exhibition</p>
+                    </li>
+                    <li class="reward__item  reward__item--border">
+                        <strong>5%</strong> from PL
+                    </li>
+                    <li class="reward__item  reward__item--border">
+                        <strong>10</strong> years
+                        <br>
+                        <span>In the forex industry</span>
                     </li>
                     <li class="reward__item">
-                        <div class="reward__block  reward__block--indent-binary">
-                            <strong>10</strong> years
-                        </div>
-                    </li>
-                    <li class="reward__item">
-                        <div class="reward__block  reward__block--zero-margin  reward__block--indent-binary">
-                            <strong>30+</strong>
-                            <br>
-                            <span>Brokers worldwide</span>
-                        </div>
+                        <strong>30+</strong>
+                        <br>
+                        <span>Brokers worldwide</span>
                     </li>
                 </ul>
             </div>
         </div>
+-->
+        
+        <div class="reward">
+       <div class="center">
+       
+       <div class="reward__prize">
+           <div class="reward__img"><img src="img/Award_2014.png" alt="Prize"></div>
+           <div class="reward__descr  reward__descr--indent">
+           <h4 class="reward__title">The best binary options<br> trading platform</h4>
+           <p>at the FOREX EXPO 2014 exhibition</p>
+           </div>
+       </div>
+       
+        <ul class="reward__list">
+            <li class="reward__item">
+                <div class="reward__block  reward__block--indent-binary">
+                <strong>5%</strong> from PL
+                </div>
+            </li>
+            <li class="reward__item">
+               <div class="reward__block  reward__block--indent-binary">
+                <strong>10</strong> years    
+            </div>
+            </li>
+            <li class="reward__item">
+               <div class="reward__block  reward__block--zero-margin  reward__block--indent-binary">
+                <strong>30+</strong><br>
+                <span>Brokers worldwide</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </div>
 
         <!--Work scheme-->
 
@@ -152,7 +182,7 @@
             <div class="work-scheme  work-scheme--zero-mb">
                 <div class="page-descr">
                     <h2 class="page-descr__title  page-descr__title--smaller">Additional broker solutions</h2>
-                    <img class="work-scheme__img work-scheme__img--zero-mb" src="img/binary.svg" alt="Additional broker solutions">
+                    <img class="work-scheme__img work-scheme__img--zero-mb" src="img/binare-img.jpg" alt="Additional broker solutions">
                 </div>
             </div>
         </div>
@@ -160,43 +190,41 @@
         <!--Important numbers-->
 
         <div class="numbers">
-            <div class="numbers__bg">
-                <div class="center">
-                    <div class="page-descr">
-                        <h2 class="page-descr__title">Важные цифры</h2>
-                    </div>
-                    <ul class="numbers__list">
-                        <li class="numbers__item">
-                            <h3>21</h3>
-                            <p>Time frame</p>
-                            <span>From 5 second to a year</span>
-                        </li>
-
-                        <li class="numbers__item">
-                            <h3>29</h3>
-                            <p>Elements for drawing</p>
-                            <span>Lines, channels, icons, etc</span>
-                        </li>
-
-                        <li class="numbers__item">
-                            <h3>38</h3>
-                            <p>Popular indexes</p>
-                            <span>Trends oscilliators, volumes, volatility</span>
-                        </li>
-
-                        <li class="numbers__item">
-                            <h3>100+</h3>
-                            <p>Instruments</p>
-                            <span>Forex, CFD, Cripto, Indexes</span>
-                        </li>
-
-                        <li class="numbers__item">
-                            <h3>4</h3>
-                            <p>Types of options</p>
-                            <span>HightLow, 60 seconds, Range, One Touch</span>
-                        </li>
-                    </ul>
+            <div class="center">
+                <div class="page-descr">
+                    <h2 class="page-descr__title">Важные цифры</h2>
                 </div>
+                <ul class="numbers__list">
+                    <li class="numbers__item">
+                        <h3>21</h3>
+                        <p>Time frame</p>
+                        <span>From 5 second to a year</span>
+                    </li>
+
+                    <li class="numbers__item">
+                        <h3>29</h3>
+                        <p>Elements for drawing</p>
+                        <span>Lines, channels, icons, etc</span>
+                    </li>
+
+                    <li class="numbers__item">
+                        <h3>38</h3>
+                        <p>Popular indexes</p>
+                        <span>Trends oscilliators, volumes, volatility</span>
+                    </li>
+
+                    <li class="numbers__item">
+                        <h3>100+</h3>
+                        <p>Instruments</p>
+                        <span>Forex, CFD, Cripto, Indexes</span>
+                    </li>
+
+                    <li class="numbers__item">
+                        <h3>4</h3>
+                        <p>Types of options</p>
+                        <span>HightLow, 60 seconds, Range, One Touch</span>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -212,9 +240,7 @@
 
                     <a href="#" class="btn btn-try btn-try--width-binary">Get PC Terminal</a>
 
-                    <div class="platform__primary"><img src="img/svg/index-tablet.svg" alt="Forex Platform">
-                        <div class="platform__primary-screen"><img src="img/svg/screen1.svg" alt="screen"></div>
-                    </div>
+                    <div class="platform__primary"><img src="img/tab-1-pc-term.png" alt="Forex Platform"></div>
                 </div>
             </div>
         </div>
@@ -229,9 +255,7 @@
                         <p>Привычный PC терминал для профессиональных трейдеров. Многофункциональное, производительное и надежное приложение.</p>
                     </div>
                     <a href="#" class="btn btn-try  btn-try--width-binary">Get PC Terminal</a>
-                    <div class="platform__primary"><img src="img/svg/index-tablet-black.svg" alt="Forex Platform">
-                        <div class="platform__primary-screen"><img src="img/svg/screen4.svg" alt="screen"></div>
-                    </div>
+                    <div class="platform__secondary"><img src="img/binary-platf.png" alt="Binary Platform"></div>
                 </div>
 
             </div>
@@ -274,16 +298,7 @@
         <!--Form-->
 
         <div class="appeal">
-            <div class="center  appeal__icon">
-
-                <div class="appeal__descr clearfix">
-                    <h3 class="appeal__title">
-                You want to start cooperate?
-            </h3>
-                    <p class="appeal__text">
-                        We will be happy to answer your questions and tell you more about our solution.
-                    </p>
-                </div>
+            <div class="center">
                 <div class="appeal__form">
                     <form class="" action="">
                         <div class="appeal__inputs-wrapper">
@@ -294,6 +309,15 @@
                         <textarea name="" id="" cols="" rows="" placeholder="Your question"></textarea>
                         <button class="btn btn-submit" type="submit">Ask a question</button>
                     </form>
+                </div>
+
+                <div class="appeal__descr">
+                    <h3 class="appeal__title">
+                You want to start cooperate?
+            </h3>
+                    <p class="appeal__text">
+                        We will be happy to answer your questions and tell you more about our solution.
+                    </p>
                 </div>
 
                 <ul class="appeal__list">
@@ -349,14 +373,12 @@
 
                     <ul class="footer__language">
                         <li class="footer__item footer__title">Language</li>
-                        <li class="footer__item footer__lang">
+                        <li class="footer__item"><a href="#">English</a></li>
+                        <ul class="footer__sub">
 
-                            <a href="#" class="footer__link drop_lang">Русский</a>
-                            <ul class="footer__sub">
-                                <li class="language__sub-item"><a class="footer__sub-link" data-speech="Русский" href="#">Русский</a></li>
-                                <li class="language__sub-item"><a class="footer__sub-link" data-speech="English" href="#">English</a></li>
-                            </ul>
-                        </li>
+                            <li class="language__sub-item">Русский</li>
+                        </ul>
+
                     </ul>
                 </div>
             </div>

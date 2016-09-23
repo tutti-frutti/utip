@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/SlickNav/dist/slicknav.css">
+<!--    <link rel="stylesheet" href="js/animated-timeline/css/timelify.css">-->
     <link rel="stylesheet" href="js/jquery-ui-1.12.0.custom/jquery-ui.css">
-    <link rel="stylesheet" href="js/Selectric/public/selectric.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/SlickNav/dist/jquery.slicknav.min.js"></script>
     <script src="js/animated-timeline/js/jquery.timelify.js"></script>
@@ -18,58 +19,54 @@
     <!--Main content-->
 
     <main>
-
+        
         <!--Menu shown on click, hidden by default-->
-
+    
     <div class="toogle-menu">
-       <div class="toogle-menu__scroll">
-        <div class="toogle-menu__close">
-            <a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a>
-        </div>
+       <div class="toogle-menu__close"><a href="#" class="close-menu"><img src="img/button-menu-ic-close.png" alt="close"></a></div>
         <div class="center  center--narrow">
             <div class="toogle-menu__wrapper">
                 <div class="toogle-menu__product">Products</div>
-
                 <div class="toogle-menu__left">
-                    <a href="#" class="toogle-menu__trading">
-                        <h4>Trading Platform</h4>
-                        <p>On the FOREX market</p>
-                    </a>
-
-                    <a href="#" class="toogle-menu__binary">
-                        <h4>Binary options</h4>
-                        <p>On the FOREX market in the UTIP trader terminal</p>
-                    </a>
+                  
+                   <div class="toogle-menu__trading">
+                    <h4>Trading Platform</h4>
+                    <p>On the FOREX market</p>
+                    </div>
+                    
+                    <div class="toogle-menu__binary">
+                    <h4>Binary options</h4>
+                    <p>On the FOREX market in the UTIP trader terminal</p>
+                    </div>
                 </div>
                 <div class="toogle-menu__right">
-                    <a href="#" class="toogle-menu__links">
+                    <div class="toogle-menu__links">
                         <h3>CRM</h3>
-                        <span>For brokers &amp; traders</span>
-                    </a>
-                    <a href="#" class="toogle-menu__links">
+                        <a href="#">For brokers &amp; traders</a>
+                    </div>
+                    <div class="toogle-menu__links">
                         <h3>Pro investor</h3>
-                        <span>Trust Managment Service</span>
-                    </a>
-                    <a href="#" class="toogle-menu__links">
+                        <a href="#">Trust Managment Service</a>
+                    </div>
+                    <div class="toogle-menu__links">
                         <h3>Personal account</h3>
-                        <span>Description</span>
-                    </a>
+                        <a href="#">Description</a>
+                    </div>
                 </div>
                 <div class="toogle-menu__service">Service</div>
                 <div class="toogle-menu__left-down">
-                    <a href="#" class="toogle-menu__brokerage">
-                        <h4>Start your brokerage</h4>
-                        <p>Description description description</p>
-                    </a>
+                    <div class="toogle-menu__brokerage">
+                    <h4>Start your brokerage</h4>
+                    <p>Description description description</p>
+                    </div>
                 </div>
                 <div class="toogle-menu__right-down">
-                    <a href="#" class="toogle-menu__links">
+                    <div class="toogle-menu__links">
                         <h3>Website development</h3>
-                        <span>Description Description</span>
-                    </a>
+                        <a href="#">Description Description</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
 
@@ -83,19 +80,20 @@
                 </div>
                 <nav class="nav nav--bg">
                     <ul class="nav__list">
-                        <li class="nav__item open-menu"><img src="img/button-menu-ic.png" alt="Открыть меню">Products &amp; Services</li>
+                       <li class="nav__item"><a href="#" class="nav__link open-menu"><img src="img/button-menu-ic.png" alt="Открыть меню"></a></li>
+                        <li class="nav__item"><a href="platform.html" class="nav__link">Products &amp; Services</a></li>
                         <li class="nav__item"><a href="crm.html" class="nav__link  nav__link--active">Technologies</a></li>
                         <li class="nav__item"><a href="company-create.html" class="nav__link">Company</a></li>
                         <li class="nav__item"><a href="binary-options.html" class="nav__link">Contacts</a></li>
                         <li class="nav__item nav__lang">
-
-                            <a href="#" class="nav__link lang_show">EN</a>
-                            <ul class="nav__sub  nav__sub--indent">
-                                <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color" data-lang="EN">English</a></li>
-                                <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color" data-lang="RU">Русский</a></li>
-                            </ul>
-
-                        </li>
+                        
+                        <a href="#" class="nav__link lang_show">EN</a>
+                    <ul class="nav__sub  nav__sub--indent">
+                        <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color"data-lang="EN">English</a></li>
+                        <li class="nav__sub-item    nav__sub-item--white"><a href="" class="nav__sub-link  nav__sub-link--color"data-lang="RU">Русский</a></li>
+                    </ul>
+                    
+                    </li>
                     </ul>
                 </nav>
             </div>
@@ -105,15 +103,15 @@
 
         <div class="standart-page">
             <div class="center">
-                <!--Navigation on right side-->
+               <!--Navigation on right side-->
 
                 <div class="standart-page__right">
                     <ul class="nav-aside">
                         <li>
                             <div class="head-3">
-                                <h3>Навигация</h3>
+                            <h3>Навигация</h3>
                             </div>
-                        </li>
+                            </li>
                         <li><a href="#headlines">Заголовки</a></li>
                         <li><a href="#text-form">Форматирование текста</a></li>
                         <li><a href="#text-decor">Оформление текста</a></li>
@@ -125,94 +123,94 @@
                     <div class="aside"></div>
                     <div class="aside"></div>
                 </div>
-
+                
                 <div class="standart-page__left">
                     <!--Headlines-->
                     <div class="headlines" id="headlines">
-                        <div class="head-1">
-                            <h1>H1. Длинный заголовок типовой страницы, чтобы настроить интерлиньяж</h1>
+                       <div class="head-1">
+                        <h1>H1. Длинный заголовок типовой страницы, чтобы настроить интерлиньяж</h1>
                         </div>
 
                         <div class="lead">
-                            <p>Лид — это первый абзац статьи, информативный отрывок позволяющий захватить внимание читателя на данном материале. Необязательный элемент.</p>
+                        <p>Лид — это первый абзац статьи, информативный отрывок позволяющий захватить внимание читателя на данном материале. Необязательный элемент.</p>
                         </div>
 
                         <div class="standart">
-                            <p>Эта страница создана для демонстрации блоков и элементов, которые используются на сайте, и служит руководством для всех, кто работает над ним. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Здесь же рассказывается о некоторых общих правилах оформления контента.</p>
+                        <p>Эта страница создана для демонстрации блоков и элементов, которые используются на сайте, и служит руководством для всех, кто работает над ним. Дизайнеры и технологи отрабатывают здесь стили, чтобы добиться приемлемых результатов в различных сочетаниях блоков и элементов. Контент-менеджеры и редакторы используют страницу в качестве справочника по верстке типовых страниц. Здесь же рассказывается о некоторых общих правилах оформления контента.</p>
                         </div>
-
+                        
                         <div class="head-2">
-                            <h2>H2. Длинный заголовок типовой страницы, чтобы настроить интерлиньяж</h2>
+                        <h2>H2. Длинный заголовок типовой страницы, чтобы настроить интерлиньяж</h2>
                         </div>
 
                         <div class="standart  standart--mt-1">
-                            <p>Типовые элементы оформляются в системе администрирования через визуальный редактор. Чтобы контент-менеджеру было легче в них ориентироваться, их количество лучше свести к необходимому минимуму.</p>
+                        <p>Типовые элементы оформляются в системе администрирования через визуальный редактор. Чтобы контент-менеджеру было легче в них ориентироваться, их количество лучше свести к необходимому минимуму.</p>
                         </div>
 
                         <div class="head-3">
-                            <h3>h3. Делаем заголовки нарочито длинными, чтобы убедиться в правильном интерлиньяже</h3>
+                        <h3>h3. Делаем заголовки нарочито длинными, чтобы убедиться в правильном интерлиньяже</h3>
                         </div>
 
                         <div class="standart  standart--mt-2">
-                            <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
+                        <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности.</p>
                         </div>
 
                         <div class="head-4">
-                            <h4>h4. Делаем заголовки нарочито длинными, чтобы убедиться в правильном интерлиньяже </h4>
+                        <h4>h4. Делаем заголовки нарочито длинными, чтобы убедиться в правильном интерлиньяже </h4>
                         </div>
 
                         <div class="standart  standart--mt-3">
-                            <p>Текст состоит из некоторого количества предложений. Одно предложение, даже очень распространённое, сложное, текстом назвать нельзя, поскольку текст можно расчленить на самостоятельные предложения, а части предложения сочетаются по законам синтаксиса сложного предложения, но не текста.</p>
+                        <p>Текст состоит из некоторого количества предложений. Одно предложение, даже очень распространённое, сложное, текстом назвать нельзя, поскольку текст можно расчленить на самостоятельные предложения, а части предложения сочетаются по законам синтаксиса сложного предложения, но не текста.</p>
                         </div>
 
                         <div class="head-5">
-                            <h5>H5. Заголовок пятого уровня</h5>
+                        <h5>H5. Заголовок пятого уровня</h5>
                         </div>
 
                         <div class="standart  standart--mt-4">
-                            <p>Заголовок &lt;h5&gt; используется только для вспомогательной информации, где есть вероятность появления шестого уровня разбивки. Пример — блок «Контактная информация», который внутри дробится по отделам компании.</p>
+                        <p>Заголовок &lt;h5&gt; используется только для вспомогательной информации, где есть вероятность появления шестого уровня разбивки. Пример — блок «Контактная информация», который внутри дробится по отделам компании.</p>
                         </div>
 
                         <h6>H6. Заголовок пятого уровня</h6>
 
                         <div class="standart  standart--mt-5">
-                            <p>Заголовок &lt;h5&gt; используется только для вспомогательной информации, где есть вероятность появления шестого уровня разбивки. Пример — блок «Контактная информация», который внутри дробится по отделам компании.</p>
+                        <p>Заголовок &lt;h5&gt; используется только для вспомогательной информации, где есть вероятность появления шестого уровня разбивки. Пример — блок «Контактная информация», который внутри дробится по отделам компании.</p>
                         </div>
 
                         <div class="head-2  head-2--indent">
-                            <h2>H2. Теперь покажем несколько двустрочных заголовков подряд</h2>
+                        <h2>H2. Теперь покажем несколько двустрочных заголовков подряд</h2>
                         </div>
-
+                        
                         <div class="head-3  head-3--indent">
-                            <h3>h3. Таким образом проверим их сочетание:интерлиньяж и отступы</h3>
+                        <h3>h3. Таким образом проверим их сочетание:интерлиньяж и отступы</h3>
                         </div>
-
+                        
                         <div class="head-4  head-4--indent">
-                            <h4>h4. Однако, в реальной ситуации подобных скопленийзаголовков лучше избегать</h4>
+                        <h4>h4. Однако, в реальной ситуации подобных скопленийзаголовков лучше избегать</h4>
                         </div>
-
+                        
                         <div class="standart  standart--mt-6">
-                            <p>Если за заголовком более низкого уровня сразу следует заголовок более высокого, это нарушает композиционную связность элементов оформления и логику повествования. Поэтому после заголовка должен следовать текст (или иной контент), который этот заголовок и подчиненные ему подзаголовки, если они есть.</p>
+                        <p>Если за заголовком более низкого уровня сразу следует заголовок более высокого, это нарушает композиционную связность элементов оформления и логику повествования. Поэтому после заголовка должен следовать текст (или иной контент), который этот заголовок и подчиненные ему подзаголовки, если они есть.</p>
                         </div>
                     </div>
 
                     <!--Форматирование текста-->
 
                     <div class="text-formating" id="text-form">
-                        <div class="head-2">
-                            <h2>Форматирование текста</h2>
+                       <div class="head-2">
+                        <h2>Форматирование текста</h2>
                         </div>
                         <div class="head-3  head-3--indent-top">
-                            <h3>Списки</h3>
+                        <h3>Списки</h3>
                         </div>
 
                         <!--ul-->
 
                         <div class="head-5  head-5--indent">
-                            <h5>Ненумерованный список:</h5>
+                        <h5>Ненумерованный список:</h5>
                         </div>
                         <ul class="main-menu  main-menu--indent">
-                            <li>Если пункты списка длинные и представляют собой развернутые предложения, они должны начинаться с прописной буквы и заканчиваться точкой.
+                            <li>Если пункты списка длинные и представляют собой развернутые предложения, они должны начинаться с прописной буквы и заканчиваться точкой. 
                                 <ul class="sub-menu  sub-menu--indent">
                                     <li>Если пункты списка длинные и представляют собой развернутые предложения, они должны начинаться с прописной буквы и заканчиваться точкой.</li>
                                     <li>Если пункты списка короткие, не являются самостоятельной законченной конструкцией и грамматически тесно связаны с предшествующей списку вводной фразой, они должны начинаться со строчной буквы и заканчиваться точкой с запятой (в конце последнего пункта — точка).</li>
@@ -224,7 +222,7 @@
                         <!--ol-->
 
                         <div class="head-5  head-5--indent-top">
-                            <h5>Нумерованный список:</h5>
+                        <h5>Нумерованный список:</h5>
                         </div>
                         <ol type="1" class="numb-menu  numb-menu--indent">
                             <li>Если пункты списка длинные и представляют собой развернутые предложения, они должны начинаться с прописной буквы и заканчиваться точкой.
@@ -237,7 +235,7 @@
                         </ol>
 
                         <div class="head-5  head-5--indent-top-1">
-                            <h5>Короткий список:</h5>
+                        <h5>Короткий список:</h5>
                         </div>
                         <ul class="small-menu  main-menu--indent-2">
                             <li>начинаются со строчной буквы;</li>
@@ -246,21 +244,21 @@
                         </ul>
 
                         <div class="head-3  head-3--indent-top-1">
-                            <h3>Ссылки</h3>
+                        <h3>Ссылки</h3>
                         </div>
-
+                        
                         <div class="standart  standart--mt-7">
-                            <p>На сайте может встречаться несколько видов ссылок. Например, ссылка на Яндекс является внешней. Внутренние ссылки могут открываться по умолчанию в текущем окне (например, переход на главную страницу) или в новом окне (например, для показа изображений в оригинальном размере).</p>
+                        <p>На сайте может встречаться несколько видов ссылок. Например, ссылка на Яндекс является внешней. Внутренние ссылки могут открываться по умолчанию в текущем окне (например, переход на главную страницу) или в новом окне (например, для показа изображений в оригинальном размере).</p>
                         </div>
 
                         <!--???-->
 
                         <div class="head-3">
-                            <h3>Сноски</h3>
+                        <h3>Сноски</h3>
                         </div>
-
+                        
                         <div class="standart  standart--mt-8">
-                            <p>Ссылку<sup id="first"><a href="#expl-1">1</a></sup> на сноску и название сноски нужно заключать в элемент «Сноска». Таким образом сохраняется связь между ссылкой на сноску и самой сноской<sup id="second"><a href="#expl-2">2</a></sup>.</p>
+                        <p>Ссылку<sup id="first"><a href="#expl-1">1</a></sup> на сноску и название сноски нужно заключать в элемент «Сноска». Таким образом сохраняется связь между ссылкой на сноску и самой сноской<sup id="second"><a href="#expl-2">2</a></sup>.</p>
                         </div>
                         <hr>
                         <ol class="numb-menu" type="1">
@@ -269,27 +267,27 @@
                         </ol>
 
                         <div class="head-3">
-                            <h3>Надстрочные и подстрочные индексы</h3>
+                        <h3>Надстрочные и подстрочные индексы</h3>
                         </div>
-
+                        
                         <div class="standart  standart--mt-9">
-                            <p>Важно следить за тем, чтобы элементы надстрочных и подстрочных индексов не увеличивали высоту строки, потому что это портит вид текстового блока. Пример: 2<sup>3</sup>. Еще пример: H<sub>2</sub>SO<sub>4</sub>. В обоих случаях высота строки от индексов не должна меняться. Если отступ между первой и второй строками увеличился, значит, что-то </p>
+                        <p>Важно следить за тем, чтобы элементы надстрочных и подстрочных индексов не увеличивали высоту строки, потому что это портит вид текстового блока. Пример: 2<sup>3</sup>. Еще пример: H<sub>2</sub>SO<sub>4</sub>. В обоих случаях высота строки от индексов не должна меняться. Если отступ между первой и второй строками увеличился, значит, что-то </p>
                         </div>
 
                         <!--Accordion-->
 
                         <div class="head-3">
-                            <h3>Раскрывающийся контент</h3>
+                        <h3>Раскрывающийся контент</h3>
                         </div>
 
                         <div class="accordion">
                             <div id="accordion">
-
+                                
                                 <h3>Раскрывающийся контент</h3>
-
+                                
                                 <div>
                                     <p>
-                                        Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.Элемент раскрыв ающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.
+                                        Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.Элемент раскрывающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.Элемент раскрыв    ающийся используется для формирования раскрывающихся элементов. В частности, для вопросов и ответов.
                                     </p>
                                 </div>
                                 <h3>Раскрывающийся контент</h3>
@@ -312,44 +310,44 @@
 
 
                     <div class="text-decoration" id="text-decor">
-                        <div class="head-2  head-2--indent-2">
-                            <h2>Оформление текста</h2>
+                       <div class="head-2  head-2--indent-2">
+                        <h2>Оформление текста</h2>
                         </div>
-
+                        
                         <div class="standart standart--mt-10">
-                            <p>Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и <em>курсивное</em> начертания.</p>
+                        <p>Наиболее простыми способами выделения информации являются <strong>полужирное</strong> и <em>курсивное</em> начертания.</p>
                         </div>
 
                         <!--Comment-->
 
                         <div class="head-3 head-3--indent-2">
-                            <h3>Комментарий</h3>
+                        <h3>Комментарий</h3>
                         </div>
-
+                        
                         <div class="comment  comment--indent">
-                            <p>Элемент «Комментарий» применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</p>
+                        <p>Элемент «Комментарий» применяется к пояснительному тексту. И еще немного специально написанного текста, чтобы получилось несколько строк для наглядности</p>
                         </div>
 
                         <!--Important-->
 
                         <div class="head-3  head-3--indent-3">
-                            <h3>Важно</h3>
+                        <h3>Важно</h3>
                         </div>
-
+                        
                         <div class="important  important--indent">
-                            <p>Элемент «Важно», который используется для выделения особо важной информации. И еще немного текста, чтобы получилось несколько строк для наглядности</p>
+                        <p>Элемент «Важно», который используется для выделения особо важной информации. И еще немного текста, чтобы получилось несколько строк для наглядности</p>
                         </div>
 
                         <!--Address-->
 
                         <div class="head-3  head-3--indent-4">
-                            <h3>Адреса</h3>
-                        </div>
+                        <h3>Адреса</h3>
+                    </div>
                         <ul class="address-menu  address-menu--indent">
                             <li>
                                 <ul class="sub-address">
-                                    <div class="head-5">
-                                        <h5>Центральный офис в Москве</h5>
+                                   <div class="head-5">
+                                    <h5>Центральный офис в Москве</h5>
                                     </div>
                                     <li>Студия Артемия Лебедева</li>
                                     <li>Газетный переулок, дом 5</li>
@@ -360,8 +358,8 @@
                             </li>
                             <li class="address-menu__kiev">
                                 <ul class="sub-address">
-                                    <div class="head-5">
-                                        <h5>Киевский офис</h5>
+                                   <div class="head-5">
+                                    <h5>Киевский офис</h5>
                                     </div>
                                     <li>Студия Артемия Лебедева</li>
                                     <li>ул. Антоновича (Горького),</li>
@@ -373,8 +371,8 @@
                             </li>
                             <li class="address-menu__ny">
                                 <ul class="sub-address">
-                                    <div class="head-5">
-                                        <h5>Нью-Йорский офис</h5>
+                                   <div class="head-5">
+                                    <h5>Нью-Йорский офис</h5>
                                     </div>
                                     <li>Art. Lebedev Studio</li>
                                     <li>125 Maiden Lane</li>
@@ -386,14 +384,14 @@
                         </ul>
 
                         <div class="standart  standart--mt-11">
-                            <p>Также надо следить за форматом телефонных номеров. Он должен быть единым для всего сайта, при этом следует избегать неоправданного использования скобок — в них помещается часть номера, которую в определенных ситуациях набирать необязательно. Кстати, код 495 в Москве в ближайшее время станет обязательным для набора. Правильно:8 495 926-18-00 или +7 495 926-18-00. Неправильно:+7 (495) 926-18-00 или 8 (495) 926-18-00</p>
+                        <p>Также надо следить за форматом телефонных номеров. Он должен быть единым для всего сайта, при этом следует избегать неоправданного использования скобок — в них помещается часть номера, которую в определенных ситуациях набирать необязательно. Кстати, код 495 в Москве в ближайшее время станет обязательным для набора. Правильно:8 495 926-18-00 или +7 495 926-18-00. Неправильно:+7 (495) 926-18-00 или 8 (495) 926-18-00</p>
                         </div>
 
                         <div class="head-3  head-3--indent-5">
-                            <h3>Цитаты</h3>
-                        </div>
+                        <h3>Цитаты</h3>
+                    </div>
                         <div class="standart  standart--mt-12">
-                            <p>Используйте элемент «Комментарий» внутри цитаты для выделения информации об источнике.</p>
+                        <p>Используйте элемент «Комментарий» внутри цитаты для выделения информации об источнике.</p>
                         </div>
 
                         <div class="blockquote-wrapper">
@@ -401,147 +399,239 @@
                             <cite>wikipedia.org</cite>
                         </div>
                     </div>
+                </div>
 
+                <div class="elements" id="elem">
 
+                    <div class="head-2">
+                    <h2>Элементы</h2>
+                    </div>
+                    <div class="head-3  head-3--indent-6">
+                    <h3>Картинки</h3>
+                    </div>
 
-                    <div class="elements" id="elem">
+                    <div class="img-sign  img-sign--big">
+                        <img src="img/img-960x400.jpg" alt="big img">
+                        <span class="sign">Подпись большого изображения</span>
+                    </div>
 
-                        <div class="head-2">
-                            <h2>Элементы</h2>
-                        </div>
-                        <div class="head-3  head-3--indent-6">
-                            <h3>Картинки</h3>
-                        </div>
+                    <div class="img-sign  img-sign--med">
+                        <img src="img/img-630x400.jpg" alt="medium img">
+                        <span class="sign">Подпись среднего изображения</span>
+                    </div>
 
-                        <div class="img-sign  img-sign--big">
-                            <img src="img/img-960x400.jpg" alt="big img">
-                            <span class="sign">Подпись большого изображения</span>
-                        </div>
+                    <div class="img-sign  img-sign--small">
+                        <img src="img/img-300x190.jpg" alt="small img">
+                        <span class="sign">Подпись небольшого изображения</span>
+                    </div>
 
-                        <div class="img-sign  img-sign--med">
-                            <img src="img/img-630x400.jpg" alt="medium img">
-                            <span class="sign">Подпись среднего изображения</span>
-                        </div>
-
-                        <div class="img-sign  img-sign--small">
-                            <img src="img/img-300x190.jpg" alt="small img">
-                            <span class="sign">Подпись небольшого изображения</span>
-                        </div>
-
-                        <div class="head-3  head-3--indent-7">
-                            <h3>Таблицы</h3>
-                        </div>
-
-                        <div class="d-table-wrapper">
-                            <div class="d-table">
-                                <div class="d-table__head">
-                                    <div class="cell">id</div>
-                                    <div class="cell">Имя</div>
-                                    <div class="cell">Фамилия</div>
-                                    <div class="cell">Логин</div>
-                                    <div class="cell">Активный</div>
-                                    <div class="cell">Руководитель</div>
+                    <div class="head-3  head-3--indent-7">
+                    <h3>Таблицы</h3>
+                    </div>
+                    
+                    <div class="d-table-wrapper">
+                        <div class="d-table">
+                            <div class="row d-table__head">
+                                <div class="cell">id</div>
+                                <div class="cell">Имя</div>
+                                <div class="cell">Фамилия</div>
+                                <div class="cell">Логин</div>
+                                <div class="cell">Активный</div>
+                                <div class="cell">Руководитель</div>
+                            </div>
+                            <div class="row">
+                                <div class="cell">1</div>
+                                <div class="cell">Jonh</div>
+                                <div class="cell">Boo</div>
+                                <div class="cell">jonhy81</div>
+                                <div class="cell"><div class="wrap-check">
+                                <input type="checkbox" id="table-1">
+                                <label for="table-1"></label>
                                 </div>
-                                <div class="row">
-                                    <div class="cell" data-label="id">1</div>
-                                    <div class="cell" data-label="Имя">Jonh</div>
-                                    <div class="cell" data-label="Фамилия">Boo</div>
-                                    <div class="cell" data-label="Логин">jonhy81</div>
-                                    <div class="cell" data-label="Активный">
-                                        <div class="wrap-check">
-                                            <input type="checkbox" id="table-1">
-                                            <label for="table-1"></label>
-                                        </div>
-                                    </div>
-                                    <div class="cell" data-label="Руководитель">
-                                        <div class="wrap-radio">
-                                            <input type="radio" name="test" id="tr-1">
-                                            <label for="tr-1"></label>
-                                        </div>
-                                    </div>
                                 </div>
-
-
-                                <div class="row">
-                                    <div class="cell" data-label="id">2</div>
-                                    <div class="cell" data-label="Имя">Mary</div>
-                                    <div class="cell" data-label="Фамилия">Brown</div>
-                                    <div class="cell" data-label="Логин">missmary</div>
-                                    <div class="cell" data-label="Активный">
-                                        <div class="wrap-check">
-                                            <input type="checkbox" id="table-2">
-                                            <label for="table-2"></label>
-                                        </div>
-                                    </div>
-                                    <div class="cell" data-label="Руководитель">
-                                        <div class="wrap-radio">
-                                            <input type="radio" name="test" id="tr-2">
-                                            <label for="tr-2"></label>
-                                        </div>
-                                    </div>
+                                <div class="cell"><div class="wrap-radio">
+                                <input type="radio" name="test" id="tr-1">
+                                <label for="tr-1"></label>
                                 </div>
-
-                                <div class="row">
-                                    <div class="cell" data-label="id">3</div>
-                                    <div class="cell" data-label="Имя">James</div>
-                                    <div class="cell" data-label="Фамилия">Mooray</div>
-                                    <div class="cell" data-label="Логин">jijames</div>
-                                    <div class="cell" data-label="Активный">
-                                        <div class="wrap-check">
-                                            <input type="checkbox" id="table-3">
-                                            <label for="table-3"></label>
-                                        </div>
-                                    </div>
-                                    <div class="cell" data-label="Руководитель">
-                                        <div class="wrap-radio">
-                                            <input type="radio" name="test" id="tr-3">
-                                            <label for="tr-3"></label>
-                                        </div>
-                                    </div>
                                 </div>
-
-                                <div class="row">
-                                    <div class="cell" data-label="id">4</div>
-                                    <div class="cell" data-label="Имя">Michael</div>
-                                    <div class="cell" data-label="Фамилия">Robinson</div>
-                                    <div class="cell" data-label="Логин">rob1n</div>
-                                    <div class="cell" data-label="Активный">
-                                        <div class="wrap-check">
-                                            <input type="checkbox" id="table-4">
-                                            <label for="table-4"></label>
-                                        </div>
-                                    </div>
-                                    <div class="cell" data-label="Руководитель">
-                                        <div class="wrap-radio">
-                                            <input type="radio" name="test" id="tr-4">
-                                            <label for="tr-4"></label>
-                                        </div>
-                                    </div>
+                            </div>
+                            
+                            
+                            <div class="row">
+                                <div class="cell">2</div>
+                                <div class="cell">Mary</div>
+                                <div class="cell">Brown</div>
+                                <div class="cell">missmary</div>
+                                <div class="cell"><div class="wrap-check">
+                                <input type="checkbox" id="table-2">
+                                <label for="table-2"></label>
                                 </div>
-
+                                </div>
+                                <div class="cell"><div class="wrap-radio">
+                                <input type="radio" name="test" id="tr-2">
+                                <label for="tr-2"></label>
+                                </div>
+                                </div>
+                            </div>
+                                
+                            <div class="row">
+                                <div class="cell">3</div>
+                                <div class="cell">James</div>
+                                <div class="cell">Mooray</div>
+                                <div class="cell">jijames</div>
+                                <div class="cell"><div class="wrap-check">
+                                <input type="checkbox" id="table-3">
+                                <label for="table-3"></label>
+                                </div>
+                                </div>
+                                <div class="cell"><div class="wrap-radio">
+                                <input type="radio" name="test" id="tr-3">
+                                <label for="tr-3"></label>
+                                </div>
+                                </div>
+                            </div>
+                                
                                 <div class="row">
-                                    <div class="cell" data-label="id">1</div>
-                                    <div class="cell" data-label="Имя">Bob</div>
-                                    <div class="cell" data-label="фамилия">Robson</div>
-                                    <div class="cell" data-label="Логин">boby88</div>
-                                    <div class="cell" data-label="Активный">
-                                        <div class="wrap-check">
-                                            <input type="checkbox" id="table-5">
-                                            <label for="table-5"></label>
-                                        </div>
-                                    </div>
-                                    <div class="cell" data-label="Руководитель">
-                                        <div class="wrap-radio">
-                                            <input type="radio" name="test" id="tr-5">
-                                            <label for="tr-5"></label>
-                                        </div>
-                                    </div>
+                                <div class="cell">4</div>
+                                <div class="cell">Michael</div>
+                                <div class="cell">Robinson</div>
+                                <div class="cell">rob1n</div>
+                                <div class="cell"><div class="wrap-check">
+                                <input type="checkbox" id="table-4">
+                                <label for="table-4"></label>
+                                </div>
+                                </div>
+                                <div class="cell"><div class="wrap-radio">
+                                <input type="radio" name="test" id="tr-4">
+                                <label for="tr-4"></label>
+                                </div>
+                                </div>
+                                </div>
+                                
+                                <div class="row">
+                                <div class="cell">1</div>
+                                <div class="cell">Bob</div>
+                                <div class="cell">Robson</div>
+                                <div class="cell">boby88</div>
+                                <div class="cell"><div class="wrap-check">
+                                <input type="checkbox" id="table-5">
+                                <label for="table-5"></label>
+                                </div>
+                                </div>
+                                <div class="cell"><div class="wrap-radio">
+                                <input type="radio" name="test" id="tr-5">
+                                <label for="tr-5"></label>
+                                </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-
+<!--
+                    <div class="table-wrapper">
+                        <table class="table">
+                            <tr class="table__head">
+                                <td>id</td>
+                                <td>Имя</td>
+                                <td>Фамилия</td>
+                                <td>Логин</td>
+                                <td>Активный</td>
+                                <td>Руководитель</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>John</td>
+                                <td>Boo</td>
+                                <td>johny81</td>
+                                <td>
+                                    <div class="wrap-check">
+                            <input type="checkbox" id="table-1">
+                            <label for="table-1"></label>
+                            </div>
+                                </td>
+                                <td>
+                                    <div class="wrap-radio">
+                        <input type="radio" name="test" id="tr-1">
+                        <label for="tr-1"></label>
+                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Mary</td>
+                                <td>Brown</td>
+                                <td>missmary</td>
+                                <td>
+                                    <div class="wrap-check">
+                            <input type="checkbox" id="table-2">
+                            <label for="table-2"></label>
+                            </div>
+                                </td>
+                                <td>
+                                    <div class="wrap-radio">
+                        <input type="radio" name="test" id="tr-2">
+                        <label for="tr-2"></label>
+                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>James</td>
+                                <td>Mooray</td>
+                                <td>jijames</td>
+                                <td>
+                                    <div class="wrap-check">
+                            <input type="checkbox" id="table-3">
+                            <label for="table-3"></label>
+                            </div>
+                                </td>
+                                <td>
+                                    <div class="wrap-radio">
+                        <input type="radio" name="test" id="tr-3">
+                        <label for="tr-3"></label>
+                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Michael</td>
+                                <td>Robinson</td>
+                                <td>Rob1n</td>
+                                <td>
+                                    <div class="wrap-check">
+                            <input type="checkbox" id="table-4">
+                            <label for="table-4"></label>
+                            </div>
+                                </td>
+                                <td>
+                                    <div class="wrap-radio">
+                        <input type="radio" name="test" id="tr-4">
+                        <label for="tr-4"></label>
+                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Bob</td>
+                                <td>Robson</td>
+                                <td>bobby88</td>
+                                <td>
+                                    <div class="wrap-check">
+                            <input type="checkbox" id="table-5">
+                            <label for="table-5"></label>
+                            </div>
+                                </td>
+                                <td>
+                                    <div class="wrap-radio">
+                        <input type="radio" name="test" id="tr-5">
+                        <label for="tr-5"></label>
+                        </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+-->
 
                     <div class="table-wrapper">
                         <table class="table  table-short">
@@ -581,7 +671,7 @@
                     <!--TABs-->
 
                     <div class="head-3 head-3--indent-8">
-                        <h3>Вкладки</h3>
+                    <h3>Вкладки</h3>
                     </div>
                     <div class="center">
                         <div class="tabs  tabs--indent">
@@ -608,7 +698,7 @@
                         <!--Pagination-->
 
                         <div class="head-3  head-3--indent-10">
-                            <h3>Пагинация</h3>
+                        <h3>Пагинация</h3>
                         </div>
                         <div class="pagination">
                             <ul class="pag">
@@ -626,11 +716,11 @@
                     <!--Form standart page-->
 
                     <div class="form" id="st-form">
-                        <div class="head-2  head-2--indent-3">
-                            <h2>Формы</h2>
+                       <div class="head-2  head-2--indent-3">
+                        <h2>Формы</h2>
                         </div>
                         <div class="head-3  head-3--indent-9">
-                            <h3>Пример простой формы</h3>
+                        <h3>Пример простой формы</h3>
                         </div>
                         <!--styles at appeal.scss-->
                         <div class="appeal appeal--bg-none">
@@ -644,9 +734,9 @@
                                         </div>
                                         <textarea name="" id="" cols="" rows="" placeholder="Текстовое поле"></textarea>
                                         <div class="wrap-check  wrap-check--indent">
-                                            <input type="checkbox" id="page-form">
-                                            <label for="page-form"></label>
-                                        </div>
+                            <input type="checkbox" id="page-form">
+                            <label for="page-form"></label>
+                            </div>
                                         <div class="btn-wrapper  btn-wrapper--decor-st-page">
                                             <button class="btn btn-cansel" type="submit">Отмена</button>
                                             <button class="btn btn-submit  btn-submit--narrow" type="submit">Отправить</button>
@@ -657,7 +747,7 @@
                         </div>
 
                         <div class="head-4">
-                            <h4>Поле ввода</h4>
+                        <h4>Поле ввода</h4>
                         </div>
                         <!--styles at appeal.scss-->
                         <div class="appeal appeal--bg-none-2">
@@ -685,7 +775,7 @@
                         <!--gray color-->
 
                         <div class="head-3">
-                            <h3>Кнопки</h3>
+                        <h3>Кнопки</h3>
                         </div>
                         <div class="btn-kit-1">
                             <div class="btn-kit">
@@ -755,7 +845,7 @@
                         </div>
 
                         <div class="head-3">
-                            <h3>Выпадающий список</h3>
+                        <h3>Выпадающий список</h3>
                         </div>
 
                         <div class="all-menu">
@@ -769,265 +859,214 @@
                                     <li>Выпадающий список</li>
                                 </ul>
                             </div>
-
-                            <!--Selects, select-1-->
-
-                            <div class="select-1">
-                                <form action="#">
-                                    <select name="speed" id="select-1">
-                                        <option selected="selected">Выпадающий список</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                    </select>
-                                </form>
-                            </div>
-
-                            <!--Selects, select-2-->
-
-                            <div class="select-2">
-                                <form action="#">
-                                    <select name="speed" id="select-2">
-                                        <option selected="selected">Выпадающий список</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                        <option>Элемент списка</option>
-                                    </select>
-                                </form>
-                            </div>
-
+                        </div>
+                        <div class="menu-wrapper">
+                            <ul class="menu menu--decor-1-top">
+                                <li>Выпадающий список
+                                    <ul class="menu-dropdown  menu-dropdown--decor-1-drop">
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
 
-
-
+                        <div class="menu-wrapper">
+                            <ul class="menu menu--decor-2-top">
+                                <li>Выпадающий список
+                                    <ul class="menu-dropdown  menu-dropdown--decor-2-drop">
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                        <li><a href="#">Элемент списка</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!--Form end-->
 
                     <!--checkboxes and radio-->
 
                     <div class="head-3">
-                        <h3>Переключатели</h3>
+                    <h3>Переключатели</h3>
                     </div>
 
                     <div class="checkboxes">
-                        <div class="head-4">
+                           <div class="head-4">
                             <h4>Чекбоксы</h4>
                         </div>
-
-                        <div class="wrap-check">
+                            
+                            <div class="wrap-check">
                             <input type="checkbox" id="act-1" checked>
                             <label for="act-1">Активно</label>
-                        </div>
-
-                        <div class="wrap-check">
+                            </div>
+                            
+                            <div class="wrap-check">
                             <input class="focus" type="checkbox" id="act-2">
                             <label for="act-2">В фокусе</label>
-                        </div>
-
-                        <div class="wrap-check">
+                            </div>
+                            
+                            <div class="wrap-check">
                             <input type="checkbox" id="act-3">
                             <label for="act-3">Обычно</label>
-                        </div>
-
-                        <div class="wrap-check">
+                            </div>
+                            
+                            <div class="wrap-check">
                             <input type="checkbox" id="act-4" disabled>
                             <label for="act-4">Неактивно</label>
-                        </div>
+                            </div>
                     </div>
 
                     <div class="radio">
-                        <div class="head-4">
-                            <h4>Переключатели</h4>
+                      <div class="head-4">
+                       <h4>Переключатели</h4>
                         </div>
-
+                        
                         <div class="wrap-radio">
-                            <input type="radio" name="test" id="rs-1" checked>
-                            <label for="rs-1">Активно</label>
+                        <input type="radio" name="test" id="rs-1" checked>
+                        <label for="rs-1">Активно</label>
                         </div>
-
+                        
                         <div class="wrap-radio">
-                            <input class="focus" type="radio" name="test" id="rs-2">
-                            <label for="rs-2">В фокусе</label>
+                        <input class="focus" type="radio" name="test" id="rs-2">
+                        <label for="rs-2">В фокусе</label>
                         </div>
-
+                        
                         <div class="wrap-radio">
-                            <input type="radio" name="test" id="rs-3">
-                            <label for="rs-3">Обычно</label>
+                        <input type="radio" name="test" id="rs-3">
+                        <label for="rs-3">Обычно</label>
                         </div>
-
+                        
                         <div class="wrap-radio">
-                            <input type="radio" name="test" id="rs-4" disabled>
-                            <label for="rs-4">Неактивно</label>
+                        <input type="radio" name="test" id="rs-4" disabled>
+                        <label for="rs-4">Неактивно</label>
                         </div>
                     </div>
-                </div>
-                <!--Elements end-->
-
-                <!--Pallete-->
-
+                </div> <!--Elements end-->
+                
                 <div class="head-3">
-                    <h3>Палитра</h3>
+                <h3>Палитра</h3>
+                </div>
+                
+                <div class="palette" id="colors">
+                    <img src="/img/palette.jpg" alt="Палитра">
+                </div>
+                </div><!--end center-->
 
-                    <div class="pallete">
-                        <div>
-                            <div class="square light-gray-1"></div>
-                            <div class="square light-gray-2"></div>
+                <!--Form-->
+
+                <div class="appeal">
+                    <div class="center">
+                        <div class="appeal__form">
+                            <form class="" action="">
+                                <div class="appeal__inputs-wrapper">
+                                    <input type="text" name="" id="" placeholder="Your name">
+                                    <input type="tel" name="" id="" placeholder="Phone">
+                                    <input type="email" name="" id="" placeholder="E-mail">
+                                </div>
+                                <textarea name="" id="" cols="" rows="" placeholder="Your question"></textarea>
+                                <button class="btn btn-submit" type="submit">Ask a question</button>
+                            </form>
                         </div>
-                        <div>
-                            <div class="square light-gray-3"></div>
-                            <div class="square light-gray-4"></div>
+
+                        <div class="appeal__descr">
+                            <h3 class="appeal__title">
+                                    You want to start cooperate?
+                                </h3>
+                            <p class="appeal__text">
+                                We will be happy to answer your questions and tell you more about our solution.
+                            </p>
                         </div>
-                        <div>
-                            <div class="square light-gray-5"></div>
-                            <div class="square light-gray-6"></div>
-                            <div class="square light-blue-1"></div>
-                        </div>
-                        <div>
-                            <div class="square medium-gray-1"></div>
-                            <div class="square light-violet-1"></div>
-                            <div class="square light-blue-2"></div>
-                        </div>
-                        <div>
-                            <div class="square deep-gray-1"></div>
-                            <div class="square deep-violet-1"></div>
-                            <div class="square medium-blue-2"></div>
-                        </div>
-                        <div>
-                            <div class="square deep-gray-2"></div>
-                            <div class="square deep-violet-2"></div>
-                            <div class="square medium-blue-3"></div>
-                            <div class="square green"></div>
-                        </div>
-                        <div>
-                            <div class="square deep-black"></div>
-                            <div class="square deep-violet-3"></div>
-                            <div class="square deep-blue"></div>
-                        </div>
+
+                        <ul class="appeal__list">
+                            <li class="appeal__item  appeal__icon-1  appeal__item--active">Ознакомление</li>
+                            <li class="appeal__item  appeal__icon-2  appeal__item--active">Заявка</li>
+                            <li class="appeal__item  appeal__icon-3  appeal__item--disactive">Консультация</li>
+                            <li class="appeal__item  appeal__icon-4 appeal__icon-5  appeal__item--disactive">Старт</li>
+                        </ul>
+
                     </div>
-
-                </div>
-            </div>
-            <!--end center-->
-        </div>
-        <!--Standart page left end-->
-
-        <!--Form-->
-
-        <div class="appeal">
-            <div class="center  appeal__icon">
-
-                <div class="appeal__descr clearfix">
-                    <h3 class="appeal__title">
-                You want to start cooperate?
-            </h3>
-                    <p class="appeal__text">
-                        We will be happy to answer your questions and tell you more about our solution.
-                    </p>
                 </div>
 
-                <div class="appeal__form">
-                    <form class="" action="">
-                        <div class="appeal__inputs-wrapper">
-                            <input type="text" name="" id="" placeholder="Your name">
-                            <input type="tel" name="" id="" placeholder="Phone">
-                            <input type="email" name="" id="" placeholder="E-mail">
-                        </div>
-                        <textarea name="" id="" cols="" rows="" placeholder="Your question"></textarea>
-                        <button class="btn btn-submit" type="submit">Ask a question</button>
-                    </form>
-                </div>
+                <!--Footer navigation-->
 
+                <footer class="footer">
+                    <div class="center">
 
-                <ul class="appeal__list">
-                    <li class="appeal__item  appeal__icon-1  appeal__item--active">Ознакомление</li>
-                    <li class="appeal__item  appeal__icon-2  appeal__item--active">Заявка</li>
-                    <li class="appeal__item  appeal__icon-3  appeal__item--disactive">Консультация</li>
-                    <li class="appeal__item  appeal__icon-4 appeal__icon-5  appeal__item--disactive">Старт</li>
-                </ul>
-
-            </div>
-        </div>
-
-        <!--Footer navigation-->
-
-        <footer class="footer">
-            <div class="center">
-
-                <div class="footer__wrapper">
-                    <ul class="footer__products">
-                        <li class="footer__item footer__title">Products</li>
-                        <li class="footer__item"><a href="#">UTIP Trading Platform</a></li>
-                        <li class="footer__item"><a href="#">UTIP Web Terminal </a></li>
-                        <li class="footer__item"><a href="#">Binary Options</a></li>
-                        <li class="footer__item"><a href="#">UTIP + MT4</a></li>
-                        <li class="footer__item"><a href="#">Web Office</a></li>
-                        <li class="footer__item"><a href="#">Pro Investor</a></li>
-                        <li class="footer__item"><a href="#">CRM</a></li>
-                    </ul>
-
-                    <ul class="footer__solutions">
-                        <li class="footer__item footer__title">Solutions</li>
-                        <li class="footer__item"><a href="#">Website</a></li>
-                        <li class="footer__item"><a href="#">Consulting</a></li>
-                        <li class="footer__item"><a href="#">Multi-levelaffiliate</a></li>
-                        <li class="footer__item"><a href="#">Integration</a></li>
-                    </ul>
-
-                    <ul class="footer__about">
-                        <li class="footer__item footer__title">About</li>
-                        <li class="footer__item"><a href="#">History</a></li>
-                        <li class="footer__item"><a href="#">Certificates and awards</a></li>
-                        <li class="footer__item"><a href="#">Geography</a></li>
-                        <li class="footer__item"><a href="#">News</a></li>
-                        <li class="footer__item"><a href="#">Partnership</a></li>
-                    </ul>
-
-                    <ul class="footer__contacts">
-                        <li class="footer__item footer__title">Contacts</li>
-                        <li class="footer__item"><span class="footer__cont">Skype:</span><a href="">utip-sale</a></li>
-                        <li class="footer__item"><span class="footer__cont">E-mail:</span><a href="mailto:info@utip.org">info@utip.org</a></li>
-                        <li class="footer__item"><span class="footer__cont">Phone:</span> +7 (342) 201-70-55</li>
-                    </ul>
-
-                    <ul class="footer__language">
-                        <li class="footer__item footer__title">Language</li>
-                        <li class="footer__item footer__lang">
-
-                            <a href="#" class="footer__link drop_lang">Русский</a>
-                            <ul class="footer__sub">
-                                <li class="language__sub-item"><a class="footer__sub-link" data-speech="Русский" href="#">Русский</a></li>
-                                <li class="language__sub-item"><a class="footer__sub-link" data-speech="English" href="#">English</a></li>
+                        <div class="footer__wrapper">
+                            <ul class="footer__products">
+                                <li class="footer__item footer__title">Products</li>
+                                <li class="footer__item"><a href="#">UTIP Trading Platform</a></li>
+                                <li class="footer__item"><a href="#">UTIP Web Terminal </a></li>
+                                <li class="footer__item"><a href="#">Binary Options</a></li>
+                                <li class="footer__item"><a href="#">UTIP + MT4</a></li>
+                                <li class="footer__item"><a href="#">Web Office</a></li>
+                                <li class="footer__item"><a href="#">Pro Investor</a></li>
+                                <li class="footer__item"><a href="#">CRM</a></li>
                             </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
 
-        <!--Footer bottom copyright-->
+                            <ul class="footer__solutions">
+                                <li class="footer__item footer__title">Solutions</li>
+                                <li class="footer__item"><a href="#">Website</a></li>
+                                <li class="footer__item"><a href="#">Consulting</a></li>
+                                <li class="footer__item"><a href="#">Multi-levelaffiliate</a></li>
+                                <li class="footer__item"><a href="#">Integration</a></li>
+                            </ul>
 
-        <footer class="footer-bottom">
-            <div class="center">
-                <div class="footer-bottom__left">
-                    <div class="footer-bottom__logo">
-                        <a href="#"><img src="img/utip-bottom-logo.png" alt="UTIP"></a>
+                            <ul class="footer__about">
+                                <li class="footer__item footer__title">About</li>
+                                <li class="footer__item"><a href="#">History</a></li>
+                                <li class="footer__item"><a href="#">Certificates and awards</a></li>
+                                <li class="footer__item"><a href="#">Geography</a></li>
+                                <li class="footer__item"><a href="#">News</a></li>
+                                <li class="footer__item"><a href="#">Partnership</a></li>
+                            </ul>
+
+                            <ul class="footer__contacts">
+                                <li class="footer__item footer__title">Contacts</li>
+                                <li class="footer__item"><span class="footer__cont">Skype:</span><a href="">utip-sale</a></li>
+                                <li class="footer__item"><span class="footer__cont">E-mail:</span><a href="mailto:info@utip.org">info@utip.org</a></li>
+                                <li class="footer__item"><span class="footer__cont">Phone:</span> +7 (342) 201-70-55</li>
+                            </ul>
+
+                            <ul class="footer__language">
+                                <li class="footer__item footer__title">Language</li>
+                                <li class="footer__item"><a href="#">English</a></li>
+                                <ul class="footer__sub">
+
+                                    <li class="language__sub-item">Русский</li>
+                                </ul>
+
+                            </ul>
+                        </div>
                     </div>
-                    <div class="footer-bottom__copyright">Copyright 2006-2016 UTIP Technologies Ltd.</div>
-                </div>
-                <div class="footer-bottom__right">
-                    <div class="footer-bottom__text">ET Development Ltd и ООО "Ютип Технологии" занимаются разработкой программного обеспечения, не оказывают брокерских услуг и услуг доверительного управления на
+                </footer>
+
+                <!--Footer bottom copyright-->
+
+                <footer class="footer-bottom">
+                    <div class="center">
+                        <div class="footer-bottom__left">
+                            <div class="footer-bottom__logo">
+                                <a href="#"><img src="img/utip-bottom-logo.png" alt="UTIP"></a>
+                            </div>
+                            <div class="footer-bottom__copyright">Copyright 2006-2016 UTIP Technologies Ltd.</div>
+                        </div>
+                        <div class="footer-bottom__right">
+                            <div class="footer-bottom__text">ET Development Ltd и ООО "Ютип Технологии" занимаются разработкой программного обеспечения, не оказывают брокерских услуг и услуг доверительного управления на
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </footer>
+                </footer>
+            
+            
 
     </main>
-
-    <script src="js/Selectric/public/jquery.selectric.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

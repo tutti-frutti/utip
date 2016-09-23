@@ -19,12 +19,12 @@
 .selectric .label {
   display: block;
   white-space: nowrap;
-/*  overflow: hidden;*/
+  overflow: hidden;
   text-overflow: ellipsis;
   margin: 0 38px 0 10px;
-/*  font-size: 12px;*/
+  font-size: 12px;
   line-height: 38px;
-/*  color: #444;*/
+  color: #444;
   height: 38px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -53,8 +53,8 @@
   margin: auto;
   width: 0;
   height: 0;
-  border: 5px solid transparent;
-/*  border-top-color: #BBB;*/
+  border: 4px solid transparent;
+  border-top-color: #BBB;
   border-bottom: none;
 }
 
@@ -69,8 +69,7 @@
   color: #A2A2A2;
 }
 .selectric-hover .selectric .button:after {
-/*  border-top-color: #A2A2A2;*/
-/*  border-top-color: #fff;*/
+  border-top-color: #A2A2A2;
 }
 
 .selectric-open {
@@ -131,15 +130,12 @@
 .selectric-items {
   display: none;
   position: absolute;
-/*  padding-left: 15px;*/
   top: 100%;
   left: 0;
-/*  background: #F8F8F8;*/
-  background: #fff;
-/*  border: 1px solid #C4C4C4;*/
+  background: #F8F8F8;
+  border: 1px solid #C4C4C4;
   z-index: -1;
-/*    text-align: center;*/
-  box-shadow: 0 0 10px -3px #000;
+  box-shadow: 0 0 10px -6px;
 }
 .selectric-items .selectric-scroll {
   height: 100%;
@@ -153,7 +149,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-/*  font-size: 14px;*/
+  font-size: 12px;
   line-height: 20px;
   min-height: 20px;
 }
@@ -164,13 +160,12 @@
   cursor: pointer;
 }
 .selectric-items li.selected {
-/*  background: #E0E0E0;*/
-/*    padding-left: 15px;*/
+  background: #E0E0E0;
   color: #444;
 }
 .selectric-items li:hover {
-  background: #3869b8;
-  color: #fff;
+  background: #D5D5D5;
+  color: #444;
 }
 .selectric-items .disabled {
   filter: alpha(opacity=50);

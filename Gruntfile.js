@@ -8,6 +8,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   grunt.initConfig({
     sass: {
@@ -49,7 +50,7 @@ module.exports = function(grunt) {
     browserSync: {
       server: {
         bsFiles: {
-          src: ["build/*.html", "build/css/*.css"]
+          src: ["build/*.html", "build/css/*.css", "build/js/*.js"]
         },
         options: {
           server: "build",
@@ -99,6 +100,27 @@ module.exports = function(grunt) {
       
       clean: {
           build: ["build"],
+      },
+      
+      uglify: {
+          my_target: {
+              options: {
+                  beautify: true
+              },
+              files: {
+                  "build/js/main.min.js": [
+                      "js/animated-timeline/js/jquery.timelify.js",
+                      "js/jquery-ui-1.12.0.custom/jquery-ui.js", "js/Selectric/public/jquery.selectric.min.js"
+                  ]
+              }
+          }
+      },
+      bake: {
+          build: {
+              files: {
+                  'build/index.html': 'includes/header.html'
+              }
+          }
       }
       
   });
@@ -111,6 +133,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "uglify",
 //    "imagemin"
   ]);
 };
