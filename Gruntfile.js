@@ -9,6 +9,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks( 'grunt-bake' );
 
   grunt.initConfig({
     sass: {
@@ -63,6 +64,10 @@ module.exports = function(grunt) {
     },
 
     watch: {
+        bake: {
+            files: [ "app/**/**" ],
+            tasks: "bake:build"
+        },
         html: {
             files: ["*.html"],
             tasks: ["copy:html"]
@@ -117,8 +122,15 @@ module.exports = function(grunt) {
       },
       bake: {
           build: {
+              options: {
+                  content: "app/content.json",
+                  section: "de"
+              },
+              
               files: {
-                  'build/index.html': 'includes/header.html'
+                  'build/index-1.html': 'app/base.html',
+                  'build/crm-2.html': 'app/base.html',
+                  'build/platform-2.html': 'app/platform.html',
               }
           }
       }
@@ -134,6 +146,7 @@ module.exports = function(grunt) {
     "postcss",
     "csso",
     "uglify",
+    "bake",
 //    "imagemin"
   ]);
 };
