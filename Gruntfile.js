@@ -8,8 +8,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-csso');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks( 'grunt-bake' );
+  grunt.loadNpmTasks('grunt-bake');
 
   grunt.initConfig({
     sass: {
@@ -26,7 +27,12 @@ module.exports = function(grunt) {
                 report: "gzip"
             },
             files: {
-                "build/css/style.min.css": ["build/css/style.css"]
+                // основной файл css
+                "build/css/style.min.css": ["build/css/style.css"],
+                // файлы css из плагинов для минификации и объеденения
+                "build/css/library.min.css": ["js/library-css/timelify.css",
+                                            "js/library-css/slicknav.css",
+                                            "js/library-css/selectric.css"]
             }
         }
     },
@@ -72,6 +78,7 @@ module.exports = function(grunt) {
             files: ["*.html"],
             tasks: ["copy:html"]
         },
+        
       style: {
         files: ["sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"],
@@ -107,16 +114,31 @@ module.exports = function(grunt) {
           build: ["build"],
       },
       
+      concat: {
+      options: {
+          // "включает" использование баннера
+          stripBanners: true, 
+          banner: "/**/"
+      },
+          dist: {
+              // файлы для склеивания
+              src: ['js/library-js/jquery.timelify.js',
+                    'js/library-js/jquery.slicknav.min.js', 
+                    'js/library-js/jquery.selectric.js'], 
+              // где будут находиться склеенные файлы
+              dest: 'build/js/project.js'
+          }
+          
+      },
+      
       uglify: {
           my_target: {
               options: {
                   beautify: true
               },
               files: {
-                  "build/js/main.min.js": [
-                      "js/animated-timeline/js/jquery.timelify.js",
-                      "js/jquery-ui-1.12.0.custom/jquery-ui.js", "js/Selectric/public/jquery.selectric.min.js"
-                  ]
+                  //минимфикация в той же папке, где и основной файл 
+                  "build/js/project.min.js": ['build/js/project.js']
               }
           }
       },
@@ -127,10 +149,12 @@ module.exports = function(grunt) {
                   section: "de"
               },
               
-              files: {
-                  'build/index-1.html': 'app/base.html',
-                  'build/crm-2.html': 'app/base.html',
-                  'build/platform-2.html': 'app/platform.html',
+              files: { 
+                  // указываются из каких шаблонов формируются готовые страницы
+                  // из base.html в index-1.html
+                  'index-1.html': 'app/base.html', 
+                  'crm-2.html': 'app/base.html',
+                  'platform-2.html': 'app/platform.html',
               }
           }
       }
@@ -145,6 +169,7 @@ module.exports = function(grunt) {
     "sass",
     "postcss",
     "csso",
+    "concat",
     "uglify",
     "bake",
 //    "imagemin"
